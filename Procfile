@@ -1,0 +1,1 @@
+web: gunicorn scrub_savers.wsgi:application
