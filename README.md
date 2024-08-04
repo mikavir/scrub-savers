@@ -161,36 +161,52 @@ Example:
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
+### Viewing and Navigation
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+As a Shopper, I want to be able to view a list of products so that I can select items to purchase.
+As a Shopper, I want to be able to view individual product details so that I can identify the price, description, and product details.
+As a Shopper, I want to quickly identify deals, clearance items, and special offers so that I can take advantage of special savings on products I'd like to purchase.
+As a Shopper, I want to easily view the total of my purchases at any time so that I can avoid overspending.
 
-In this section, list all of your user stories for the project.
+### Registration and User Authentication
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+As a Shopper, I want to easily register for an account so that I can have a personal account to view my purchase history.
+As a Shopper, I want to easily log in to my account so that I can keep track of my purchase history.
+As a Shopper, I want to easily log out of my account so that my account is secure when using a public device.
+As a Shopper, I want to easily recover my password in case I forget it so that I can recover access to my account.
+As a Shopper, I want to receive an email confirmation after signing in so that I can verify that my account registration was successful.
+As a Shopper, I want to have a personalized user profile so that I can view my purchase history, order confirmations, and save my payment history.
 
-### New Site Users
+### Sorting and Searching
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products.
+As a Shopper, I want to sort a specific category of products so that I can find the best-priced or best-rated products in that category or sort them by name.
+As a Shopper, I want to sort multiple categories or products simultaneously so that I can find the best-priced or best-rated products across broad categories, such as clothing or medical items.
+As a Shopper, I want to search for a product by name or description so that I can find the specific product I want to purchase.
+As a Shopper, I want to easily view what I have searched for and the number of results so that I can quickly identify if the product I'm searching for is available.
 
-### Returning Site Users
+### Purchasing and Checkout
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+As a Shopper, I want to easily select the size and quantity of a product when purchasing it so that I don't accidentally select the wrong size.
+As a Shopper, I want to view items in my bag to be purchased so that I can identify the total cost of the items I'm purchasing.
+As a Shopper, I want to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.
+As a Shopper, I want to easily enter my payment information so that I can checkout quickly.
+As a Shopper, I want to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
+As a Shopper, I want to receive an email confirmation after my purchase so that I have a record of my purchase.
 
-### Site Admin
+### Admin and Store Management
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+As a Store Owner, I want to add a product so that I can add new items to my store.
+As a Store Owner, I want to edit a product so that I can change the product information easily.
+As a Store Owner, I want to delete a product so that I can remove items that are no longer for sale.
+As a Store Owner, I want to have a logo so that I can improve my brand identity.
+
+### Contact and Questions
+
+As a Shopper, I want to see contact information so that I can feel safe knowing that I can contact someone to remedy any mistakes.
+As a Shopper, I want to see questions and answers so that I can understand more about what happens during my purchase.
+As a Shopper, I want to see reviews so that I can understand the quality of the product I'm buying.
+As a Store Owner, I want to be contacted so that I can improve customer loyalty and understand if there are improvements to be made.
 
 ## Wireframes
 
