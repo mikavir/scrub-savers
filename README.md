@@ -210,92 +210,118 @@ As a Store Owner, I want to be contacted so that I can improve customer loyalty 
 
 ## Wireframes
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
-
-⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
-
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 ### Mobile Wireframes
 
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
+
 
 Home
-  - ![screenshot](documentation/wireframes/mobile-home.png)
+  - ![screenshot](documentation/wireframes/home-mobile-1.png)
+  - ![screenshot](documentation/wireframes/home-mobile-2.png)
 
-About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
+Login
+  - ![screenshot](documentation/wireframes/login-mobile.png)
+
+Register
+  - ![screenshot](documentation/wireframes/register-mobile.png)
+
+Products
+  - ![screenshot](documentation/wireframes/products-mobile.png)
+
+Product details
+  - ![screenshot](documentation/wireframes/products-detail-mobile.png)
+
+Bag
+  - ![screenshot](documentation/wireframes/bag-mobile.png)
+
+Checkout
+  - ![screenshot](documentation/wireframes/checkout-mobile-1.png)
+  - ![screenshot](documentation/wireframes/checkout-mobile-2.png)
+
+Profile
+  - ![screenshot](documentation/wireframes/profile-mobile.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
+  - ![screenshot](documentation/wireframes/contact-mobile.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-etc.
-  - repeat for any remaining mobile wireframes
-
-< / details >
+</details>
 
 ### Tablet Wireframes
 
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
+  - ![screenshot](documentation/wireframes/home-tablet-1.png)
+  - ![screenshot](documentation/wireframes/home-tablet-2.png)
 
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
+Login
+  - ![screenshot](documentation/wireframes/login-tablet.png)
+
+Register
+  - ![screenshot](documentation/wireframes/register-tablet.png)
+
+Products
+  - ![screenshot](documentation/wireframes/products-tablet.png)
+
+Product details
+  - ![screenshot](documentation/wireframes/product-detail-tablet.png)
+
+Bag
+  - ![screenshot](documentation/wireframes/bag-tablet.png)
+
+Checkout
+  - ![screenshot](documentation/wireframes/checkout-tablet.png)
+  - ![screenshot](documentation/wireframes/checkout-tablet-2.png)
+
+Profile
+  - ![screenshot](documentation/wireframes/profile-tablet.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
+  - ![screenshot](documentation/wireframes/contact-tablet.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
-
-etc.
-  - repeat for any remaining tablet wireframes
-
-< / details >
+</details>
 
 ### Desktop Wireframes
 
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
+
 
 Home
-  - ![screenshot](documentation/wireframes/desktop-home.png)
+  - ![screenshot](documentation/wireframes/home-desktop-1.png)
+  - ![screenshot](documentation/wireframes/home-desktop-2.png)
 
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
+Login
+  - ![screenshot](documentation/wireframes/login-desktop.png)
+
+Register
+  - ![screenshot](documentation/wireframes/register-desktop.png)
+
+Products
+  - ![screenshot](documentation/wireframes/products-desktop.png)
+
+Product details
+  - ![screenshot](documentation/wireframes/product-detail-desktop.png)
+
+Bag
+  - ![screenshot](documentation/wireframes/bag-desktop.png)
+
+Checkout
+  - ![screenshot](documentation/wireframes/checkout-desktop.png)
+  - ![screenshot](documentation/wireframes/checkout-desktop-2.png)
+
+Profile
+  - ![screenshot](documentation/wireframes/profile-desktop.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
+  - ![screenshot](documentation/wireframes/contact-desktop.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
-
-etc.
-  - repeat for any remaining desktop wireframes
-
-< / details >
+</details>
 
 ## Features
 
