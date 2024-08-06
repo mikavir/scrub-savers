@@ -105,19 +105,12 @@ I used [coolors.co](https://coolors.co/081f5c-334eac-7096d1-d0e3ff-e1eaef-fff9f0
 
 ### Typography
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+After researching fonts closely associated with healthcare websites, [Typ.io](https://typ.io/tags/medical#:~:text=If%20you're%20working%20on,Nunito%20Sans%2C%20Publico%20and%20Titillium.) recommends Avenir Next and Tiempos. Since these were not accessible, we chose close replacements: Montserrat and Lora. 
+Ensuring that the typography is consistent with other healthcare websites is vital for maintaining strong visual associations with the industry. This consistency will enhance engagement with our target audience.
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
 
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Lora](https://fonts.google.com/specimen/Lora) was used for all other secondary text.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
