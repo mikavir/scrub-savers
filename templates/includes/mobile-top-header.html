@@ -1,24 +1,19 @@
-<div class="text-left d-lg-none">
-    <a href="{% url 'home' %}" class="nav-link main-logo-link">
-        <img class="logo" src="media/logo/scrub-savers-logo.png" alt="logo">
-    </a>
-</div>
-<ul>
+<ul class="text-right">
     <li class="list-inline-item">
-      <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="text-center">
-              <div><i class="fas fa-search fa-lg"></i></div>
+      <a class="text-black nav-link d-block d-md-none mobile-nav-icon" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="text-center nav-icon">
+              <div><i class="fa fa-search"></i></div>
               <p class="my-0">Search</p>
           </div>
       </a>
-      <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+      <div class="dropdown-menu border-0 w-100 rounded-0" aria-labelledby="mobile-search">
           <form class="form" method="GET" action="">
               <div class="input-group w-100">
                   <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                   <div class="input-group-append">
                       <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
-                          <span class="icon">
-                              <i class="fas fa-search"></i>
+                          <span class="icon mobile-nav-icon">
+                              <i class="fa fa-search"></i>
                           </span>
                       </button>
                   </div>
@@ -27,8 +22,8 @@
       </div>
   </li>
   <li class="list-inline-item dropdown">
-      <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="text-center">
+      <a class="text-black nav-link d-block d-md-none mobile-nav-icon" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="text-center nav-icon">
               <div><i class="fas fa-user fa-lg"></i></div>
               <p class="my-0">My Account</p>
           </div>
@@ -47,9 +42,9 @@
       </div>
   </li>
   <li class="list-inline-item">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
+      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-md-none mobile-nav-icon" href="">
           <div class="text-center">
-              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+              <div><i class="fas fa-shopping-bag fa-lg nav-icon"></i></div>
               <p class="my-0">
                   {% if grand_total %}
                       ${{ grand_total|floatformat:2 }}
@@ -59,5 +54,10 @@
               </p>
           </div>
       </a>
+    </li>
+    <li class="list-inline-item">
+        <button class="navbar-toggler d-block d-md-none mobile-nav-icon" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </li>
   </ul>
