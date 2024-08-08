@@ -1,0 +1,50 @@
+[
+    {
+        "pk": 1,
+        "model": "products.profession",
+        "fields": {
+            "name": "doctor",
+            "friendly_name": "Doctor"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.profession",
+        "fields": {
+            "name": "nurse",
+            "friendly_name": "Nurse"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.profession",
+        "fields": {
+            "name": "paramedic",
+            "friendly_name": "Paramedic"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.profession",
+        "fields": {
+            "name": "dentist",
+            "friendly_name": "Dentist"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.profession",
+        "fields": {
+            "name": "student",
+            "friendly_name": "Student"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.profession",
+        "fields": {
+            "name": "phsyiotherapist",
+            "friendly_name": "phsyiotherapist"
+        }
+    }
+]

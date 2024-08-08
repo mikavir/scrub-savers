@@ -1,0 +1,53 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "uni/scr/tro",
+            "name": "Alexandra Unisex Lightweight Scrub Trousers ",
+            "description": "Crafted for the demands of a fast-paced healthcare setting, these unisex lightweight scrub trousers offer excellent ventilation and freedom of movement while being durable enough to endure industrial laundering and infection-controlled temperatures.",
+            "price": 16.00,
+            "category": 1,
+            "profession":[1,2,3,4,5,6],
+            "rating": 4.6,
+            "has_sizes": true,
+            "colours": [2],
+            "image_url": "https://www.alexandra.co.uk/media/catalog/product/d/3/d398sn_3.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+            "image": "scrub-trousers-1.png"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "uni/sru/tun",
+            "name": "Alexandra Unisex Lightweight Scrub Tunic",
+            "description": "Engineered for industrial laundering and infection-controlled temperatures, Alexandra scrub tops provide the protection, versatility, and comfort that healthcare professionals need in any work environment. Now offered in a broader selection of colors to suit your brand or role.",
+            "price": 15.00,
+            "category": 1,
+            "profession":[1,2,3,4,5,6],
+            "rating": 4.6,
+            "has_sizes": true,
+            "colours": [2],
+            "image_url": "https://www.alexandra.co.uk/media/catalog/product/d/3/d397_product_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+            "image": "scrub-tunic-1.png"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "ste/bla",
+            "name": "Littmann CORE Digital Stethoscope 8490 - Black",
+            "description": "The FDA-cleared 3M™ Littmann® CORE Stethoscope allows you to switch between analog and amplified listening modes, giving you flexibility during assessments. With 3M's tunable diaphragm technology, you can hear different frequencies by adjusting the pressure on the chestpiece—apply light pressure for low-frequency sounds and press a bit harder to hear higher frequencies. Soft-sealing ear tips adapt to your ears for maximum comfort and superior sound isolation.",
+            "price": 15.00,
+            "category": 3,
+            "profession":[1,2,3,5,6],
+            "rating": 4.6,
+            "has_sizes": false,
+            "colours": [1],
+            "image_url": "https://www.medisave.co.uk/cdn/shop/products/3m_littmann_core_stethoscope_8480_01_hero_1.png?v=1679930849",
+            "image": "media/products/littman-stethoscope-black.png"
+        }
+    }
+]

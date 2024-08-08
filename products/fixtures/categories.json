@@ -1,0 +1,82 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "medical_uniform",
+            "friendly_name": "Medical Uniform"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "footwear",
+            "friendly_name": "Footwear"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "stethoscopes",
+            "friendly_name": "Stethoscope"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "equipment",
+            "friendly_name": "Equipment"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "scrubs",
+            "friendly_name": "Scrubs"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "maternity",
+            "friendly_name": "Maternity"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "accessories",
+            "friendly_name": "Accessories"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "bags",
+            "friendly_name": "Bags"
+        }
+    }
+]

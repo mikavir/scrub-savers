@@ -1,0 +1,74 @@
+[
+    {
+        "pk": 1,
+        "model": "products.colours",
+        "fields": {
+            "name": "black",
+            "friendly_name": "Black"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.colours",
+        "fields": {
+            "name": "blue",
+            "friendly_name": "Blue"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.colours",
+        "fields": {
+            "name": "grey",
+            "friendly_name": "Grey"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.colours",
+        "fields": {
+            "name": "pink",
+            "friendly_name": "Pink"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.colours",
+        "fields": {
+            "name": "purple",
+            "friendly_name": "Purple"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.colours",
+        "fields": {
+            "name": "green",
+            "friendly_name": "Green"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.colours",
+        "fields": {
+            "name": "red",
+            "friendly_name": "Red"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.colours",
+        "fields": {
+            "name": "white",
+            "friendly_name": "White"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.colours",
+        "fields": {
+            "name": "no_colour",
+            "friendly_name": "No Colour"
+        }
+    }
+]
