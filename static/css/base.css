@@ -1,7 +1,8 @@
 html {
     height: 100%;
-    background-color:antiquewhite
 }
+
+
 
 .logo {
     max-height: 7rem;
@@ -13,6 +14,7 @@ html {
 
 #top-nav {
     max-height: 20vh;
+    background-color: blue;
 }
 
 .search-input {
@@ -20,15 +22,12 @@ html {
     
 }
 
-/* .hero-image {
-    display: flex;
-    flex-direction: column;
-    background: url('/media/bg-image/hero-image.jpg') no-repeat center center fixed;
+/* body {
+    background:url('/media/bg-image/hero-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    object-fit: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: Roboto;
 } */
 
 .hero-image {
@@ -44,7 +43,95 @@ html {
     justify-content: center;
 }
 
+.product-container {
+    background-color: blue;
+}
 
+
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
 
 @media (max-width: 450px) {
     .mobile-nav-icon > a {
