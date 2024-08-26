@@ -17,10 +17,21 @@
                 Shop by profession
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="profession-link">
-                <a href="" class="dropdown-item">Medic</a>
-                <a href="" class="dropdown-item">Nurse</a>
-                <a href="" class="dropdown-item">Occupational Therapist</a>
-                <a href="" class="dropdown-item">Physiotherapist</a>
+                <a href="{% url 'products' %}?profession=doctor" class="dropdown-item">Medic</a>
+                <a href="{% url 'products' %}?profession=nurse" class="dropdown-item">Nurse</a>
+                <a href="{% url 'products' %}?profession=paramedic" class="dropdown-item">Paramedic</a>
+                <a href="{% url 'products' %}?profession=dentist" class="dropdown-item">Dentist</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="colour-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop by colours
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="colour-link">
+                <a href="{% url 'products' %}?colours=pink" class="dropdown-item">Pink</a>
+                <a href="{% url 'products' %}?colours=blue" class="dropdown-item">Blue</a>
+                <a href="{% url 'products' %}?colours=black" class="dropdown-item">Black</a>
+                <a href="{% url 'products' %}?colours=white" class="dropdown-item">White</a>
             </div>
         </li>
 
@@ -29,7 +40,7 @@
                 Student
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="student-link">
-                <a href="" class="dropdown-item">Essentials</a>
+                <a href="{% url 'products' %}?profession=student" class="dropdown-item">Essentials</a>
                 <a href="" class="dropdown-item">FAQ's</a>
             </div>
         </li>
@@ -39,10 +50,10 @@
                 Deals
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
