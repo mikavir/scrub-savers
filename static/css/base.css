@@ -43,10 +43,6 @@ html {
     justify-content: center;
 }
 
-.product-container {
-    background-color: blue;
-}
-
 
 
 /* from Bulma */
@@ -64,12 +60,6 @@ html {
 
 .main-logo-link {
     width: fit-content;
-}
-
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
 }
 
 .btn-black {
