@@ -11,7 +11,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
-        colour = Colours.objects.all()
+        colours = Colours.objects.all()
         profession = Profession.objects.all()
 
         # Get friendly names of categories
@@ -19,7 +19,11 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = categories_friendly_names
 
         # Get friendly names of colours 
-        colour_friendly_names = [(c.id, c.get_friendly_name()) for c in colour]
+        # colours = forms.ModelMultipleChoiceField(
+        #         queryset=Colours.objects.all(),
+        #         widget=forms.CheckboxSelectMultiple
+        #     )
+        colour_friendly_names = [(c.id, c.get_friendly_name()) for c in colours]
         self.fields['colours'].choices = colour_friendly_names
 
         # Get friendly names of profession
