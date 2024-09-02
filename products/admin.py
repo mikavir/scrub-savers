@@ -3,7 +3,6 @@ from .models import Product, Category, Profession, Colours
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
         'name',
         'category',
         'price',
@@ -11,7 +10,7 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
     )
 
-    ordering = ('sku',)
+    ordering = ('name',)
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
