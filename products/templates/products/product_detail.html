@@ -104,6 +104,24 @@
             </div>
         </div>
     </div>
+    <div class="div row">
+        <div class="div col">
+        {% for review in reviews %}
+            <div class="notification space-below">
+                <p>
+                    <strong> User: {{review.user_profile}}</strong>
+                    <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
+                </p>
+
+                {{ review.content }}
+            </div>
+        {% empty %}
+            <div class="notification space-below">
+                No reviews yet...
+            </div>
+        {% endfor %}
+        </div>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}
