@@ -75,3 +75,16 @@ def edit_review(request, product_id, product_review_id):
 
     return render(request, template , context)
 
+@login_required
+def delete_review(request, product_id, product_review_id):
+    """Allow users to delete a review"""
+    product_review = get_object_or_404(ProductReview, pk=product_review_id)
+    product = get_object_or_404(Product, pk=product_id)
+    profile = get_object_or_404(UserProfile, user=request.user)
+    if request.user != product_review.user_profile.user:
+        messages.error(request, 'Forbidden')
+        return redirect('product_detail', product_id)
+    if request.user.is_authenticated:
+        product_review.delete()
+        messages.success(request, 'Review deleted!')
+    return redirect('product_detail', product_id)

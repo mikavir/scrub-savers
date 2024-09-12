@@ -135,7 +135,11 @@
                             <div class="col">
                                 <a href="{% url 'edit_review' product.id review.id  %}" class="btn"> Edit Review</a>
                             </div>
+                            <div class="col">
+                                <a href="{% url 'delete_review' product.id review.id  %}" class="btn"> Delete Review</a>
+                            </div>
                         </div>
+                        
                     {% endif %}
                 </div>
             </div>
