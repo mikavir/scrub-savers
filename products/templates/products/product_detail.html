@@ -119,17 +119,32 @@
 
         <div class="col">
         {% for review in reviews %}
-            <div class="notification space-below">
-                <p>
-                    <strong> User: {{review.user_profile}}</strong>
-                    <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
-                </p>
-    
-                {{ review.content }}
+            <div class="row">
+                <div class="notification col space-below">
+                    <p>
+                        <strong> User: {{review.user_profile}}</strong>
+                        <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
+                        {{review.user_profile}}
+                        {{request.user}}
+                    </p>
+        
+                    {{ review.content }}
+
+                    {% if request.user == review.user_profile.user %}
+                        <div class="row">
+                            <div class="col">
+                                <a href="{% url 'edit_review' product.id review.id  %}" class="btn"> Edit Review</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
             </div>
-        {% empty %}
-            <div class="notification space-below">
-                No reviews yet...
+
+            {% empty %}
+            <div class="row">
+                 <div class="notification space-below col">
+                    No reviews yet...
+                </div>
             </div>
         {% endfor %}
         </div>

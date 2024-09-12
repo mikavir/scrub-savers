@@ -5,6 +5,7 @@ from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 
 from .models import Product, Category, Colours, Profession
+from profiles.models import UserProfile
 from reviews.models import ProductReview
 from .forms import ProductForm
 
@@ -82,10 +83,14 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product_review = ProductReview.objects.filter(product=product_id)
+    profile = UserProfile.objects.get(user=request.user)
+  
 
     context = {
         'product': product,
-        'reviews': product_review
+        'reviews': product_review,
+        'profile': profile,
+
     }
 
     return render(request, 'products/product_detail.html', context)
