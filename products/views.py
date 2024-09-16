@@ -64,6 +64,7 @@ def all_products(request):
     
     current_sorting = f'{sort}_{direction}'
 
+
     context = {
         'products': products,
         'search_term': query,
@@ -84,8 +85,15 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product_review = ProductReview.objects.filter(product=product_id)
     profile = UserProfile.objects.get(user=request.user)
+    product.rating = 0
+    sum = 0
+    if product_review:
+        # Average rating of product
+        for review in product_review: 
+            sum += review.rating
+        product.rating = sum / len(product_review)
   
-
+    product.save()
     context = {
         'product': product,
         'reviews': product_review,
