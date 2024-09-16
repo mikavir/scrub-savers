@@ -119,28 +119,49 @@
 
         <div class="col">
         {% for review in reviews %}
-            <div class="row">
-                <div class="notification col space-below">
-                    <p>
-                        <strong> User: {{review.user_profile}}</strong>
-                        <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
-                        {{review.user_profile}}
-                        {{request.user}}
-                    </p>
-        
-                    {{ review.content }}
+        <!-- https://medium.com/geekculture/django-implementing-star-rating-e1deff03bb1c -->
+            <div class="row card">
+                <div class="col">
+                    <div class="row">
+                        <h5 class="card-title">
+                            <span class="fa fa-star {% if review.rating > 0 %} d-inline {% else %} d-none {% endif %}"></span>
+                            <span class="fa fa-star {% if review.rating > 1 %} d-inline {% else %} d-none {% endif %}"></span>
+                            <span class="fa fa-star {% if review.rating > 2 %} d-inline {% else %} d-none {% endif %}"></span>
+                            <span class="fa fa-star {% if review.rating > 3 %} d-inline {% else %} d-none {% endif %}" ></span>
+                            <span class="fa fa-star {% if review.rating > 4 %} d-inline {% else %} d-none {% endif %}"></span>
+                        </h5>
+                    </div>
+                    <div class="row">
+                        <div class="col">
 
-                    {% if request.user == review.user_profile.user %}
-                        <div class="row">
-                            <div class="col">
-                                <a href="{% url 'edit_review' product.id review.id  %}" class="btn"> Edit Review</a>
-                            </div>
-                            <div class="col">
-                                <a href="{% url 'delete_review' product.id review.id  %}" class="btn"> Delete Review</a>
-                            </div>
+                            <p>
+                                <strong> {{review.user_profile}}</strong>
+                                <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
+                            </p>
                         </div>
-                        
-                    {% endif %}
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{ review.content }}
+
+
+                        </div>
+                    </div>
+                    <div class="row>">
+
+                        <div class="col space-below">                            
+                            {% if request.user == review.user_profile.user %}
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="{% url 'edit_review' product.id review.id  %}" class="btn"> Edit Review</a>
+                                        <a href="{% url 'delete_review' product.id review.id  %}" class="btn"> Delete Review</a>
+                                    </div>
+                                </div>
+                                
+                            {% endif %}
+                        </div>
+                    </div>                  
+
                 </div>
             </div>
 
