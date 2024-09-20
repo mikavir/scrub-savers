@@ -15,6 +15,15 @@ def add_review(request, product_id):
     """ Allow user to add review of products: view should only be limited to users who have bought the product"""
     product = get_object_or_404(Product, pk=product_id)
     profile = get_object_or_404(UserProfile, user=request.user)
+
+    # Check if user have purchased product:
+    validated_purchase = False
+    if product in profile.user_purchases.all():
+        validated_purchase = True
+
+    if not validated_purchase:
+        messages.error(request, 'Sorry, only verified buyers can submit a review for this product')
+        return redirect(reverse('home'))
     if request.method == 'POST':
         if request.user.is_authenticated:
             form = ProductReviewForm(request.POST)
