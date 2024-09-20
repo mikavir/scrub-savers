@@ -73,6 +73,8 @@ def checkout(request):
                         if request.user.is_authenticated:
                             try:
                                 profile = UserProfile.objects.get(user=request.user)
+                                # https://stackoverflow.com/questions/1182380/how-to-add-data-into-manytomany-field
+                                # https://docs.djangoproject.com/en/5.1/topics/db/queries/#:~:text=To%20save%20changes%20to%20an,the%20database%2C%20use%20save()%20.&text=This%20performs%20an%20UPDATE%20SQL,you%20explicitly%20call%20save()%20.
                                 profile.user_purchases.add(product)
                                 profile.save()
                             except UserProfile.DoesNotExist:
