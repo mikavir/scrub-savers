@@ -115,12 +115,15 @@
             <h5>Product Reviews</h5>
         </div>
     </div>
+    {% if validated_purchase %}
     <div class="row">
         <div class="col">
             <a href="{% url 'add_review' product.id %}" class="btn"> Add Review </a>
     
         </div>
+
     </div>
+    {% endif %}
     <div class="row">
 
         <div class="col">

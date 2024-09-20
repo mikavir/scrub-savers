@@ -7,6 +7,8 @@ from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Colours, Profession
 from profiles.models import UserProfile
 from reviews.models import ProductReview
+from checkout.models import Order
+
 from .forms import ProductForm
 
 # Create your views here.
@@ -87,6 +89,13 @@ def product_detail(request, product_id):
     profile = UserProfile.objects.get(user=request.user)
     product.rating = 0
     sum = 0
+    # Check if user have purchased product:
+    validated_purchase = False
+    if product in profile.user_purchases.all():
+        validated_purchase = True
+
+    
+
     if product_review:
         # Average rating of product
         for review in product_review: 
@@ -98,6 +107,7 @@ def product_detail(request, product_id):
         'product': product,
         'reviews': product_review,
         'profile': profile,
+        'validated_purchase': validated_purchase,
 
     }
 
