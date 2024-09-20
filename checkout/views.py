@@ -61,6 +61,7 @@ def checkout(request):
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
+                    print("just before is instance")
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -68,6 +69,15 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
+                        # save products into profile.user purchases:
+                        if request.user.is_authenticated:
+                            try:
+                                profile = UserProfile.objects.get(user=request.user)
+                                profile.user_purchases.add(product)
+                                profile.save()
+                            except UserProfile.DoesNotExist:
+                                messages.error(request, (" You do not have a profile"))
+                    
                     else:
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
@@ -77,6 +87,14 @@ def checkout(request):
                                 product_size=size,
                             )
                             order_line_item.save()
+                            if request.user.is_authenticated:
+                                try:
+                                    profile = UserProfile.objects.get(user=request.user)
+                                    profile.user_purchases.add(product)
+                                    profile.save()
+                                except UserProfile.DoesNotExist:
+                                    messages.error(request, (" You do not have a profile"))
+                            
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
