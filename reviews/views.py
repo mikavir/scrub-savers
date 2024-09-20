@@ -21,6 +21,15 @@ def add_review(request, product_id):
     if product in profile.user_purchases.all():
         validated_purchase = True
 
+    
+    # Check if user has already reviewed:
+    # https://stackoverflow.com/questions/38370908/how-to-check-if-a-user-already-likes-a-blog-post-or-not-in-django
+    already_reviewed = ProductReview.objects.filter(user_profile=profile, product=product).exists()
+    if already_reviewed:
+        messages.error(request, 'Sorry, you have already reviewed')
+        return redirect(reverse('home'))
+    
+
     if not validated_purchase:
         messages.error(request, 'Sorry, only verified buyers can submit a review for this product')
         return redirect(reverse('home'))

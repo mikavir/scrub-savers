@@ -94,7 +94,9 @@ def product_detail(request, product_id):
     if product in profile.user_purchases.all():
         validated_purchase = True
 
-    
+    # Checks if user have already reviewed: 
+    # https://stackoverflow.com/questions/38370908/how-to-check-if-a-user-already-likes-a-blog-post-or-not-in-django
+    already_reviewed = ProductReview.objects.filter(user_profile=profile, product=product).exists()
 
     if product_review:
         # Average rating of product
@@ -108,6 +110,7 @@ def product_detail(request, product_id):
         'reviews': product_review,
         'profile': profile,
         'validated_purchase': validated_purchase,
+        'already_reviewed': already_reviewed,
 
     }
 
