@@ -9,6 +9,10 @@
 {% endblock %}
 
 {% block content %}
-<h5> I am contact page</h5>
+<form class="mt-3" action="{% url 'contact' %}" method="POST" id="profile-update-form">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button class="btn btn-black rounded-0 text-uppercase float-right">Get in touch </button>
+</form>
 
 {% endblock %}
