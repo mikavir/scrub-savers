@@ -1,13 +1,13 @@
 <div class="collapse navbar-collapse d-lg-block" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
+        <li class="nav-item  dropdown">
             <a class="nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop by product
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="nav-dropdown dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=asc" class="nav-dropdown dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}" class="nav-dropdown dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -15,22 +15,22 @@
             <a class="nav-link mr-5" href="#" id="profession-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop by profession
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="profession-link">
-                <a href="{% url 'products' %}?profession=doctor" class="dropdown-item">Medic</a>
-                <a href="{% url 'products' %}?profession=nurse" class="dropdown-item">Nurse</a>
-                <a href="{% url 'products' %}?profession=paramedic" class="dropdown-item">Paramedic</a>
-                <a href="{% url 'products' %}?profession=dentist" class="dropdown-item">Dentist</a>
+            <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="profession-link">
+                <a href="{% url 'products' %}?profession=doctor" class="nav-dropdown dropdown-item">Medic</a>
+                <a href="{% url 'products' %}?profession=nurse" class="nav-dropdown dropdown-item">Nurse</a>
+                <a href="{% url 'products' %}?profession=paramedic" class="nav-dropdown dropdown-item">Paramedic</a>
+                <a href="{% url 'products' %}?profession=dentist" class="nav-dropdown dropdown-item">Dentist</a>
             </div>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link mr-5" href="#" id="colour-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop by colours
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="colour-link">
-                <a href="{% url 'products' %}?colours=pink" class="dropdown-item">Pink</a>
-                <a href="{% url 'products' %}?colours=blue" class="dropdown-item">Blue</a>
-                <a href="{% url 'products' %}?colours=black" class="dropdown-item">Black</a>
-                <a href="{% url 'products' %}?colours=white" class="dropdown-item">White</a>
+            <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="colour-link">
+                <a href="{% url 'products' %}?colours=pink" class="nav-dropdown dropdown-item">Pink</a>
+                <a href="{% url 'products' %}?colours=blue" class="nav-dropdown dropdown-item">Blue</a>
+                <a href="{% url 'products' %}?colours=black" class="nav-dropdown dropdown-item">Black</a>
+                <a href="{% url 'products' %}?colours=white" class="nav-dropdown dropdown-item">White</a>
             </div>
         </li>
 
@@ -38,11 +38,11 @@
             <a class="nav-link mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Deals
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+            <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=new_arrivals" class="nav-dropdown dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="nav-dropdown dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="nav-dropdown dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="nav-dropdown dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>

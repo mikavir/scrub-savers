@@ -54,12 +54,15 @@ html {
     background-color: #fff9F0;
 }
 
-.account-dropdown-menu {
+.account-dropdown-menu, .nav-dropdown-menu{
     background-color: #081F5c;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+
 }
 
-.account-dropdown {
+
+.account-dropdown, .nav-dropdown {
     color: #fff9f0;
 }
 
