@@ -51,7 +51,7 @@
                     <li class="list-inline-item">
                         <form method="GET" action="{% url 'products' %}">
                             <div class="input-group w-100">
-                                <input class="form-control search-input" type="text" name="q"
+                                <input class="form-control search-input search-font" type="text" name="q"
                                     placeholder="Search our site">
                                 <div class="input-group-append">
                                     <button class="form-control btn btn-black border border-black rounded-3"
@@ -73,21 +73,21 @@
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class=" account-dropdown-menu dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item account-dropdown">Product Management</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item account-dropdown">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item account-dropdown">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item account-dropdown">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item account-dropdown">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link nav-icon"
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}{% endif %} nav-link nav-icon"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg nav-icon"></i></div>
