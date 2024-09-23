@@ -1,8 +1,11 @@
 html {
     height: 100%;
+    background-color: #fff9F0;
 }
 
-
+.sort-nav {
+    padding: 5px;
+}
 
 .logo {
     max-height: 7rem;
@@ -12,17 +15,34 @@ html {
     color: #7096D1;
 }
 
-#top-nav {
+#topnav {
     max-height: 20vh;
-    background-color: blue;
 }
 
+#topnav {
+    background-color: #fff9F0;
+}
+
+#main-nav {
+    padding: 10px;
+}
+
+.mobile-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-toggler-icon {
+    font-size: 10px;
+}
 .search-input {
     border-radius: 15px;
     
 }
-
-.hero-image {
+.mobile-nav {
+    background-color: #fff9F0;
+}
+/* .hero-image {
     display: flex;
     flex-direction: column;
     background-image: url('../images/bg-image/hero-image.jpg');
@@ -33,8 +53,18 @@ html {
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
+} */
+#hero-image {
+    width: 100vw;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../images/bg-image/hero-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
 }
-
 
 
 /* from Bulma */
@@ -58,6 +88,7 @@ html {
     background: black;
     color: white;
 }
+
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -146,6 +177,19 @@ html {
     .header-container {
         padding-top: 164px;
     }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+        
+    #hero-image {
+        background-position: left;
+    }
+
+
 }
 
 @media (max-width: 450px) {
@@ -153,6 +197,6 @@ html {
         padding: 0px;
         font-size: 7px;
     }
-
+        
 
 }

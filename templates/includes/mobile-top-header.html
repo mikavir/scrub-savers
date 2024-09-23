@@ -1,12 +1,21 @@
-<ul class="text-right">
-    <li class="list-inline-item">
-      <a class="text-black nav-link d-block d-md-none mobile-nav-icon" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{% load static %}
+<div class="text-left">
+    <a href="{% url 'home' %}" class="nav-link d-block d-md-none mobile-nav-icon px-0">
+        <img class="logo" src="{% static 'images/logo/scrub-savers-logo.png' %}" alt="logo">
+    </a>
+
+</div>
+
+<ul class="mobile-list text-right">
+
+    <li class="list-inline-item text-right">
+      <a class="text-black nav-link d-block d-md-none mobile-nav-icon p-0" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center nav-icon">
               <div><i class="fa fa-search"></i></div>
               <p class="my-0">Search</p>
           </div>
       </a>
-      <div class="dropdown-menu border-0 w-100 rounded-0" aria-labelledby="mobile-search">
+      <div class="dropdown-menu border-0 w-100 rounded-0 text-right" aria-labelledby="mobile-search">
           <form class="form" method="GET" action="{% url 'products' %}">
               <div class="input-group w-100">
                   <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -21,14 +30,14 @@
           </form>
       </div>
   </li>
-  <li class="list-inline-item dropdown">
-      <a class="text-black nav-link d-block d-md-none mobile-nav-icon" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <li class="list-inline-item dropdown text-right">
+      <a class="text-black nav-link d-block d-md-none mobile-nav-icon p-0" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center nav-icon">
               <div><i class="fas fa-user fa-lg"></i></div>
               <p class="my-0">My Account</p>
           </div>
       </a>
-      <div class="dropdown-menu border-0" aria-labelledby="user-options">
+      <div class="dropdown-menu border-0 text-right" aria-labelledby="user-options">
           {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
                   <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
@@ -41,23 +50,23 @@
           {% endif %}
       </div>
   </li>
-  <li class="list-inline-item">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-md-none mobile-nav-icon" href="">
+  <li class="list-inline-item text-right">
+      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-md-none mobile-nav-icon p-0" href="">
           <div class="text-center">
               <div><i class="fas fa-shopping-bag fa-lg nav-icon"></i></div>
               <p class="my-0">
                   {% if grand_total %}
-                      ${{ grand_total|floatformat:2 }}
+                      £{{ grand_total|floatformat:2 }}
                   {% else %}
-                      $0.00
+                      £0.00
                   {% endif %}
               </p>
           </div>
       </a>
     </li>
-    <li class="list-inline-item">
-        <button class="navbar-toggler d-block d-md-none mobile-nav-icon" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <li class="list-inline-item mobile-nav-icon p-0 text-right">
+        <button class=" mobile-nav-icon d-block d-md-none" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mobile-nav-icon"></span>
         </button>
     </li>
   </ul>
