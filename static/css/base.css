@@ -46,10 +46,21 @@ html {
 .search-input {
     border-radius: 15px;
     
+    
 }
-.mobile-nav {
+
+.search-button {
+    background-color: #081F5c;
+    color: #fff9F0;
+    border: #081F5c 1px;
+
+}
+.mobile-nav, .mobile-search-bar {
     background-color: #fff9F0;
 }
+
+
+
 
 .account-dropdown-menu, .nav-dropdown-menu{
     background-color: #081F5c;
@@ -226,7 +237,7 @@ html {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     .mobile-nav-icon {
         padding: 0px;
         font-size: 10px;
@@ -235,8 +246,11 @@ html {
         font-size: 15px;
         text-transform: uppercase;
     }
-        
+    .logo {
+        max-height: 5.5rem;
+    }
 
+    
 }
 
 @media (max-width: 350px) {

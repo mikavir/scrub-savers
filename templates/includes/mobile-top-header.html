@@ -9,19 +9,19 @@
 <ul class="mobile-list text-right">
 
     <li class="list-inline-item text-right">
-      <a class="nav-link d-block d-md-none mobile-nav-icon p-0" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link d-block d-md-none mobile-nav-icon" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center nav-icon">
               <div><i class="fa fa-search"></i></div>
               <p class="my-0">Search</p>
           </div>
       </a>
-      <div class="dropdown-menu border-0 w-100 rounded-0 text-right" aria-labelledby="mobile-search">
+      <div class="dropdown-menu border-0 w-100 text-center mobile-search-bar m-0" aria-labelledby="mobile-search">
           <form class="form" method="GET" action="{% url 'products' %}">
-              <div class="input-group w-100">
-                  <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+              <div class="input-group m-2 search-input search-font px-4">
+                  <input class="form-control border border-black rounded-3" type="text" name="q" placeholder="Search our site">
                   <div class="input-group-append">
-                      <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
-                          <span class="icon mobile-nav-icon">
+                      <button class="form-control btn form-control border-black rounded-3 search-button" type="submit">
+                          <span class="icon nav-icon">
                               <i class="fa fa-search"></i>
                           </span>
                       </button>
