@@ -71,6 +71,18 @@ html {
 
 }
 
+/*  DELIVERY BANNER */
+
+#delivery-banner {
+    background-color: #7096de;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+.delivery-banner-font {
+    text-transform: uppercase;
+}
+
 /*  HOME PAGE  */
 #hero-image {
     width: 100vw;
@@ -216,6 +228,10 @@ html {
         padding: 0px;
         font-size: 12px;
     }
+    .delivery-banner-font {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
         
 
 }
@@ -225,6 +241,6 @@ html {
         padding: 0px;
         font-size: 10px;
     }
-        
+
 
 }
