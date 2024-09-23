@@ -1,6 +1,6 @@
 {% load static %}
 <div class="text-left">
-    <a href="{% url 'home' %}" class="nav-link d-block d-md-none mobile-nav-icon px-0">
+    <a href="{% url 'home' %}" class="nav-link d-block d-md-none mobile-nav-icon p-0">
         <img class="logo" src="{% static 'images/logo/scrub-savers-logo.png' %}" alt="logo">
     </a>
 
@@ -65,11 +65,10 @@
       </a>
     </li>
     <li class="list-inline-item mobile-nav-icon p-0 text-right">
-        <div class="nav-link d-block d-md-none mobile-nav-icon p-0">
-            <button class="" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars toggler-button"></i>
+        <div class="nav-link d-block d-md-none mobile-nav-icon p-0 ">
+            <button class="toggle-button" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars  fa-3x"></i>
             </button>
-            <p class="my-0"></p>
         </div>
     </li>
   </ul>

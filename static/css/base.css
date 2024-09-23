@@ -61,16 +61,18 @@ html {
 
 .account-dropdown, .nav-dropdown {
     color: #fff9f0;
+    border: none;
 }
 
 .search-font {
     font-family: "Montserrat", sans-serif;
 
 }
-.toggler-button {
+.toggle-button {
     color: #081F5c;
+    border: none;
+    background-color: #fff9f0;
 }
-
 /*  DELIVERY BANNER */
 
 #delivery-banner {
@@ -227,7 +229,7 @@ html {
 @media (max-width: 400px) {
     .mobile-nav-icon {
         padding: 0px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .delivery-banner-font {
         font-size: 15px;
@@ -241,6 +243,9 @@ html {
     .mobile-nav-icon {
         padding: 0px;
         font-size: 10px;
+    }
+    .logo {
+        max-height: 5.5rem;
     }
 
 
