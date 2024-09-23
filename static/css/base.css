@@ -42,10 +42,7 @@ html {
     padding: 0px;
 }
 
-.mobile-nav-icon {
-    font-size: 15px;
-    color: #7096D1;
-}
+
 .search-input {
     border-radius: 15px;
     
@@ -70,24 +67,28 @@ html {
     font-family: "Montserrat", sans-serif;
 
 }
+.toggler-button {
+    color: #081F5c;
+}
 
 /*  DELIVERY BANNER */
 
 #delivery-banner {
-    background-color: #7096de;
+    background-color: #e1eaff;
     font-family: "Montserrat", sans-serif;
     padding: 10px;
 }
 
 .delivery-banner-font {
     text-transform: uppercase;
+    color:#081F5c;
 }
 
 /*  HOME PAGE  */
 #hero-image {
     width: 100vw;
     height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../images/bg-image/hero-image.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg-image/hero-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
