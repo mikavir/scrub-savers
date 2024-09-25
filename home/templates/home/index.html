@@ -5,19 +5,37 @@
 {% endblock %}
 
 {% block content %}
-<aside id="hero-image" class="row align-items-center">
+<aside id="hero-image" class="row align-items-center m-0 ">
     <div class="col">
         <div class="row align-items-center">
-            <div class="col offset-md-6 ">
-                <div class="hero-callout">
-                    <h3>Designed for Professionals, Trusted by Heroes </h3>
+            <div class="col offset-md-6 d-md-block d-none ">
+                <div class="hero-callout text-center">
+                    <h3 class="message">Designed for Professionals, Trusted by Heroes </h3>
+                    <p>You care for others, let us care for you! Our high-performance scrubs and trusted medical equipment are designed to keep you comfortable and focused. Shop today and elevate your daily essentials!</p>
+                    <a href="{% url 'products' %}" class="shop-now-btn">Shop Now</a>
 
                 </div>
     
             </div>
         </div>
+
     </div>
 
 </aside>
+<aside id="hero-callout-mobile" class="row d-md-none">
+    <div class="col p-3">
+        <div class="hero-callout text-center">
+            <h3 class="message">Designed for Professionals, Trusted by Heroes </h3>
+            <p>You care for others, let us care for you! Our high-performance scrubs and trusted medical equipment are designed to keep you comfortable and focused. Shop today and elevate your daily essentials!</p>
+            <a href="{% url 'products' %}" class="shop-now-btn">Shop Now</a>
+
+        </div>
+
+    </div>
+
+</aside>
+<section id="recommendations" class="row">
+
+</section>
 
 {% endblock %}

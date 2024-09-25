@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 html {
     height: 100%;
     background-color: #fff9F0;
@@ -110,11 +112,27 @@ html {
 }
 
 .hero-callout {
-    background-color: white;
     border-radius: 10px;
 }
 
+.message {
+    font-family: "Lora", serif;
+}
 
+.shop-now-btn {
+    font-family: "Montserrat", sans-serif;
+    border: 2px #081F5c solid;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #081F5c;
+
+}
+
+#hero-callout-mobile {
+    background-color:#fff9F0;
+    padding: 2rem;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -253,6 +271,9 @@ html {
     }
     .logo {
         max-height: 5.5rem;
+    }
+    #hero-image {
+        max-height: 45vh;
     }
 
 }
