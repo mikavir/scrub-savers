@@ -109,6 +109,11 @@ html {
     z-index: 2;
 }
 
+.hero-callout {
+    background-color: white;
+    border-radius: 10px;
+}
+
 
 /* from Bulma */
 .icon {

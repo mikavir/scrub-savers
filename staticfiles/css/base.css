@@ -1,40 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     height: 100%;
+    background-color: #fff9F0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
 }
 
-
+/*  NAVIGATION BAR */
+.sort-nav {
+    padding: 5px;
+}
 
 .logo {
     max-height: 7rem;
 }
 
-.nav-icon {
+/* .nav-icon {
     color: #7096D1;
+    font-family: "Montserrat", sans-serif;
+} */
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    color: #081F5c
+}
+#topnav {
+    max-height: 20vh;
 }
 
-#top-nav {
-    max-height: 20vh;
-    background-color: blue;
+#topnav {
+    background-color: #fff9F0;
 }
+
+#main-nav {
+    padding: 10px;
+}
+
+.mobile-list {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .search-input {
     border-radius: 15px;
     
+    
 }
 
-.hero-image {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../images/bg-image/hero-image.jpg');
-    height: calc(100vh - 20vh);
-    align-self: center;
+.search-button {
+    background-color: #081F5c;
+    color: #fff9F0;
+    border: #081F5c 1px;
+
+}
+.mobile-nav, .mobile-search-bar {
+    background-color: #fff9F0;
+}
+
+
+
+
+.account-dropdown-menu, .nav-dropdown-menu{
+    background-color: #081F5c;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+.account-dropdown, .nav-dropdown {
+    color: #fff9f0;
+    border: none;
+}
+
+.search-font {
+    font-family: "Montserrat", sans-serif;
+
+}
+.toggle-button {
+    color: #081F5c;
+    border: none;
+    background-color: #fff9f0;
+}
+/*  DELIVERY BANNER */
+
+#delivery-banner {
+    background-color: #e1eaff;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+.delivery-banner-font {
+    text-transform: uppercase;
+    color:#081F5c;
+}
+
+/*  HOME PAGE  */
+#hero-image {
+    width: 100vw;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg-image/hero-image.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
+.hero-callout {
+    background-color: white;
+    border-radius: 10px;
+}
 
 
 /* from Bulma */
@@ -58,6 +136,7 @@ html {
     background: black;
     color: white;
 }
+
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -146,12 +225,45 @@ html {
     .header-container {
         padding-top: 164px;
     }
+
+
 }
 
-@media (max-width: 450px) {
-    .mobile-nav-icon > a {
+
+@media (max-width: 600px) {
+
+        
+    #hero-image {
+        background-position: left;
+    }
+
+
+}
+
+
+
+@media (max-width: 460px) {
+    .mobile-nav-icon {
         padding: 0px;
-        font-size: 7px;
+        font-size: 10px;
+    }
+    .delivery-banner-font {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .logo {
+        max-height: 5.5rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .mobile-nav-icon {
+        padding: 0px;
+        font-size: 10px;
+    }
+    .logo {
+        max-height: 5.5rem;
     }
 
 
