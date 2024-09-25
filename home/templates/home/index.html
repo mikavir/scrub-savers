@@ -34,7 +34,36 @@
     </div>
 
 </aside>
-<section id="recommendations" class="row">
+<section id="recommendations" class="row p-5">
+    <div class="col">
+        <div class="row pb-3">
+           <div class="col text-center">
+            <h5>Staff Favourites</h5>
+            <p>Trusted by the Best, Chosen for You!</p>
+           </div>
+        </div>
+        <div class="row text-center">
+            {% for product in products %}
+            <div class="col-md-3 col-6">
+                <a href="{% url 'product_detail' product.id %}" class="recommendation-card">
+                    {% if 'noimage' not in product.image.url %}
+
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    {% else %}
+                        <img class="card-img-top img-fluid" src="{% static 'images/noimage.png' %}" alt="{{ product.name }}">
+                  
+                    {% endif %}
+                    <div class="pb-0 text-left">
+                        
+                        <p class="mb-0">{{ product.name }}</p>
+                        <p>£{{product.price}} </p>
+                    </div>
+                </a>
+
+            </div>    
+            {% endfor %}
+        </div>
+    </div>
 
 </section>
 

@@ -9,6 +9,11 @@ html {
     font-style: normal;
 }
 
+h5, p {
+    font-family: "Montserrat", sans-serif;
+
+
+}
 /*  NAVIGATION BAR */
 .sort-nav {
     padding: 5px;
@@ -132,6 +137,15 @@ html {
 #hero-callout-mobile {
     background-color:#fff9F0;
     padding: 2rem;
+}
+
+#recommendations {
+    background-color: #f7F2EB;
+}
+
+.recommendation-card {
+    text-decoration: none;
+    color:  #081F5c;
 }
 /* from Bulma */
 .icon {
