@@ -256,8 +256,13 @@ font-size: 30px;
 
 .custom-select {
     font-family: "Montserrat", sans-serif;
-
  }
+
+
+.review-container {
+    background-color: #fff9F0;
+    padding: 3rem;
+}
 /* from Bulma */
 .icon {
     align-items: center;
