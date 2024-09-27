@@ -21,6 +21,16 @@ h1,h2,h3,h4, h5, p {
 .text-blue {
     color:#081F5c;
 }
+.btn-blue {
+    background-color: #081F5c;
+    color: #fff9F0;
+}
+.custom-button {
+    background-color: #081F5c;
+    color: #fff9F0;
+    border-radius: 15px;
+    border: 1px #081F5c solid;
+}
 /*  NAVIGATION BAR */
 .sort-nav {
     padding: 5px;
