@@ -253,6 +253,11 @@ font-size: 30px;
     background-color: white;
     border-radius: 50%;
  }
+
+.custom-select {
+    font-family: "Montserrat", sans-serif;
+
+ }
 /* from Bulma */
 .icon {
     align-items: center;
