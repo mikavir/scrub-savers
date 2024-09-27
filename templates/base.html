@@ -145,6 +145,74 @@
 
     {% block content %}
     {% endblock %}
+    <footer class="container-fluid footer-section">
+        <div class="d-flex py-3 my-4 border-top row text-center">
+            <div class="col-lg-3 justify-content-start">
+                <div class="row">
+                    <div class="col">
+                        <a href="{% url 'home' %}" class="link-body-emphasis text-decoration-none col-md-2">
+                            <img class="logo" src="{% static 'images/logo/scrub-savers-logo.png' %}" alt="logo">
+                        </a>
+                        <p >&copy; 2024 ScrubSavers</p>
+
+                    </div>
+                </div>
+            </div>
+            </div class="col-lg-9 d-flex justify-content-end">
+                <div class="row">
+                    <div class="col">
+                        <!-- Social media links -->
+                        <ul class="social-media-icons nav">
+                            <li class="nav-item">
+                                <a href="https://en-gb.facebook.com/" target="_blank" rel=noreferrer
+                                    aria-label="facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/" target="_blank" rel=noreferrer
+                                    aria-label="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+    
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/mikavir/scrub-saver" target="_blank" rel=noreferrer
+                                    aria-label="github">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+    
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.linkedin.com/in/mikaela-virtucio-b01962274/" target="_blank"
+                                    rel=noreferrer aria-label="linkedin">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+    
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
+                            <li class="nav-item"><a href="{% url 'products' %}" class="nav-link px-2 text-body-secondary">Our Products</a></li>
+                            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+            
+        </div>
+
+        
+        
+    </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">

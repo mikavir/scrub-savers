@@ -103,7 +103,27 @@ h5, p {
     text-transform: uppercase;
     color:#081F5c;
 }
+/* FOOTER */
 
+footer {
+    background-color: #fff9f0;
+}
+
+ul.social-media-icons {
+    padding-inline-start: 0px;
+  }
+  
+  
+  .social-media-icons li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .social-media-icons i {
+    color: #081F5c;
+    font-size: 30px;
+  }
 /*  HOME PAGE  */
 #hero-image {
     width: 100vw;
