@@ -204,6 +204,55 @@ font-size: 30px;
  .product-container, .header-container{
     background-color: #fff9F0;
  }
+
+ /* COLOUR */
+.colour-blue {
+    height: 2rem;
+    width: 2rem;
+    border: 1px blue solid;
+    background-color: blue;
+    border-radius: 50%;
+ }
+
+ .colour-black {
+    height: 2rem;
+    width: 2rem;
+    border: 1px black solid;
+    background-color: black;
+    border-radius: 50%;
+ }
+
+ .colour-green {
+    height: 2rem;
+    width: 2rem;
+    border: 1px green solid;
+    background-color: green;
+    border-radius: 50%;
+ }
+
+ .colour-purple {
+    height: 2rem;
+    width: 2rem;
+    border: 1px purple solid;
+    background-color: purple;
+    border-radius: 50%;
+ }
+
+ .colour-pink {
+    height: 2rem;
+    width: 2rem;
+    border: 1px pink solid;
+    background-color: pink;
+    border-radius: 50%;
+ }
+
+ .colour-white {
+    height: 2rem;
+    width: 2rem;
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 50%;
+ }
 /* from Bulma */
 .icon {
     align-items: center;
