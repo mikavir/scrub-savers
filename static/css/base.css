@@ -9,10 +9,17 @@ html {
     font-style: normal;
 }
 
-h5, p {
+h1,h2,h3,h4, h5, p {
     font-family: "Montserrat", sans-serif;
 
 
+}
+.heading {
+    font-family: "Lora", serif;
+}
+
+.text-blue {
+    color:#081F5c;
 }
 /*  NAVIGATION BAR */
 .sort-nav {
@@ -191,6 +198,12 @@ font-size: 30px;
     z-index: 2;
 
 }
+
+ /* PRODUCT PAGE */
+
+ .product-container, .header-container{
+    background-color: #fff9F0;
+ }
 /* from Bulma */
 .icon {
     align-items: center;
@@ -299,7 +312,7 @@ font-size: 30px;
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 3.5rem;
     }
 
 
