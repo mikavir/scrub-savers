@@ -114,17 +114,28 @@ ul.social-media-icons {
   }
   
   
-  .social-media-icons li {
-    list-style: none;
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .social-media-icons i {
-    color: #081F5c;
-    font-size: 30px;
+.social-media-icons li {
+list-style: none;
+display: inline-block;
+margin: 10px;
+}
+
+.social-media-icons i {
+color: #081F5c;
+font-size: 30px;
   }
 /*  HOME PAGE  */
+#hero-image {
+    width: 100vw;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg-image/hero-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
 #hero-image {
     width: 100vw;
     height: 60vh;
@@ -166,6 +177,19 @@ ul.social-media-icons {
 .recommendation-card {
     text-decoration: none;
     color:  #081F5c;
+}
+
+#hero-image-review{
+
+    width: 100vw;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg-image/hero-image-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+
 }
 /* from Bulma */
 .icon {
