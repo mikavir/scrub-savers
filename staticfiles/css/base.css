@@ -9,6 +9,9 @@ html {
     font-style: normal;
 }
 
+.bg-cream {
+    background-color: #fff9F0;
+}
 h1,h2,h3,h4, h5, p {
     font-family: "Montserrat", sans-serif;
 
@@ -20,11 +23,25 @@ h1,h2,h3,h4, h5, p {
 
 .text-blue {
     color:#081F5c;
+    font-family: "Montserrat", sans-serif;
 }
 .btn-blue {
     background-color: #081F5c;
     color: #fff9F0;
 }
+.text-primary {
+    font-family: "Montserrat", sans-serif;
+}
+.text-secondary {
+    font-family: "Lora", serif;
+}
+
+.btn:hover,.btn-black:hover{
+    background-color: #f7F2EB;
+    color: #081F5c;
+    border:#081F5c 1px solid;
+}
+
 .custom-button {
     background-color: #081F5c;
     color: #fff9F0;
@@ -273,6 +290,14 @@ font-size: 30px;
     background-color: #fff9F0;
     padding: 3rem;
 }
+
+/* TOASTS */
+.toast, .custom-toast {
+    border:#081F5c 2px solid;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: #f7F2EB;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -310,6 +335,9 @@ font-size: 30px;
     color: #000 !important;
 }
 
+.text-cream {
+    color:#fff9F0;
+}
 .border-black {
     border: 1px solid black !important;
 }
@@ -344,6 +372,9 @@ font-size: 30px;
 }
 
 /* ------------------------------- bootstrap toasts */
+.toast-font {
+    font-size: 90%;
+}
 
 .message-container {
     position: fixed;
@@ -415,6 +446,11 @@ font-size: 30px;
     #hero-image {
         max-height: 45vh;
     }
+    .mobile-font {
+        font-size: 80%;        
+    }
+
+
 
 }
 
@@ -426,6 +462,7 @@ font-size: 30px;
     .logo {
         max-height: 5.5rem;
     }
+
 
 
 }
