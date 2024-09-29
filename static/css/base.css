@@ -25,6 +25,15 @@ h1,h2,h3,h4, h5, p {
     background-color: #081F5c;
     color: #fff9F0;
 }
+
+
+
+.btn:hover,.btn-black:hover{
+    background-color: #f7F2EB;
+    color: #081F5c;
+    border:#081F5c 1px solid;
+}
+
 .custom-button {
     background-color: #081F5c;
     color: #fff9F0;
