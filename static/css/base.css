@@ -10,7 +10,7 @@ html {
 }
 
 .bg-cream {
-    background-color: #f7F2EB;
+    background-color: #fff9F0;
 }
 h1,h2,h3,h4, h5, p {
     font-family: "Montserrat", sans-serif;
@@ -28,6 +28,12 @@ h1,h2,h3,h4, h5, p {
 .btn-blue {
     background-color: #081F5c;
     color: #fff9F0;
+}
+.text-primary {
+    font-family: "Montserrat", sans-serif;
+}
+.text-secondary {
+    font-family: "Lora", serif;
 }
 
 .btn:hover,.btn-black:hover{
@@ -434,6 +440,12 @@ font-size: 30px;
     #hero-image {
         max-height: 45vh;
     }
+    .mobile-font {
+        font-size: 80%;
+        
+    }
+
+
 
 }
 
@@ -445,6 +457,7 @@ font-size: 30px;
     .logo {
         max-height: 5.5rem;
     }
+
 
 
 }
