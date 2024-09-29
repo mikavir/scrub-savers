@@ -63,5 +63,10 @@ select option[value=""] {
     justify-content: center;
     margin: 0;
     height: 100%;
-    
+
+}
+
+.order-confirmation-wrapper {
+    border:#081F5c 2px solid;
+    border-radius: 15px;
 }
