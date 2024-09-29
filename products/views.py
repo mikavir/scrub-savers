@@ -86,17 +86,20 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product_review = ProductReview.objects.filter(product=product_id)
-    profile = UserProfile.objects.get(user=request.user)
     product.rating = 0
+    profile = False
     sum = 0
-    # Check if user have purchased product:
+    already_reviewed = True
     validated_purchase = False
-    if product in profile.user_purchases.all():
-        validated_purchase = True
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        already_reviewed = ProductReview.objects.filter(user_profile=profile, product=product).exists()
+        if product in profile.user_purchases.all():
+            validated_purchase = True
+    # Check if user have purchased product:
 
     # Checks if user have already reviewed: 
     # https://stackoverflow.com/questions/38370908/how-to-check-if-a-user-already-likes-a-blog-post-or-not-in-django
-    already_reviewed = ProductReview.objects.filter(user_profile=profile, product=product).exists()
 
     if product_review:
         # Average rating of product
