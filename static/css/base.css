@@ -9,6 +9,9 @@ html {
     font-style: normal;
 }
 
+.bg-cream {
+    background-color: #f7F2EB;
+}
 h1,h2,h3,h4, h5, p {
     font-family: "Montserrat", sans-serif;
 
@@ -20,13 +23,12 @@ h1,h2,h3,h4, h5, p {
 
 .text-blue {
     color:#081F5c;
+    font-family: "Montserrat", sans-serif;
 }
 .btn-blue {
     background-color: #081F5c;
     color: #fff9F0;
 }
-
-
 
 .btn:hover,.btn-black:hover{
     background-color: #f7F2EB;
@@ -281,6 +283,14 @@ font-size: 30px;
 .review-container {
     background-color: #fff9F0;
     padding: 3rem;
+}
+
+/* TOASTS */
+.toast, .custom-toast {
+    border:#081F5c 2px solid;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: #f7F2EB;
 }
 /* from Bulma */
 .icon {
