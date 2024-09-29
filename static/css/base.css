@@ -369,6 +369,9 @@ font-size: 30px;
 }
 
 /* ------------------------------- bootstrap toasts */
+.toast-font {
+    font-size: 90%;
+}
 
 .message-container {
     position: fixed;
@@ -441,8 +444,7 @@ font-size: 30px;
         max-height: 45vh;
     }
     .mobile-font {
-        font-size: 80%;
-        
+        font-size: 80%;        
     }
 
 
