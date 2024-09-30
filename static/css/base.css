@@ -361,7 +361,15 @@ font-size: 30px;
 .remove-item {
     cursor: pointer;
 }
-
+.btn-red {
+    background-color: red;
+    color: #f7F2EB;
+}
+.btn-red:hover {
+   border: red 1px solid;
+   background-color: #f7F2EB;
+   color: red;
+}
 /* ------------------------------- bootstrap toasts */
 .toast-font {
     font-size: 90%;
