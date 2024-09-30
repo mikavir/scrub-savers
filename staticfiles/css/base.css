@@ -159,16 +159,7 @@ color: #081F5c;
 font-size: 30px;
   }
 /*  HOME PAGE  */
-#hero-image {
-    width: 100vw;
-    height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg-image/hero-image.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 2;
-}
+
 
 #hero-image {
     width: 100vw;
@@ -370,7 +361,15 @@ font-size: 30px;
 .remove-item {
     cursor: pointer;
 }
-
+.btn-red {
+    background-color: red;
+    color: #f7F2EB;
+}
+.btn-red:hover {
+   border: red 1px solid;
+   background-color: #f7F2EB;
+   color: red;
+}
 /* ------------------------------- bootstrap toasts */
 .toast-font {
     font-size: 90%;
@@ -414,9 +413,21 @@ font-size: 30px;
     .header-container {
         padding-top: 3.5rem;
     }
+    .hero-callout-review {
+        background-color: rgba(247, 242, 235, 0.7);
+        padding: 10px;
+    }
 
 
 }
+
+@media (max-width: 800px) {
+    .hero-callout-review {
+        background-color: rgba(247, 242, 235, 0.7);
+        padding: 10px;
+    }
+}
+
 
 
 @media (max-width: 600px) {
@@ -425,6 +436,10 @@ font-size: 30px;
     #hero-image {
         background-position: left;
     }
+    #hero-image-review {
+        background-position: right;
+    }
+
 
 
 }
