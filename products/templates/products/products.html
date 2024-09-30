@@ -119,9 +119,31 @@
                                 {% endif %}
                                 {% if request.user.is_superuser %}
                                 <small class="ml-3">
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    <a href="{% url 'edit_product' product.id %}" class="btn btn-blue mobile-font">Edit</a> | 
+                                    <button type="button" class="btn btn-red mobile-font" data-toggle="modal" data-target="#delete-product">
+                                        Delete
+                                      </button>
                                 </small>
+                                <div class="modal fade" id="delete-product" tabindex="-1" role="dialog" aria-labelledby="deleteProduct" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title text-blue text-uppercase">Caution <i class="fa-solid fa-triangle-exclamation"></i></h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <h5 class="text-secondary mobile-font"> Are you sure you want to delete this product?</h5>
+                                          <p class="text-secondary mobile-font">Once deleted, all product details, images, and related information will be permanently removed and cannot be restored.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-blue text-uppercase mobile-font" data-dismiss="modal">Cancel</button>
+                                          <a class="btn btn-red text-uppercase mobile-font" href="{% url 'delete_product' product.id %}">Delete product</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 {% endif %}
                             </div>
                         </a>
