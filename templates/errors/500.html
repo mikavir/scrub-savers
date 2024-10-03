@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid h-100 bg-cream">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <h4 class="display-4 logo-font text-bluek">
+                    Diagnosis: Server Error. Treatment: A little patience.
+                </h4>
+                <p class="text-secondary"> It looks like our system needs a quick checkup. We’ll be back shortly!</p>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}" class="btn btn-blue rounded-0 text-uppercase py-3">
+                            Return to shop
+                        </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

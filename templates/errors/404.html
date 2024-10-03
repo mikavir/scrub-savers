@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid bg-cream">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <h4 class="display-4 logo-font text-blue">
+                    Paging Dr. 404... This page didn’t make it through triage.
+                </h4>
+                <p class="text-secondary">
+                    Looks like this page needs more than a Band-Aid. Head back to Scrub Savers and keep shopping!
+
+
+                </p>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}" class="btn btn-blue rounded-0 text-uppercase py-3">
+                            Return to shop
+                        </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
