@@ -5,9 +5,9 @@
                 Shop by product
             </a>
             <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="nav-dropdown dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=asc" class="nav-dropdown dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}" class="nav-dropdown dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="nav-dropdown dropdown-item mobile-font">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=asc" class="nav-dropdown dropdown-item mobile-font">By Rating</a>
+                <a href="{% url 'products' %}" class="nav-dropdown dropdown-item mobile-font">All Products</a>
             </div>
         </li>
 
@@ -16,10 +16,10 @@
                 Shop by profession
             </a>
             <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="profession-link">
-                <a href="{% url 'products' %}?profession=doctor" class="nav-dropdown dropdown-item">Medic</a>
-                <a href="{% url 'products' %}?profession=nurse" class="nav-dropdown dropdown-item">Nurse</a>
-                <a href="{% url 'products' %}?profession=paramedic" class="nav-dropdown dropdown-item">Paramedic</a>
-                <a href="{% url 'products' %}?profession=dentist" class="nav-dropdown dropdown-item">Dentist</a>
+                <a href="{% url 'products' %}?profession=doctor" class="nav-dropdown dropdown-item mobile-font">Medic</a>
+                <a href="{% url 'products' %}?profession=nurse" class="nav-dropdown dropdown-item mobile-font">Nurse</a>
+                <a href="{% url 'products' %}?profession=paramedic" class="nav-dropdown dropdown-item mobile-font">Paramedic</a>
+                <a href="{% url 'products' %}?profession=dentist" class="nav-dropdown dropdown-item mobile-font">Dentist</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -27,10 +27,10 @@
                 Shop by colours
             </a>
             <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="colour-link">
-                <a href="{% url 'products' %}?colours=pink" class="nav-dropdown dropdown-item">Pink</a>
-                <a href="{% url 'products' %}?colours=blue" class="nav-dropdown dropdown-item">Blue</a>
-                <a href="{% url 'products' %}?colours=black" class="nav-dropdown dropdown-item">Black</a>
-                <a href="{% url 'products' %}?colours=white" class="nav-dropdown dropdown-item">White</a>
+                <a href="{% url 'products' %}?colours=pink" class="nav-dropdown dropdown-item mobile-font">Pink</a>
+                <a href="{% url 'products' %}?colours=blue" class="nav-dropdown dropdown-item mobile-font">Blue</a>
+                <a href="{% url 'products' %}?colours=black" class="nav-dropdown dropdown-item mobile-font">Black</a>
+                <a href="{% url 'products' %}?colours=white" class="nav-dropdown dropdown-item mobile-font">White</a>
             </div>
         </li>
 
@@ -39,10 +39,10 @@
                 Deals
             </a>
             <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="nav-dropdown dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="nav-dropdown dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="nav-dropdown dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="nav-dropdown dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="nav-dropdown dropdown-item mobile-font">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="nav-dropdown dropdown-item mobile-font">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="nav-dropdown dropdown-item mobile-font">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="nav-dropdown dropdown-item mobile-font">All Specials</a>
             </div>
         </li>
     </ul>
