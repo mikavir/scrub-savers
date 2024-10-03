@@ -15,7 +15,8 @@
     {% endblock %}
 
     {% block corecss %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -24,12 +25,17 @@
 
     {% block corejs %}
     <script src="https://kit.fontawesome.com/61cd806bb5.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
-    
+
     {% endblock %}
 
     {% block extra_js %}
@@ -51,10 +57,11 @@
                     <li class="list-inline-item">
                         <form method="GET" action="{% url 'products' %}">
                             <div class="input-group w-100 search-bar-input">
-                                <input class="form-control search-input search-font search-bar-input" type="text" name="q"
-                                    placeholder="Search our site">
+                                <input class="form-control search-input search-font search-bar-input" type="text"
+                                    name="q" placeholder="Search our site">
                                 <div class="input-group-append">
-                                    <button class="form-control btn border-black rounded-3 search-button search-bar-input"
+                                    <button
+                                        class="form-control btn border-black rounded-3 search-button search-bar-input"
                                         type="submit">
                                         <span class="icon">
                                             <i class="fas fa-search"></i>
@@ -76,7 +83,8 @@
                         <div class=" account-dropdown-menu dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item account-dropdown">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item account-dropdown">Product
+                                Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item account-dropdown">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item account-dropdown">Logout</a>
@@ -122,21 +130,21 @@
     </header>
 
     {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
 
@@ -145,74 +153,76 @@
 
     {% block content %}
     {% endblock %}
-    <footer class="container-fluid footer-section">
-        <div class="d-flex row text-center">
-            <div class="col-lg-3 justify-content-start">
-                <div class="row">
-                    <div class="col">
-                        <a href="{% url 'home' %}" class="link-body-emphasis text-decoration-none col-md-2">
-                            <img class="logo" src="{% static 'images/logo/scrub-savers-logo.png' %}" alt="logo">
-                        </a>
-                        <p >&copy; 2024 ScrubSavers</p>
+    <footer class="container-fluid footer-section text-center">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center text-md-left">
+                
+                    <a href="{% url 'home' %}" class="link-body-emphasis text-decoration-none col-md-2">
+                        <img class="logo" src="{% static 'images/logo/scrub-savers-logo.png' %}" alt="logo">
+                    </a>
+                    <p>&copy; 2024 ScrubSavers</p>
 
-                    </div>
-                </div>
+                    
+             
             </div>
-            </div class="col-lg-9 d-flex justify-content-end">
-                <div class="row">
-                    <div class="col">
-                        <!-- Social media links -->
-                        <ul class="social-media-icons nav">
-                            <li class="nav-item">
-                                <a href="https://en-gb.facebook.com/" target="_blank" rel=noreferrer
-                                    aria-label="facebook">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.instagram.com/" target="_blank" rel=noreferrer
-                                    aria-label="instagram">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-    
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/mikavir/scrub-saver" target="_blank" rel=noreferrer
-                                    aria-label="github">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-    
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.linkedin.com/in/mikaela-virtucio-b01962274/" target="_blank"
-                                    rel=noreferrer aria-label="linkedin">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-    
-                            </li>
-                        </ul>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col">
-                        <ul class="nav">
-                            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
-                            <li class="nav-item"><a href="{% url 'products' %}" class="nav-link px-2 text-body-secondary">Our Products</a></li>
-                            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
-                        </ul>
-                    </div>
+            <div class="col-12 col-md-9 text-center text-md-right p-4">
+                <div class="d-block">
+                    
+                    <!-- Social media links -->
+                    <ul class="social-media-icons nav justify-content-center justify-content-md-end">
+                        <li class="nav-item">
+                            <a href="https://en-gb.facebook.com/" target="_blank" rel=noreferrer
+                                aria-label="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/" target="_blank" rel=noreferrer
+                                aria-label="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
 
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/mikavir/scrub-saver" target="_blank" rel=noreferrer
+                                aria-label="github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.linkedin.com/in/mikaela-virtucio-b01962274/" target="_blank"
+                                rel=noreferrer aria-label="linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="d-block">
+                    <ul class="nav justify-content-center justify-content-md-end">
+                        <li class="nav-item"><a href="{% url 'home' %}"
+                                class="nav-link px-2 text-body-secondary mobile-font">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'products' %}"
+                                class="nav-link px-2 text-body-secondary mobile-font">Our
+                                Products</a></li>
+                        <li class="nav-item"><a href="{% url 'contact' %}"
+                                class="nav-link px-2 text-body-secondary mobile-font">Contact
+                                Us</a></li>
+                    </ul>
+                 
                 </div>
 
             </div>
-            
-
-            
         </div>
 
-        
-        
+
+
+
     </footer>
+
 
     {% block postloadjs %}
     <script type="text/javascript">
