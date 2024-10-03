@@ -1,18 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+
 {% endblock %}
 
 {% block content %}
-<form class="mt-3" action="{% url 'contact' %}" method="POST" id="profile-update-form">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <button class="btn btn-black rounded-0 text-uppercase float-right">Get in touch </button>
-</form>
+<div class="container-fluid bg-cream">
+    <div class="row p-4">
+        <div class="col">
+            <h5 class="text-blue text-uppercase">Have Questions or Need Assistance?</h5>
+            <p class="mt-3 mobile-font">
+
+             Whether you're looking for specific medical supplies or need support with your order, our team is ready to assist. Reach out to us through the contact form and we’ll get back to you as soon as possible.</p>
+        </div>
+    </div>
+    <div class="row">
+        <form class="mt-3 col-12 col-md-7 mx-auto" action="{% url 'contact' %}" method="POST" id="profile-update-form">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button class="btn btn-blue rounded-0 text-uppercase">Get in touch </button>
+        </form>
+    </div>
+
+</div>
 
 {% endblock %}
