@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomClearableFileInput
 from .models import Product, Category, Profession, Colours
 
 
@@ -7,6 +8,8 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         exclude = ('rating',)
+
+    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -28,8 +31,6 @@ class ProductForm(forms.ModelForm):
             choices=[(c.id, c.get_friendly_name()) for c in colours],
             required=False,
         )
-        # colour_friendly_names = [(c.id, c.get_friendly_name()) for c in colours]
-        # self.fields['colours'].choices = colour_friendly_names
 
         # Get friendly names of profession
         self.fields['profession'] = forms.MultipleChoiceField(
@@ -37,8 +38,6 @@ class ProductForm(forms.ModelForm):
             choices=[(p.id, p.get_friendly_name()) for p in profession],
             required=False,
         )
-        # profession_friendly_names = [(p.id, p.get_friendly_name()) for p in profession]
-        # self.fields['profession'].choices = profession_friendly_names
 
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-1'
