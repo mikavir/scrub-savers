@@ -6,7 +6,7 @@ class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        fields = '__all__'
+        exclude = ('rating',)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -15,20 +15,30 @@ class ProductForm(forms.ModelForm):
         profession = Profession.objects.all()
 
         # Get friendly names of categories
-        categories_friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
-        self.fields['category'].choices = categories_friendly_names
+        #https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287
+        self.fields['category'] = forms.MultipleChoiceField(
+            widget=forms.CheckboxSelectMultiple,
+            choices=[(c.id, c.get_friendly_name()) for c in categories],
+            required=False,
+        )
 
-        # Get friendly names of colours 
-        # colours = forms.ModelMultipleChoiceField(
-        #         queryset=Colours.objects.all(),
-        #         widget=forms.CheckboxSelectMultiple
-        #     )
-        colour_friendly_names = [(c.id, c.get_friendly_name()) for c in colours]
-        self.fields['colours'].choices = colour_friendly_names
+        #https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287
+        self.fields['colours'] = forms.MultipleChoiceField(
+            widget=forms.CheckboxSelectMultiple,
+            choices=[(c.id, c.get_friendly_name()) for c in colours],
+            required=False,
+        )
+        # colour_friendly_names = [(c.id, c.get_friendly_name()) for c in colours]
+        # self.fields['colours'].choices = colour_friendly_names
 
         # Get friendly names of profession
-        profession_friendly_names = [(p.id, p.get_friendly_name()) for p in profession]
-        self.fields['profession'].choices = profession_friendly_names
+        self.fields['profession'] = forms.MultipleChoiceField(
+            widget=forms.CheckboxSelectMultiple,
+            choices=[(p.id, p.get_friendly_name()) for p in profession],
+            required=False,
+        )
+        # profession_friendly_names = [(p.id, p.get_friendly_name()) for p in profession]
+        # self.fields['profession'].choices = profession_friendly_names
 
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-0'
+            field.widget.attrs['class'] = 'border-black rounded-1'
