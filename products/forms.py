@@ -19,11 +19,10 @@ class ProductForm(forms.ModelForm):
 
         # Get friendly names of categories
         #https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287
-        self.fields['category'] = forms.MultipleChoiceField(
-            widget=forms.CheckboxSelectMultiple,
-            choices=[(c.id, c.get_friendly_name()) for c in categories],
-            required=False,
-        )
+        categories = Category.objects.all()
+        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
+
+        self.fields['category'].choices = friendly_names
 
         #https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287
         self.fields['colours'] = forms.MultipleChoiceField(
