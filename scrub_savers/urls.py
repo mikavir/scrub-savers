@@ -30,7 +30,7 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('reviews/', include('reviews.urls')),
     path('contact/', include('contact.urls')),
-]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
+]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = "scrub_savers.views.handler404"
 handler500 = "scrub_savers.views.handler500"
