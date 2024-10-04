@@ -17,7 +17,7 @@ def contact(request):
         sender = settings.DEFAULT_FROM_EMAIL
         cust_email = request.POST.get('email')
         name = request.POST.get('name')
-        subject = "Thank you for reaching out!"
+        subject = " We’ve Got Your Message! 🩺✨"
         body = render_to_string(
             'contact/auto_reply/email_body.txt',
             {'name': name})

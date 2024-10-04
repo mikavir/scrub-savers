@@ -1,11 +1,10 @@
 Dear {{ name }},
 
-Thank you for reaching out to ScrubSavers! We have received your message and will get back to you as soon as possible. Our team typically responds within [timeframe, e.g., 24-48 hours].
+Thanks for reaching out to ScrubSavers! Your message has made it to our team, and we’re already putting on our thinking caps (or scrubs) to respond faster than you can say "scrub-a-dub-dub!"
 
-If your inquiry is urgent, feel free to call us at [Phone Number] or visit our FAQ page [link] for immediate assistance.
+You can typically expect a reply from us within 24 hours.
 
-We appreciate your patience and look forward to assisting you soon!
+We appreciate your patience while we don our superhero capes and whip up the perfect response for you. Hang tight—we’ll be in touch soon!
 
-Best regards,
+Cheers,
 The ScrubSavers Team
-[Contact Information]
