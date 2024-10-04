@@ -1,6 +1,11 @@
+
+Here’s a more engaging, witty version of your confirmation email tailored for Scrub Savers:
+
+Subject: Order Confirmation from Scrub Savers - You're All Set! 🛒
+
 Hello {{ order.full_name }}!
 
-This is a confirmation of your order at Scrub Savers. Your order information is below:
+Great news! Your order has been successfully placed at Scrub Savers, and we’re already scrubbing in to get it to you. Here’s a quick rundown of your order details:
 
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
@@ -9,14 +14,15 @@ Order Total: £{{ order.order_total }}
 Delivery: £{{ order.delivery_cost }}
 Grand Total: £{{ order.grand_total }}
 
-Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+Your items will soon be on their way to:
+{{ order.street_address1 }}
+{{ order.town_or_city }}, {{ order.country }}
 
-We've got your phone number on file as {{ order.phone_number }}.
+We’ve got your contact number as {{ order.phone_number }} just in case we need to reach you.
 
-If you have any questions, feel free to contact us at {{ contact_email }}.
+If you have any questions or need assistance, feel free to call or email us at {{ contact_email }}—we're always here to help (even if we’re not wearing scrubs ourselves 😉).
 
-Thank you for your order!
+Thank you for choosing Scrub Savers. We’ll have your essentials shipped out in no time!
 
 Sincerely,
-
-Scrub Savers
+The Scrub Savers Team
