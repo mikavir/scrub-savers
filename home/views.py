@@ -8,6 +8,8 @@ def index(request):
     """ A view to return the index page """
     products = list(Product.objects.all())
 
-    products = random.sample(products, 4)
+    if len(products) > 4: 
+        products = random.sample(products, 4)
+
 
     return render(request, 'home/index.html', {'products': products})
