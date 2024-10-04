@@ -136,6 +136,11 @@
                             <div class="col">
                                 <div class="row">
                                     <div class="col">
+                                        <small class="text-muted"><i class="fa-regular fa-circle-check"></i> verified purchase</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
                                         <h5>
                                             <span class="fa fa-star {% if review.rating > 0 %} d-inline {% else %} d-none {% endif %}"></span>
                                             <span class="fa fa-star {% if review.rating > 1 %} d-inline {% else %} d-none {% endif %}"></span>
@@ -145,6 +150,7 @@
                                         </h5>
             
                                         <p>
+                                            
                                             <strong> {{review.user_profile}}</strong>
                                             <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
                                         </p>
