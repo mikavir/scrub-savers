@@ -120,11 +120,11 @@
                                 {% if request.user.is_superuser %}
                                 <small class="ml-3">
                                     <a href="{% url 'edit_product' product.id %}" class="btn btn-blue mobile-font">Edit</a> | 
-                                    <button type="button" class="btn btn-red mobile-font" data-toggle="modal" data-target="#delete-product">
+                                    <button type="button" class="btn btn-red mobile-font" data-toggle="modal" data-target="#delete-product-{{product.id}}">
                                         Delete
                                       </button>
                                 </small>
-                                <div class="modal fade" id="delete-product" tabindex="-1" role="dialog" aria-labelledby="deleteProduct" aria-hidden="true">
+                                <div class="modal fade" id="delete-product-{{product.id}}" tabindex="-1" role="dialog" aria-labelledby="deleteProduct" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                         <div class="modal-header">
@@ -136,6 +136,7 @@
                                         <div class="modal-body">
                                           <h5 class="text-secondary mobile-font"> Are you sure you want to delete this product?</h5>
                                           <p class="text-secondary mobile-font">Once deleted, all product details, images, and related information will be permanently removed and cannot be restored.</p>
+                                          <p> {{ product.name }}</p>
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-blue text-uppercase mobile-font" data-dismiss="modal">Cancel</button>
