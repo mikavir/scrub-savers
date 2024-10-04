@@ -33,17 +33,5 @@
                 <a href="{% url 'products' %}?colours=white" class="nav-dropdown dropdown-item mobile-font">White</a>
             </div>
         </li>
-
-        <li class="nav-item dropdown">
-            <a class="nav-link mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Deals
-            </a>
-            <div class="dropdown-menu border-0 nav-dropdown-menu" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="nav-dropdown dropdown-item mobile-font">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="nav-dropdown dropdown-item mobile-font">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="nav-dropdown dropdown-item mobile-font">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="nav-dropdown dropdown-item mobile-font">All Specials</a>
-            </div>
-        </li>
     </ul>
 </div>
