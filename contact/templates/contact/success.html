@@ -1,20 +1,34 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+
 {% endblock %}
 
 {% block content %}
 
-<div class="success-message">
+<div class="container-fluid mt-3 p-5 h-100 my-auto bg-cream">
+    <div class="row">
+        <div class="col-12 col-lg-7 mx-auto">
+            <h4 class="text-blue logo-font my-3" >Message Sent! We’re On the Case! </h1>
+        
+            <p class="text-secondary">Congratulations! You’ve successfully reached out to ScrubSavers, and your message is now in our capable hands. Our team of scrub enthusiasts is assembling faster than you can say "code blue" to get back to you!
 
-    <h1>Success!</h1>
+                While you wait, feel free to browse our collection—who knows, you might just find the perfect scrub that’ll make you the envy of the break room. 🩺✨
+                
+                Thanks for reaching out, and stay fabulous!
+                
+            </p>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" class="btn btn-blue rounded-0 text-uppercase py-3">
+                        Return to shop
+                    </a>
+                </h4>
+            </div>
+        </div>
+        
+    </div>
 
-    <p>Your operation was completed successfully.</p>
 
 </div>
 
