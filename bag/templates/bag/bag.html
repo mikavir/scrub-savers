@@ -9,7 +9,7 @@
 {% block content %}
     <div class="container-fluid bg-cream p-3 d-none d-lg-block">
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <hr>
                 <h2 class="text-blue mb-4">Shopping Bag</h2>
                 <hr>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="row p-3">
-            <div class="col">
+            <div class="col col-lg-9 mx-auto">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
@@ -102,7 +102,7 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                    <a href="{% url 'products' %}" class="btn btn-blue rounded-0 text-uppercase">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
@@ -119,8 +119,8 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <p class="text-secondary mb-5">Your bag is empty—let's change that! Time to find the perfect gear for your next shift</p>
+                    <a href="{% url 'products' %}" class="btn btn-blue rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
@@ -131,7 +131,7 @@
         </div>
     </div>
     <!-- MOBILE  -->
-    <div class="container-fluid bg-cream d-lg-none ">
+    <div class="container-fluid h-100 my-auto bg-cream d-lg-none ">
         <div class="row">
             <div class="col">
                 <hr>
@@ -245,12 +245,12 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <p class="text-secondary mobile-font mb-5">Your bag is empty—let's change that! Time to find the perfect gear for your next shift</p>
+                    <a href="{% url 'products' %}" class="btn btn-blue rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="text-uppercase">Keep Shopping</span>
+                        <span class="text-uppercase mobile-font">Keep Shopping</span>
                     </a>
                 {% endif %}
             </div>
