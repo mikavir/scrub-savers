@@ -1,8 +1,3 @@
-
-Here’s a more engaging, witty version of your confirmation email tailored for Scrub Savers:
-
-Subject: Order Confirmation from Scrub Savers - You're All Set! 🛒
-
 Hello {{ order.full_name }}!
 
 Great news! Your order has been successfully placed at Scrub Savers, and we’re already scrubbing in to get it to you. Here’s a quick rundown of your order details:
