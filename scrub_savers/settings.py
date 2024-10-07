@@ -15,7 +15,7 @@ from pathlib import Path
 import dj_database_url
 import cloudinary
 if os.path.exists("env.py"):
-    import env
+    import env  # noqa
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

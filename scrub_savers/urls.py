@@ -32,5 +32,5 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-handler404 = "scrub_savers.views.handler404"
-handler500 = "scrub_savers.views.handler500"
+handler404 = "scrub_savers.views.handler404"  # noqa
+handler500 = "scrub_savers.views.handler500"  # noqa
