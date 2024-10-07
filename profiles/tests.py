@@ -9,12 +9,12 @@ from django.contrib.auth.models import User
 password = os.environ.get("TEST_PASSWORD")
 email = os.environ.get("TEST_EMAIL")
 
-# Create your tests here.
+
 class TestViews(TestCase):
 
     def test_profile_page(self):
         """ Test views on profile page """
-        # Log user in 
+        # Log user in
         self.client = Client()
         user = User.objects.create_user('test_admin', password)
         self.client.force_login(user=user)
