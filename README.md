@@ -293,79 +293,98 @@ Understanding the relationships between different tables can save time later in 
 This is the ERD design prior to the development. 
 ![erd](documentation/erd/scrub-savers-erd.png)
 
-During the development, I have made new models and altered the relationsips between the models.
+During the development, I have made new models and altered the relationsips between the models. I've used [Mermaid](https://mermaid.live) to generate an interactive version of my ERD.
 
-```python
-class Category(models.Model):
+```mermaid
+erDiagram
+    Category {
+        int id
+        string name
+        string friendly_name
+    }
 
-    class Meta:
-        verbose_name_plural = 'Categories'
+    Profession {
+        int id
+        string name
+        string friendly_name
+    }
 
-    name = models.CharField(max_length=254)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    Colours {
+        int id
+        string name
+        string friendly_name
+    }
 
-    def __str__(self):
-        return self.name
+    Product {
+        int id
+        string name
+        text description
+        decimal price
+        decimal rating
+        bool has_sizes
+        string image
+    }
 
-    def get_friendly_name(self):
-        return self.friendly_name
+    Order {
+        int id
+        string order_number
+        string full_name
+        string email
+        string phone_number
+        string country
+        string postcode
+        string town_or_city
+        string street_address1
+        string street_address2
+        string county
+        datetime date
+        decimal delivery_cost
+        decimal order_total
+        decimal grand_total
+        text original_bag
+        string stripe_pid
+    }
 
+    OrderLineItem {
+        int id
+        string product_size
+        int quantity
+        decimal lineitem_total
+    }
 
-class Profession(models.Model):
+    UserProfile {
+        int id
+        string default_phone_number
+        string default_country
+        string default_postcode
+        string default_town_or_city
+        string default_street_address1
+        string default_street_address2
+        string default_county
+    }
 
-    class Meta:
-        verbose_name_plural = 'Profession'
+    ProductReview {
+        int id
+        text subject
+        text content
+        int rating
+        datetime date_added
+    }
 
-    name = models.CharField(max_length=254)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
-        return self.friendly_name
-
-
-class Colours(models.Model):
-
-    class Meta:
-        verbose_name_plural = 'Colours'
-
-    name = models.CharField(max_length=254)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
-        return self.friendly_name
-
-
-class Product(models.Model):
-    class Meta:
-        verbose_name_plural = 'Products'
-
-    category = models.ForeignKey(
-        'Category', null=True, blank=True, on_delete=models.SET_NULL
-    )
-    profession = models.ManyToManyField('Profession', blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True
-    )
-    colours = models.ManyToManyField('Colours', blank=True)
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    image = CloudinaryField("image", default="noimage", null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-
-    def is_available(self):
-        return self.available
-
+    Category ||--o{ Product : "has many"
+    Profession ||--o{ Product : "has many"
+    Colours ||--o{ Product : "has many"
+    Product ||--o{ OrderLineItem : "contains"
+    Order ||--o{ OrderLineItem : "has many"
+    UserProfile ||--o{ Order : "places"
+    Product ||--o{ ProductReview : "has many"
+    UserProfile ||--o{ ProductReview : "writes"
+    UserProfile ||--o{ Product : "purchases"
 ```
+
+Source: [Mermaid](https://mermaid.live/edit#pako:eNq1VT1v2zAQ_SsC52RoRq_pEqBAixbdDBA0eZavoEj1eIyrOP7vpSTLtkR_KEO0SLx79_hIPp52QnsDYiGAvqIqSVVLV6TnWTGUnppi14_bBx0XaE7jwISuLJyqIAuuCcEZ28hTdr90_ccP8msIAb37DPZnb32k8EnCTdT8YWqGf1wYCJqw5rTsU8aAxkrZoibUkIdJcWI7xVfe22Kjggz4BiGbNdWUU83fyQDNUOxbnHSxWgHlmxKtlRe3CyqFNovWG-_gGpn20TE1eZEP3JoxS7DfOulJauS8Kr0AWCpjKHnqy53802U1Z7QmGZ-xgu4jPxEDFl-BGqmT2jzd7yJ7VjZPptvlzDTZecMTluiUlStVXloB1iDr4dDGR_sNHbwwVDOOuO7t25lnDP4blePR7g6abaLHRH8u-yjgdwBqLzNamDG9gbWKluVNcwygayY5klwzywC4aZoBdM88l3FPt1U3l7vGT3hF2N7ap84KIa7-gOZJVHvH4HhcO-0OI-u2YmHqmGNXf39_fPS7Y0NbFEuR2kpRKdcsRdalZ6CHrjuPuMsdoGMXtwXtYhW6MBT0LewqfMp_7srzog5cW6UhXJEyPqmZ3HnRltKNCfdLekGRdJqlxYsHUQGlhmrS_7jzyVLwBlLXFS3yYLKWd5-gKrL_1TgtFkwRHgT5WG7EYq1sSKNYtyY4_NJ7yP4_BVqIZw)
+
+
 
 I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
 
