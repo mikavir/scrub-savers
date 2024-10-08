@@ -31,13 +31,13 @@
       </div>
   </li>
   <li class="list-inline-item dropdown">
-      <a class="nav-link d-block d-md-none mobile-nav-icon p-0" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link d-block d-md-none mobile-nav-icon p-0" href="#" id="user-options-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center nav-icon">
               <div><i class="fas fa-user fa-lg"></i></div>
               <p class="my-0">My Account</p>
           </div>
       </a>
-      <div class="account-dropdown-menu dropdown-menu border-0 text-left" aria-labelledby="user-options">
+      <div class="account-dropdown-menu dropdown-menu border-0 text-left" aria-labelledby="user-options-mobile">
           {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
                   <a href="{% url 'account_logout' %}" class="dropdown-item account-dropdown mobile-font">Admin</a>
