@@ -519,6 +519,34 @@ Set Up Cloudinary in env.py
 
 `cloudinary.config(secure=True, )`
 
+### Django WhiteNoise
+This project uses [Django WhiteNoise](https://whitenoise.readthedocs.io/en/stable/django.html) to serve static files
+1. Install Whitenoise using pip:
+
+`pip install whitenoise`
+2. Add Whitenoise to the top of your middleware stack, right after the SecurityMiddleware:
+
+```python
+MIDDLEWARE = [
+	'django.middleware.security.SecurityMiddleware',
+	'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
+	...
+]
+```
+3. Ensure you have the following static file settings in your settings.py:
+
+```python
+# Static file settings
+STATIC_URL = '/static/'
+
+# Location where static files are collected
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+```
+
+4. Run the following command to collect all static files into the STATIC_ROOT directory:
+
+`python manage.py collectstatic`
+
 ### Heroku Deployment
 
 This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
