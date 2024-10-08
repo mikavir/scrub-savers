@@ -562,8 +562,6 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
-| `AWS_ACCESS_KEY_ID` | user's own value |
-| `AWS_SECRET_ACCESS_KEY` | user's own value |
 | `DATABASE_URL` | user's own value |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
 | `EMAIL_HOST_PASS` | user's own value |
@@ -572,7 +570,9 @@ Deployment steps are as follows, after account setup:
 | `STRIPE_PUBLIC_KEY` | user's own value |
 | `STRIPE_SECRET_KEY` | user's own value |
 | `STRIPE_WH_SECRET` | user's own value |
-| `USE_AWS` | True |
+| `CLOUDINARY_URL` | user's own value |
+
+
 
 Heroku needs three additional files in order to deploy properly.
 
@@ -641,6 +641,7 @@ os.environ.setdefault("SECRET_KEY", "user's own value")
 os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
 os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
 os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
+os.environ.setdefault("CLOUDINARY_URL", "YOUR_CLOUDINARY_URL")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
