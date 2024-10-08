@@ -198,48 +198,138 @@ Contact
 
 ## Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Existing Features
 
-- **YOUR-TITLE-FOR-FEATURE-#1**
+- **Home Page**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/features/feature01.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#2**
+- **Hero Callout and button**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/features/feature02.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#3**
+- **Recommendations**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/features/feature03.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+- **Hero review**
 
-Repeat as necessary for as many features as your site contains.
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-Hint: the more, the merrier!
+![screenshot](documentation/features/feature04.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+- **Footer and social media icons**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature05.png)
+
+- **Products page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature06.png)
+
+
+- **Products page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature06.png)
+
+
+- **Search Bar**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature07.png)
+
+- **Profile**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature08.png)
+
+- **Order History**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature09.png)
+
+- **Main Nav**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature10.png)
+
+- **User Authentication**
+
+  - **Sign Out**
+
+      - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature11.png)
+
+  - **Sign in**
+
+      - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature12.png)
+
+  - **Register**
+
+      - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature13.png)
+- **Contact**
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature14.png)
+
+- **Reviews**
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature15.png)
+
+- **Checkout Success**
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature16.png)
+
+- **Bag Notification**
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature17.png)
+
+- **Bag page**
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature18.png)
+
+- **Checkout page**
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature19.png)
+
+- **Product Management**
+  - **Add Product**
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+    ![screenshot](documentation/features/feature20.png)
+  - **Edit/Delete Product**
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+  ![screenshot](documentation/features/feature21.png)
+
+
+
 
 ### Future Features
 
