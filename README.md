@@ -4,94 +4,13 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/mikavir/scrub-savers)](https://github.com/mikavir/scrub-savers/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/mikavir/scrub-savers)](https://github.com/mikavir/scrub-savers)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-!! IMPORTANT !! RE: Table of Contents
-
-DO NOT add a Table of Contents to your README or TESTING!!
-These are outdated since 2021 when GitHub added them built-in to Markdown files automatically.
-
-Assessors see this as bad practice since it's outdated for a few years now,
-as if you've taken it from someone else's project that did the same thing.
-
----
-
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
-
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://scrub-savers-7d53ee42bcc8.herokuapp.com
-
-⚠️ NOTE: Issues generating site mockups (Django projects)
-This is likely due to security policies with your deployed site.
-If you open up your dev tools, there may be an error referencing `X-Frame-Options`.
-For Chrome users, head over to http://bit.ly/3iRPn4u and install the extension within your browser.
-Once installed, navigate back to the site above.
-You should find your site rendering in the various devices.
-Alternatively, open your project in Gitpod and run the server.
-Once the site is running, click the `Ports` tab at the bottom of your Gitpod workspace (Ports: 2205, 05432, 8000... ).
-Click the padlock on port `8000`.
-This will make your local page public temporarily.
-Now copy the URL of your live-preview page into the responsive tool above.
-You should find your site rendering in the various devices.
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
 ![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
----
-
-GitHub now supports CALLOUTS in Markdown files.
-There are some callouts already embedded in this application for you.
-However, if you feel that you want to add more, there are certain ones you can use.
-
-NOTE: the preview for callouts isn't yet supported in Gitpod/Codeanywhere/VSCode/etc.
-You'll have to commit/push the changes to GitHub to see it in action.
-
-> [!NOTE]  
-> BLUE: Highlights information that users should take into account, even when skimming.
-
-> [!TIP]  
-> GREEN: Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> PURPLE: Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> YELLOW: Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]  
-> RED: Negative potential consequences of an action.
-
-Source: https://github.com/orgs/community/discussions/16925
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-![screenshot](documentation/mockup.png)
-
 source: [amiresponsive](https://ui.dev/amiresponsive?url=https://scrub-savers-7d53ee42bcc8.herokuapp.com)
+
+Scrub Savers isn e-commerce web application built with Django, catering to healthcare and medical professionals. The site specializes in selling a wide range of medical clothing and equpment. Designed for ease of use, Scrub Savers ensures a seamless shopping experience, from browsing to checkout. Whether you're looking for scrubs, tools, or medical accessories, Scrub Savers provides everything in one convenient place.
 
 ## UX
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### Colour Scheme
 
@@ -117,50 +36,50 @@ Ensuring that the typography is consistent with other healthcare websites is vit
 ## User Stories
 ### Viewing and Navigation
 
-As a Shopper, I want to be able to view a list of products so that I can select items to purchase.
-As a Shopper, I want to be able to view individual product details so that I can identify the price, description, and product details.
-As a Shopper, I want to quickly identify deals, clearance items, and special offers so that I can take advantage of special savings on products I'd like to purchase.
-As a Shopper, I want to easily view the total of my purchases at any time so that I can avoid overspending.
+- As a Shopper, I want to be able to view a list of products so that I can select items to purchase.
+- As a Shopper, I want to be able to view individual product details so that I can identify the price, description, and product details.
+- As a Shopper, I want to quickly identify deals, clearance items, and special offers so that I can take advantage of special savings on - products I'd like to purchase.
+- As a Shopper, I want to easily view the total of my purchases at any time so that I can avoid overspending.
 
 ### Registration and User Authentication
 
-As a Shopper, I want to easily register for an account so that I can have a personal account to view my purchase history.
-As a Shopper, I want to easily log in to my account so that I can keep track of my purchase history.
-As a Shopper, I want to easily log out of my account so that my account is secure when using a public device.
-As a Shopper, I want to easily recover my password in case I forget it so that I can recover access to my account.
-As a Shopper, I want to receive an email confirmation after signing in so that I can verify that my account registration was successful.
-As a Shopper, I want to have a personalized user profile so that I can view my purchase history, order confirmations, and save my payment history.
+- As a Shopper, I want to easily register for an account so that I can have a personal account to view my purchase history.
+- As a Shopper, I want to easily log in to my account so that I can keep track of my purchase history.
+- As a Shopper, I want to easily log out of my account so that my account is secure when using a public device.
+- As a Shopper, I want to easily recover my password in case I forget it so that I can recover access to my account.
+- As a Shopper, I want to receive an email confirmation after signing in so that I can verify that my account registration was successful.
+- As a Shopper, I want to have a personalized user profile so that I can view my purchase history, order confirmations, and save my payment history.
 
 ### Sorting and Searching
 
-As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products.
-As a Shopper, I want to sort a specific category of products so that I can find the best-priced or best-rated products in that category or sort them by name.
-As a Shopper, I want to sort multiple categories or products simultaneously so that I can find the best-priced or best-rated products across broad categories, such as clothing or medical items.
-As a Shopper, I want to search for a product by name or description so that I can find the specific product I want to purchase.
-As a Shopper, I want to easily view what I have searched for and the number of results so that I can quickly identify if the product I'm searching for is available.
+- As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products.
+- As a Shopper, I want to sort a specific category of products so that I can find the best-priced or best-rated products in that category or sort them by name.
+- As a Shopper, I want to sort multiple categories or products simultaneously so that I can find the best-priced or best-rated products across broad categories, such as clothing or medical items.
+- As a Shopper, I want to search for a product by name or description so that I can find the specific product I want to purchase.
+- As a Shopper, I want to easily view what I have searched for and the number of results so that I can quickly identify if the product I'm searching for is available.
 
 ### Purchasing and Checkout
 
-As a Shopper, I want to easily select the size and quantity of a product when purchasing it so that I don't accidentally select the wrong size.
-As a Shopper, I want to view items in my bag to be purchased so that I can identify the total cost of the items I'm purchasing.
-As a Shopper, I want to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.
-As a Shopper, I want to easily enter my payment information so that I can checkout quickly.
-As a Shopper, I want to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
-As a Shopper, I want to receive an email confirmation after my purchase so that I have a record of my purchase.
+- As a Shopper, I want to easily select the size and quantity of a product when purchasing it so that I don't accidentally select the wrong size.
+- As a Shopper, I want to view items in my bag to be purchased so that I can identify the total cost of the items I'm purchasing.
+- As a Shopper, I want to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.
+- As a Shopper, I want to easily enter my payment information so that I can checkout quickly.
+- As a Shopper, I want to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
+- As a Shopper, I want to receive an email confirmation after my purchase so that I have a record of my purchase.
 
 ### Admin and Store Management
 
-As a Store Owner, I want to add a product so that I can add new items to my store.
-As a Store Owner, I want to edit a product so that I can change the product information easily.
-As a Store Owner, I want to delete a product so that I can remove items that are no longer for sale.
-As a Store Owner, I want to have a logo so that I can improve my brand identity.
+- As a Store Owner, I want to add a product so that I can add new items to my store.
+- As a Store Owner, I want to edit a product so that I can change the product information easily.
+- As a Store Owner, I want to delete a product so that I can remove items that are no longer for sale.
+- As a Store Owner, I want to have a logo so that I can improve my brand identity.
 
 ### Contact and Questions
 
-As a Shopper, I want to see contact information so that I can feel safe knowing that I can contact someone to remedy any mistakes.
-As a Shopper, I want to see questions and answers so that I can understand more about what happens during my purchase.
-As a Shopper, I want to see reviews so that I can understand the quality of the product I'm buying.
-As a Store Owner, I want to be contacted so that I can improve customer loyalty and understand if there are improvements to be made.
+- As a Shopper, I want to see contact information so that I can feel safe knowing that I can contact someone to remedy any mistakes.
+- As a Shopper, I want to see questions and answers so that I can understand more about what happens during my purchase.
+- As a Shopper, I want to see reviews so that I can understand the quality of the product I'm buying.
+- As a Store Owner, I want to be contacted so that I can improve customer loyalty and understand if there are improvements to be made.
 
 ## Wireframes
 
