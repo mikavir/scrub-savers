@@ -202,70 +202,64 @@ Contact
 
 - **Home Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The home page of ScrubSavers serves as an engaging digital storefront, providing users with immediate access to featured products and easy navigation, enhancing their shopping experience while reinforcing brand trust and identity.
 
 ![screenshot](documentation/features/feature01.png)
 
 - **Hero Callout and button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The Hero Callout and button on the ScrubSavers home page immediately capture users' attention with striking visuals of medical professionals, reinforcing its identity as a site for healthcare workers while providing engaging messages and seamless navigation to the products page.
 
 ![screenshot](documentation/features/feature02.png)
 
 - **Recommendations**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The Recommendations feature on ScrubSavers offers randomized product suggestions, enhancing user engagement and discovery while providing a unique shopping experience each time they visit the site.
 
 ![screenshot](documentation/features/feature03.png)
 
 - **Hero review**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The Hero Review feature showcases a top customer testimonial on the ScrubSavers home page, building trust and credibility while encouraging new users to make purchases.
 
 ![screenshot](documentation/features/feature04.png)
 
 
 - **Footer and social media icons**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The Footer and Social Media Icons offer quick access to essential site links and social media profiles, enhancing navigation and providing a sense of security for customers by facilitating easy contact, ultimately improving the brand image.
 
 ![screenshot](documentation/features/feature05.png)
 
-- **Products page**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/features/feature06.png)
-
 
 - **Products page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This page presents an extensive list of all products available on the website, with options to filter by price, rating, and color. This feature streamlines the shopping process, allowing users to efficiently find items that match their preferences, ultimately improving user experience and encouraging more informed purchasing decisions.
 
 ![screenshot](documentation/features/feature06.png)
 
 
 - **Search Bar**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The Search Bar feature allows users to quickly find specific products or information on the ScrubSavers site by entering keywords. This functionality enhances user experience by saving time and reducing frustration, enabling customers to easily locate items without navigating through multiple categories
 
 ![screenshot](documentation/features/feature07.png)
 
 - **Profile**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This feature allows users to store essential information, such as order history and delivery addresses, enhancing their shopping experience by creating a personalized environment. It enables a streamlined checkout process, making online shopping more efficient and convenient.
 
 ![screenshot](documentation/features/feature08.png)
 
 - **Order History**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
+    - This feature enables users to access a detailed record of their past purchases on ScrubSavers, building trust and encouraging repeat shopping. Additionally, it allows users to track their spending effortlessly and reference previous orders when contacting customer support, ultimately enhancing their overall shopping experience.
+    
 ![screenshot](documentation/features/feature09.png)
 
-- **Main Nav**
+- **Main Navigation**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The Main Navigation feature allows users to sort products by profession, color, and category, enabling a more tailored shopping experience. By streamlining navigation, the Main Navigation enhances user satisfaction and encourages more efficient browsing.
 
 ![screenshot](documentation/features/feature10.png)
 
@@ -273,58 +267,59 @@ Contact
 
   - **Sign Out**
 
-      - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+      - The Sign Out Page allows users to securely log out of their ScrubSavers account, ensuring their personal information remains protected.
 
   ![screenshot](documentation/features/feature11.png)
 
   - **Sign in**
 
-      - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+      - The Sign In Page enables users to securely access their ScrubSavers account by entering their credentials. This feature enhances user experience by providing quick and easy access to order history, and saved information.
 
   ![screenshot](documentation/features/feature12.png)
 
   - **Register**
 
-      - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+      - The Register Page allows users to create a new ScrubSavers account by entering essential information, including their name, email address, and password. By creating an account, users gain access to their order history, enhancing their overall shopping experience.
 
   ![screenshot](documentation/features/feature13.png)
 - **Contact**
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - The Contact Page provides users with a straightforward way to reach out to ScrubSavers for inquiries, support, or feedback.
 
   ![screenshot](documentation/features/feature14.png)
 
 - **Reviews**
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - This feature allows users who have purchased an item to write, edit, and delete their reviews on ScrubSavers. This functionality encourages honest feedback and enhances the shopping experience by providing valuable insights to other customers.
 
   ![screenshot](documentation/features/feature15.png)
 
 - **Checkout Success**
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  
+  - This provides users with a confirmation of their recent order, displaying all relevant order information, including item details, total cost, delivery address, and estimated shipping date. This feature enhances user experience by reassuring customers that their purchase was completed successfully and allows them to review their order at a glance.
 
   ![screenshot](documentation/features/feature16.png)
 
-- **Bag Notification**
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- **Bag Notification toast**
+  - This provides users with real-time alerts about their shopping bag activities, such as successfully added items or updates to their cart. Additionally, the toast notifications can encourage users to proceed to checkout or continue browsing, fostering a more engaging and interactive shopping experience.
 
   ![screenshot](documentation/features/feature17.png)
 
 - **Bag page**
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - This page displays a summary of all items that users have added to their bag including product details, quantities, prices, and a total cost calculation. This feature enhances the user experience by allowing customers to review their selections before proceeding to checkout, making it easy to adjust quantities or remove items as needed. 
 
   ![screenshot](documentation/features/feature18.png)
 
 - **Checkout page**
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - This page guides users through the final steps of their purchase, allowing them to review their order, enter shipping information, and entering their payment details. 
 
   ![screenshot](documentation/features/feature19.png)
 
 - **Product Management**
   - **Add Product**
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This page allows administrators to efficiently add new products to the ScrubSavers inventory.
 
     ![screenshot](documentation/features/feature20.png)
   - **Edit/Delete Product**
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This feature allows administrators to efficiently manage the ScrubSavers inventory. The Edit button enables quick updates to product details, while the Delete button provides a straightforward way to remove products that are no longer available. This functionality  streamlinies product management, ensuring that the inventory remains accurate and up-to-date.
 
   ![screenshot](documentation/features/feature21.png)
 
@@ -333,21 +328,12 @@ Contact
 
 ### Future Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#1
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#2
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#3
-    - Any additional notes about this feature.
+- Add discounts and promotions
+    -  ScrubSavers will introduce a feature that allows administrators to create and manage discounts and promotional campaigns. This will enable the platform to offer special deals, such as percentage-based or fixed-amount discounts, which can be applied to specific products or categories
+- Add FAQ'a and answers
+    - ScrubSavers will implement a Frequently Asked Questions (FAQs) section to improve user experience. This feature will provide customers with quick access to common questions and detailed answers, covering topics such as product information, shipping, 
+- Add a live chat using AI
+    - ScrubSavers plans to integrate an AI-powered live chat feature to provide real-time assistance to customers. 
 
 ## Tools & Technologies Used
 
