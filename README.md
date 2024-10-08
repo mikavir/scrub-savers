@@ -480,6 +480,44 @@ Once you've created a Gmail (Google) account and logged-in, follow these series 
 	- `EMAIL_HOST_PASS` = user's 16-character API key
 	- `EMAIL_HOST_USER` = user's own personal Gmail email address
 
+### Cloudinary API
+This project uses [cloudinary](https://cloudinary.com/) to host media files. 
+
+1. Create a Cloudinary Account
+
+2. Sign up for a Cloudinary account. During registration, select Programmable Media and Files as your intended use.
+Set Up Cloudinary in env.py
+
+ - After registration, copy your Cloudinary URL and add it to your env.py file:
+	`os.environ.setdefault("CLOUDINARY_URL", "YOUR_CLOUDINARY_URL")`
+	- Later, transfer this to your Heroku config variables. 
+3. In Heroku, add the environment variable:
+
+	`DISABLE_COLLECTSTATIC=1`
+4. Install the necessary Cloudinary packages:
+	`pip install cloudinary==1.41.0 dj3-cloudinary-storage==0.0.6`
+5. Add the following to the INSTALLED_APPS list in the correct order in your settings.py:
+	```python
+	INSTALLED_APPS = [
+		'django.contrib.admin',
+		'django.contrib.auth',
+		'django.contrib.contenttypes',
+		'django.contrib.sessions',
+		'django.contrib.messages',
+		'django.contrib.staticfiles',
+		'cloudinary_storage',
+		'cloudinary',
+	]
+	```
+
+
+6. Make sure to import Cloudinary at the top of your settings.py:
+
+`import cloudinary`
+
+7. Add cloudinary configuration at the bottom of your static files declation in settings.py:
+
+`cloudinary.config(secure=True, )`
 
 ### Heroku Deployment
 
