@@ -5,87 +5,89 @@
 {% endblock %}
 
 {% block content %}
-<aside id="hero-image" class="row align-items-center m-0 ">
-    <div class="col">
-        <div class="row align-items-center">
-            <div class="col offset-md-6 d-md-block d-none ">
-                <div class="hero-callout text-center">
-                    <h3 class="message">Designed for Professionals, Trusted by Heroes </h3>
-                    <p>You care for others, let us care for you! Our high-performance scrubs and trusted medical equipment are designed to keep you comfortable and focused. Shop today and elevate your daily essentials!</p>
-                    <a href="{% url 'products' %}" class="shop-now-btn">Shop Now</a>
-
-                </div>
+<main class="container-fluid p-0">
+    <aside id="hero-image" class="row align-items-center m-0">
+        <div class="col">
+            <div class="row align-items-center">
+                <div class="col offset-md-6 d-md-block d-none ">
+                    <div class="hero-callout text-center">
+                        <h3 class="message">Designed for Professionals, Trusted by Heroes </h3>
+                        <p>You care for others, let us care for you! Our high-performance scrubs and trusted medical equipment are designed to keep you comfortable and focused. Shop today and elevate your daily essentials!</p>
+                        <a href="{% url 'products' %}" class="shop-now-btn">Shop Now</a>
     
-            </div>
-        </div>
-
-    </div>
-
-</aside>
-<aside id="hero-callout-mobile" class="row d-md-none m-0">
-    <div class="col p-3">
-        <div class="hero-callout text-center">
-            <h3 class="message">Designed for Professionals, Trusted by Heroes </h3>
-            <p>You care for others, let us care for you! Our high-performance scrubs and trusted medical equipment are designed to keep you comfortable and focused. Shop today and elevate your daily essentials!</p>
-            <a href="{% url 'products' %}" class="shop-now-btn">Shop Now</a>
-
-        </div>
-
-    </div>
-
-</aside>
-<section id="recommendations" class="row p-5 m-0">
-    <div class="col">
-        <div class="row pb-3">
-           <div class="col text-center">
-            <h5>Staff Favourites</h5>
-            <p>Trusted by the Best, Chosen for You!</p>
-           </div>
-        </div>
-        <div class="row text-center">
-            {% for product in products %}
-            <div class="col-md-3 col-6">
-                <a href="{% url 'product_detail' product.id %}" class="recommendation-card">
-                    {% if 'noimage' not in product.image.url %}
-
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                    {% else %}
-                        <img class="card-img-top img-fluid" src="{% static 'images/noimage.png' %}" alt="{{ product.name }}">
-                  
-                    {% endif %}
-                    <div class="pb-0 text-left">
-                        
-                        <p class="mb-0">{{ product.name }}</p>
-                        <p>£{{product.price}} </p>
                     </div>
-                </a>
-
-            </div>    
-            {% endfor %}
-        </div>
-    </div>
-
-</section>
-<aside id="hero-image-review" class="row align-items-center m-0">
-    <div class="col col-md-5">
-        <div class="row align-items-center">
-            <div class="col offset-md-3">
-                <div class="hero-callout text-center hero-callout-review">
-                    <h3 class="message mobile-font">⭐ ⭐ ⭐ ⭐ ⭐</h3>
-                    <p class="message mobile-font">
-                        "Best scrubs I’ve ever bought! The quality is amazing—soft, durable, and super comfortable for long shifts. Shipping was fast, and customer service was so helpful when I needed to exchange for a different size. Great prices too! Definitely my new go-to for medical scrubs."
-                    </p>
-                    <cite class="mobile-font"><em>Lily Morgan</em></cite>
-            
-
+        
                 </div>
+            </div>
+    
+        </div>
+    
+    </aside>
+    <aside id="hero-callout-mobile" class="row d-md-none m-0">
+        <div class="col p-3">
+            <div class="hero-callout text-center">
+                <h3 class="message">Designed for Professionals, Trusted by Heroes </h3>
+                <p>You care for others, let us care for you! Our high-performance scrubs and trusted medical equipment are designed to keep you comfortable and focused. Shop today and elevate your daily essentials!</p>
+                <a href="{% url 'products' %}" class="shop-now-btn">Shop Now</a>
     
             </div>
+    
         </div>
-    </div>
-
-
-</aside>
+    
+    </aside>
+    <section id="recommendations" class="row p-5 m-0">
+        <div class="col">
+            <div class="row pb-3">
+               <div class="col text-center">
+                <h5>Staff Favourites</h5>
+                <p>Trusted by the Best, Chosen for You!</p>
+               </div>
+            </div>
+            <div class="row text-center">
+                {% for product in products %}
+                <div class="col-md-3 col-6">
+                    <a href="{% url 'product_detail' product.id %}" class="recommendation-card">
+                        {% if 'noimage' not in product.image.url %}
+    
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        {% else %}
+                            <img class="card-img-top img-fluid" src="{% static 'images/noimage.png' %}" alt="{{ product.name }}">
+                      
+                        {% endif %}
+                        <div class="pb-0 text-left">
+                            
+                            <p class="mb-0">{{ product.name }}</p>
+                            <p>£{{product.price}} </p>
+                        </div>
+                    </a>
+    
+                </div>    
+                {% endfor %}
+            </div>
+        </div>
+    
+    </section>
+    <aside id="hero-image-review" class="row align-items-center m-0">
+        <div class="col col-md-5">
+            <div class="row align-items-center">
+                <div class="col offset-md-3">
+                    <div class="hero-callout text-center hero-callout-review">
+                        <h3 class="message mobile-font">⭐ ⭐ ⭐ ⭐ ⭐</h3>
+                        <p class="message mobile-font">
+                            "Best scrubs I’ve ever bought! The quality is amazing—soft, durable, and super comfortable for long shifts. Shipping was fast, and customer service was so helpful when I needed to exchange for a different size. Great prices too! Definitely my new go-to for medical scrubs."
+                        </p>
+                        <cite class="mobile-font"><em>Lily Morgan</em></cite>
+                
+    
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    
+    
+    </aside>
+</main>
 
 
 {% endblock %}
