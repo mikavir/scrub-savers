@@ -171,8 +171,13 @@
                             <div class="row">
                                 <div class="col">
                                     <p class="my-0 mobile-font"><strong>{{ item.product.name }}</strong></p>
-                                    <p class="my-0 mobile-font"><strong>Size: </strong>{% if item.product.has_sizes %}{{
-                                        item.size|upper }}{% else %}N/A{% endif %}</p>
+                                    <p class="my-0 mobile-font"><strong>Size: </strong>
+                                        {% if item.product.has_sizes %}
+                                        {{item.size|upper }}
+                                        {% else %}
+                                        N/A
+                                        {% endif %}
+                                    </p>
                                     <p class="my-0 mobile-font">£{{ item.product.price }}</p>
                                 </div>
                             </div>
@@ -225,8 +230,9 @@
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-center">
-                            <h6 class="text-secondary text-blue mobile-font"><strong>Bag Total: £{{ total|floatformat:2
-                                    }}</strong></h6>
+                            <h6 class="text-secondary text-blue mobile-font">
+                                <strong>Bag Total: £{{ total|floatformat:2}}</strong>
+                            </h6>
                             <h6 class="text-secondary text-blue mobile-font">Delivery: £{{ delivery|floatformat:2 }}
                             </h6>
                             <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
