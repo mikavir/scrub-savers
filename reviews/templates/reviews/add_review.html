@@ -40,6 +40,17 @@
                     <form method="POST" action="{% url 'add_review'  product.id  %}" class="form text-secondary mb-2">
                         {% csrf_token %}
                         {{ form | crispy }}
+                        <p>Rating</p>
+                        <div class="rating-stars">
+                            {% spaceless %}
+                                {% for star in "12345"|make_list %}
+                                    <label for="id_rating_{{forloop.counter}}">
+                                        <input class="d-none" type="radio" name="rating" id="id_rating_{{forloop.counter}}" value="{{forloop.counter}}">
+                                        <i class="fa-solid fa-star fw-lg fs-1"></i>
+                                    </label>
+                                {% endfor %}
+                            {% endspaceless %}
+                        </div>
                         <div class="text-center">
                             <a class="btn btn-outline-black rounded-0 text-uppercase"
                                 href="{% url 'product_detail' product.id %}">Cancel</a>
@@ -57,4 +68,19 @@
 
 </div>
 
+{% endblock %}
+{% block postloadjs %}
+<script>
+    $(document).ready(function () {
+      $("input[name='rating']").on("change", function () {
+        let selectedValue = $(this).val();
+  
+        // Remove gold color from all stars
+        $(".fa-star").removeClass("gold");
+  
+        // Highlight all stars up to the selected rating
+        $(".fa-star").slice(0, selectedValue).addClass("gold");
+      });
+    });
+  </script>
 {% endblock %}
