@@ -42,6 +42,7 @@ def add_review(request, product_id):
                 # https://www.youtube.com/watch?v=zJWhizYFKP0
                 instance = form.save(commit=False)
                 instance.product = product
+                instance.rating = request.POST.get("rating")
                 instance.user_profile = profile
                 instance.save()
                 messages.success(request, 'Successfully added review')
@@ -81,6 +82,7 @@ def edit_review(request, product_id, product_review_id):
                 # https://www.youtube.com/watch?v=zJWhizYFKP0
                 instance = form.save(commit=False)
                 instance.product = product
+                instance.rating = request.POST.get("rating")
                 instance.user_profile = profile
                 instance.save()
                 messages.success(request, 'Successfully updated review')
