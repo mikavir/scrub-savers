@@ -418,6 +418,22 @@ font-size: 30px;
     border-radius: 0;
 }
 
+label{
+    cursor: pointer;
+}
+
+input[type=radio]:checked + i {
+    color: gold !important;
+}
+
+.rating-stars .fa-star {
+    font-size: 1.5em;
+    margin: 0 0.5em;
+}
+
+.rating-stars .fa-star.gold {
+    color: gold;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

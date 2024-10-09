@@ -41,6 +41,17 @@
                     <form method="POST" action="{% url 'edit_review'  product.id review.id %}" class="form mb-2 text-secondary">
                         {% csrf_token %}
                         {{ form | crispy }}
+                        <p>Rating</p>
+                        <div class="rating-stars">
+                            {% spaceless %}
+                                {% for star in "12345"|make_list %}
+                                    <label for="id_rating_{{forloop.counter}}">
+                                        <input class="d-none" type="radio" name="rating" id="id_rating_{{forloop.counter}}" value="{{forloop.counter}}" {% if review.rating == forloop.counter %}checked{%endif%}>
+                                        <i class="fa-solid fa-star fw-lg fs-1"></i>
+                                    </label>
+                                {% endfor %}
+                            {% endspaceless %}
+                        </div>
                         <div class="text-center">
                             <a class="btn btn-outline-black rounded-0"
                                 href="{% url 'product_detail' product.id %}">Cancel</a>
@@ -57,4 +68,29 @@
 
 </div>
 
+{% endblock %}
+{% block postloadjs %}
+<script>
+    $(document).ready(function () {
+        function highlightStars(selectedValue){
+            // Remove gold color from all stars
+            $(".fa-star").removeClass("gold");
+            // Highlight all stars up to the selected rating
+            $(".fa-star").slice(0, selectedValue).addClass("gold");
+        }
+
+        // Apply highlight on radio button change
+        $("input[name='rating']").on("change", function () {
+            let selectedValue = $(this).val();
+            highlightStars(selectedValue);
+        });
+
+        // on page load apply existing rating
+        let preselectedRating = $("input[name='rating']:checked").attr("value");
+        if (preselectedRating){
+            highlightStars(preselectedRating);
+        }
+
+    });
+  </script>
 {% endblock %}
