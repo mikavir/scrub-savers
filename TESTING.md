@@ -3,61 +3,52 @@
 > [!NOTE]  
 > Return back to the [README.md](README.md) file.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
-Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
-with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Feature-by-Feature Testing:
-
-Go through each feature of your portfolio site and detail the testing process for each.
-
-Explain the functionality and demonstrate how it aligns with the intended purpose. This could include:
-
-- Navigation: Ensuring smooth transitions between pages, links directing to the correct destinations.
-- Responsive Design: Checking for compatibility across various devices and screen sizes.
-- Portfolio Display: Verifying that projects are properly showcased with accurate descriptions, images, and links.
-- Contact Form: Testing the form submission process, ensuring the user receives a confirmation, and you receive the message.
-
-User Experience Testing:
-
-- Usability Testing: Have users (or simulated users) interact with the site and provide feedback. Document any issues encountered and the resolutions implemented.
-- Accessibility Testing: Confirm compliance with accessibility standards (e.g., screen reader compatibility, proper alt text for images, keyboard navigation).
-
-Compatibility Testing:
-
-- Browser Compatibility: Testing on different browsers (Chrome, Firefox, Safari, Edge, etc.) to ensure consistent performance.
-- Device Compatibility: Ensuring functionality across various devices (desktops, laptops, tablets, and mobile phones).
-- Performance Testing (optional):
-	- Speed and Load Testing: Tools like PageSpeed Insights or GTmetrix to check page load times and optimize where necessary.
-	- Scalability Testing: Assess how the site handles increased traffic or usage.
-
-Regression Testing:
-
-After implementing fixes or updates, ensure that previous features and functionalities still work as intended. This prevents new changes from breaking existing features.
-
-Documentation and Logs:
-
-Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
-User Feedback Incorporation:
-
-If applicable, mention how user feedback has been taken into account and implemented to enhance the user experience.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## Code Validation
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
 
-**IMPORTANT**: You must provide a screenshot for each file you validate.
+### HTML
 
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| bag | bag.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout_success.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | success.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| reviews | add_review.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| reviews | edit_review.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | 500.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| checkout | checkout.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | profile.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| static | base.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| checkout | stripe_elements.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | countryfield.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| static | script.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 ### Python
 
@@ -65,9 +56,43 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
+| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/contexts.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/signals.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | webhook_handler.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/webhook_handler.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | webhooks.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/webhooks.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/home/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/home/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 |  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/widgets.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| reviews | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| reviews | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| reviews | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| reviews | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| reviews | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | scrub_savers | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | scrub_savers | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| scrub_savers | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 ## Browser Compatibility
 
