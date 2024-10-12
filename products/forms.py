@@ -20,7 +20,7 @@ class ProductForm(forms.ModelForm):
         profession = Profession.objects.all()
 
         # Get friendly names of categories
-        #https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287 # noqa
+        # https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287 # noqa
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
@@ -40,4 +40,4 @@ class ProductForm(forms.ModelForm):
         )
 
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-1' # noqa
+            field.widget.attrs['class'] = 'border-black rounded-1'  # noqa

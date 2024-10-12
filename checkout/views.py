@@ -88,7 +88,7 @@ def checkout(request):
                                 )
 
                     else:
-                        for size, quantity in item_data['items_by_size'].items(): # noqa
+                        for size, quantity in item_data['items_by_size'].items():  # noqa
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -111,7 +111,7 @@ def checkout(request):
 
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One item in your bag wasn't found. Please contact us!") # noqa
+                        "One item in your bag wasn't found. Please contact us!")  # noqa
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
