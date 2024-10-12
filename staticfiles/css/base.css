@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 html {
     height: 100%;
     background-color: #fff9F0;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
 }
+
 .bg-cream {
     background-color: #fff9F0;
 }
@@ -122,9 +125,6 @@ h1,h2,h3,h4, h5, p {
     border: none;
     background-color: #fff9f0;
 }
-
-/*  FOOTER */
-
 /*  DELIVERY BANNER */
 
 #delivery-banner {
@@ -160,8 +160,10 @@ color: #081F5c;
 font-size: 30px;
   }
 /*  HOME PAGE  */
+
+
 #hero-image {
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg-image/hero-image.jpg');
     background-position: center;
@@ -205,7 +207,7 @@ font-size: 30px;
 
 #hero-image-review{
 
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg-image/hero-image-2.jpg');
     background-position: center;
@@ -328,7 +330,6 @@ font-size: 30px;
 .text-cream {
     color:#fff9F0;
 }
-
 .border-black {
     border: 1px solid black !important;
 }
@@ -361,7 +362,6 @@ font-size: 30px;
 .remove-item {
     cursor: pointer;
 }
-
 .btn-red {
     background-color: red;
     color: #f7F2EB;
@@ -375,8 +375,6 @@ font-size: 30px;
 .toast-font {
     font-size: 90%;
 }
-
-/* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -420,6 +418,22 @@ font-size: 30px;
     border-radius: 0;
 }
 
+label{
+    cursor: pointer;
+}
+
+input[type=radio]:checked + i {
+    color: gold !important;
+}
+
+.rating-stars .fa-star {
+    font-size: 1.5em;
+    margin: 0 0.5em;
+}
+
+.rating-stars .fa-star.gold {
+    color: gold;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -440,12 +454,14 @@ font-size: 30px;
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 3.5rem;
     }
     .hero-callout-review {
         background-color: rgba(247, 242, 235, 0.7);
         padding: 10px;
     }
+
+
 }
 
 @media (max-width: 800px) {
@@ -454,8 +470,6 @@ font-size: 30px;
         padding: 10px;
     }
 }
-
-
 
 
 
@@ -468,6 +482,8 @@ font-size: 30px;
     #hero-image-review {
         background-position: right;
     }
+
+
 
 }
 
@@ -504,4 +520,7 @@ font-size: 30px;
     .logo {
         max-height: 5.5rem;
     }
+
+
+
 }
