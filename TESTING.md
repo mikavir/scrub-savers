@@ -36,9 +36,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | checkout.css | ![screenshot](documentation/validation/jigsaw/checkout-jigsaw.png) | |
-| profiles | profile.css | ![screenshot](documentation/validation/jigsaw/profiles-jigsaw.png) | |
-| static | base.css | ![screenshot](documentation/validation/jigsaw/base-jigsaw.png) | |
+| checkout | checkout.css | ![screenshot](documentation/validation/jigsaw/checkout-jigsaw.png) | No errors |
+| profiles | profile.css | ![screenshot](documentation/validation/jigsaw/profiles-jigsaw.png) | No errors |
+| static | base.css | ![screenshot](documentation/validation/jigsaw/base-jigsaw.png) | No errors |
 
 ### JavaScript
 
@@ -47,7 +47,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
 | checkout | stripe_elements.js | ![screenshot](documentation/validation/jshint/checkout-js-hint.png) | undefined variables from Stripe API |
-| profiles | countryfield.js | ![screenshot](documentation/validation/jshint/profiles-js-hint.png) | |
+| profiles | countryfield.js | ![screenshot](documentation/validation/jshint/profiles-js-hint.png) | No errors |
 
 ### Python
 
@@ -55,43 +55,43 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/contexts.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/signals.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | webhook_handler.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/webhook_handler.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | webhooks.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/webhooks.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/home/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/home/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/widgets.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| reviews | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| reviews | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| reviews | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| reviews | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| reviews | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| scrub_savers | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| scrub_savers | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| scrub_savers | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/contexts.py) | ![screenshot](documentation/validation/python/contexts-python.png) | No errors |
+| bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/python/bag-tools-python.png) | No errors|
+| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/urls.py) | ![screenshot](documentation/validation/python/bag-urls-python.png) | No errors |
+| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/bag/views.py) | ![screenshot](documentation/validation/python/bag-views-python.png) | No errors |
+| checkout | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/admin.py) | ![screenshot](documentation/validation/python/checkout-admin-python.png) | No errors |
+| checkout | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/forms.py) | ![screenshot](documentation/validation/python/checkout-forms-python.png) | No errors |
+| checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/models.py) | ![screenshot](documentation/validation/python/checkout-models-python.png) | No errors |
+| checkout | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/signals.py) | ![screenshot](documentation/validation/python/checkout-signals-python.png) | No errors |
+| checkout | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/urls.py) | ![screenshot](documentation/validation/python/checkout-urls-python.png) | No errors |
+| checkout | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/views.py) | ![screenshot](documentation/validation/python/checkout-views-python.png) | No errors |
+| checkout | webhook_handler.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/webhook_handler.py) | ![screenshot](documentation/validation/python/checkout-webhook-handler-python.png) | No errors |
+| checkout | webhooks.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/checkout/webhooks.py) | ![screenshot](documentation/validation/python/checkout-webhooks-python.png) | No errors |
+| contact | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/forms.py) | ![screenshot](documentation/validation/python/contacts-forms-python.png) | No errors |
+| contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/urls.py) | ![screenshot](documentation/validation/python/contact-urls-python.png) | No errors |
+| contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/contact/views.py) | ![screenshot](documentation/validation/python/contact-views-python.png) | No errors |
+| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/home/urls.py) | ![screenshot](documentation/validation/python/home-urls-python.png) | No errors |
+| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/home/views.py) | ![screenshot](documentation/validation/python/home-views-python.png) | No errors |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/manage.py) | ![screenshot](documentation/validation/python/manage-python.png) | No errors |
+| products | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/admin.py) | ![screenshot](documentation/validation/python/products-admin-python.png) | No errors |
+| products | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/forms.py) | ![screenshot](documentation/validation/python/product-forms-python.png) | No errors |
+| products | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/models.py) | ![screenshot](documentation/validation/python/products-models-python.png) | No errors |
+| products | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/urls.py) | ![screenshot](documentation/validation/python/checkout-urls-python.png) | No errors |
+| products | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/views.py) | ![screenshot](documentation/validation/python/profiles-views-python.png) | No errors |
+| products | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/products/widgets.py) | ![screenshot](documentation/validation/python/product-widgets-python.png) | No errors |
+| profiles | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/admin.py) | ![screenshot](documentation/validation/python/profiles-admin-python.png) | No errors |
+| profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/forms.py) | ![screenshot](documentation/validation/python/profiles-forms-python.png) | No errors |
+| profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/models.py) | ![screenshot](documentation/validation/python/profiles-models-python.png) | No errors |
+| profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/urls.py) | ![screenshot](documentation/validation/python/profiles-urls-python.png) | No errors |
+| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/profiles/views.py) | ![screenshot](documentation/validation/python/profiles-views-python.png) | No errors |
+| reviews | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/admin.py) | ![screenshot](documentation/validation/python/reviews-admin-python.png) | No errors |
+| reviews | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/forms.py) | ![screenshot](documentation/validation/python/reviews-forms-python.png) | No errors |
+| reviews | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/models.py) | ![screenshot](documentation/validation/python/reviews-models-python.png) | No errors |
+| reviews | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/urls.py) | ![screenshot](documentation/validation/python/reviews-urls-python.png) | No errors |
+| reviews | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/reviews/views.py) | ![screenshot](documentation/validation/python/reviews-views-python.png) | No errors |
+| scrub_savers | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/settings.py) | ![screenshot](documentation/validation/python/setting-python.png) | No errors |
+| scrub_savers | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/urls.py) | ![screenshot](documentation/validation/python/url-python.png) | No errors |
+| scrub_savers | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/views.py) | ![screenshot](documentation/validation/python/views-python.png) | No errors |
 
 ## Browser Compatibility
 
