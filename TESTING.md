@@ -46,9 +46,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | stripe_elements.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | countryfield.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| static | script.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | stripe_elements.js | ![screenshot](documentation/validation/jshint/checkout-js-hint.png) | undefined variables from Stripe API |
+| profiles | countryfield.js | ![screenshot](documentation/validation/jshint/profiles-js-hint.png) | |
 
 ### Python
 
