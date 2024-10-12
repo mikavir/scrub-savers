@@ -14,21 +14,21 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| bag | bag.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | checkout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | checkout_success.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | success.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| reviews | add_review.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| reviews | edit_review.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | 500.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | bag.html | ![screenshot](documentation/validation/w3c/bag-w3c.png) | |
+| checkout | checkout.html | ![screenshot](documentation/validation/w3c/checkout-w3c.png) | |
+| checkout | checkout_success.html | ![screenshot](documentation/validation/w3c/checkout-success-w3c.png-w3) | |
+| contact | contact.html | ![screenshot](documentation/validation/w3c/contact-w3c.png) | |
+| contact | success.html | ![screenshot](documentation/validation/w3c/contact-success-w3c.png) | |
+| home | index.html | ![screenshot](documentation/validation/w3c/index-w3c.png) | |
+| products | add_product.html | ![screenshot](documentation/validation/w3c/add-product-w3c.png) | |
+| products | edit_product.html | ![screenshot](documentation/validation/w3c/edit-product-w3c.png) | |
+| products | product_detail.html | ![screenshot](documentation/validation/w3c/product-detail-w3c.png) | |
+| products | products.html | ![screenshot](documentation/validation/w3c/product-w3c.png) | |
+| profiles | profile.html | ![screenshot](documentation/validation/w3c/profile-w3c.png) | |
+| reviews | add_review.html | ![screenshot](documentation/validation/w3c/add-review-w3c.png) | |
+| reviews | edit_review.html | ![screenshot](documentation/validation/w3c/edit-review-w3c.png) | |
+| templates | 404.html | ![screenshot](documentation/validation/w3c/404-w3c.png) | |
+| templates | 500.html | ![screenshot](documentation/validation/w3c/500-w3c.png) | |
 
 ### CSS
 
