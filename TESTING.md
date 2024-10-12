@@ -36,9 +36,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | checkout.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | profile.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| static | base.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout.css | ![screenshot](documentation/validation/jigsaw/checkout-jigsaw.png) | |
+| profiles | profile.css | ![screenshot](documentation/validation/jigsaw/profiles-jigsaw.png) | |
+| static | base.css | ![screenshot](documentation/validation/jigsaw/base-jigsaw.png) | |
 
 ### JavaScript
 
