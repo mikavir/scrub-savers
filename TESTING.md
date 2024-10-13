@@ -99,7 +99,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Browser | Bag | Checkout | Checkout-success | Contact | 404 |  Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | Chrome | ![screenshot](documentation/browsers/chrome/chrome-bag.png) | ![screenshot](documentation/browsers/chrome/chrome-checkout-1.png) ![screenshot](documentation/browsers/chrome/chrome-checkout-2.png)| ![screenshot](documentation/browsers/chrome/chrome-checkout-success.png) | ![screenshot](documentation/browsers/chrome/chrome-contact.png) |  ![screenshot](documentation/browsers/chrome/chrome-404.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browsers/firefox/firefox-bag.png) | ![screenshot](documentation/browsers/firefox/firefox-checkout-1.png) [screenshot](documentation/browsers/firefox/firefox-checkout-2.png)| ![screenshot](documentation/browsers/firefox/firefox-checkout-success.png) | ![screenshot](documentation/browsers/firefox/firefox-contact.png) | ![screenshot](documentation/browsers/firefox/firefox-404.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/firefox/firefox-bag.png) | ![screenshot](documentation/browsers/firefox/firefox-checkout-1.png) ![screenshot](documentation/browsers/firefox/firefox-checkout-2.png)| ![screenshot](documentation/browsers/firefox/firefox-checkout-success.png) | ![screenshot](documentation/browsers/firefox/firefox-contact.png) | ![screenshot](documentation/browsers/firefox/firefox-404.png) | Works as expected |
 | Safari | ![screenshot](documentation/browsers/safari/safari-bag.png) | ![screenshot](documentation/browsers/safari/safari-checkout-1.png) ![screenshot](documentation/browsers/safari/safari-checkout-2.png)| ![screenshot](documentation/browsers/safari/safari-checkout-success.png) | ![screenshot](documentation/browsers/safari/safari-contact.png) | ![screenshot](documentation/browsers/safari/safari-404.png) | Works as expected |
 
 
@@ -119,39 +119,29 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Responsiveness
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | About | Contact | etc | Notes |
+| Device | Bag | Checkout | Checkout-success | Contact | 404 |  Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools) 320px | ![screenshot](documentation/responsiveness/mobile/mobile-bag.png) | ![screenshot](documentation/responsiveness/mobile/mobile-checkout.png) | ![screenshot](documentation/responsiveness/mobile/mobile-checkout-fix.png) ![screenshot](documentation/responsiveness/mobile/mobile-checkout-success.png)| ![screenshot](documentation/responsiveness/mobile/mobile-404.png) | Order Number is spilling out of the container. Fix: make order number font smaller |
+| Tablet (DevTools) 768px | ![screenshot](documentation/responsiveness/tablet/tablet-bag.png) | ![screenshot](documentation/responsiveness/tablet/tablet-checkout.png) | ![screenshot](documentation/responsiveness/tablet/tablet-checkout-success.png) | ![screenshot](documentation/responsiveness/tablet/contact) | ![screenshot](documentation/responsiveness/tablet/tablet-404.png) | Works as expected |
+| Desktop | ![screenshot](documentation/browsers/firefox/firefox-bag.png) | ![screenshot](documentation/browsers/firefox/firefox-checkout-1.png) ![screenshot](documentation/browsers/firefox/firefox-checkout-2.png)| ![screenshot](documentation/browsers/firefox/firefox-checkout-success.png) | ![screenshot](documentation/browsers/firefox/firefox-contact.png) | ![screenshot](documentation/browsers/firefox/firefox-404.png) | Works as expected |
+| iPhone 13 Pro(personal mobile) | ![screenshot](documentation/responsiveness/iphone13/iphone-bag.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-2.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-3.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-success-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-success-2.PNG)| ![screenshot](documentation/responsiveness/iphone13/iphone-contact.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-contact-2.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-400.PNG) | Works as expected |
+
+| Device | Product Detail | Products | Profiles | Add Review | Edit Reviews | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools) 320px | ![screenshot](documentation/responsiveness/mobile/mobile-product-detail.png) | ![screenshot](documentation/responsiveness/mobile/mobile-products.png) | ![screenshot](documentation/responsiveness/mobile/mobile-profile.png) | ![screenshot](documentation/responsiveness/mobile/mobile-add-review.png) | ![screenshot](documentation/responsiveness/mobile/mobile-edit-review.png) | Works as expected |
+| Tablet (DevTools) 768px | ![screenshot](documentation/responsiveness/tablet/tablet-product-detail.png) | ![screenshot](documentation/responsiveness/tablet/tablet-products.png) | ![screenshot](documentation/responsiveness/tablet/tablet-profile.png) | ![screenshot](documentation/responsiveness/tablet/tablet-add-review.png) | ![screenshot](documentation/responsiveness/tablet/tablet-edit-review.png) | Works as expected |
+| Desktop | ![screenshot](documentation/browsers/firefox/firefox-product-detail.png) | ![screenshot](documentation/browsers/firefox/firefox-products.png) | ![screenshot](documentation/browsers/firefox/firefox-profile.png) | ![screenshot](documentation/browsers/firefox/firefox-add-review.png) | ![screenshot](documentation/browsers/firefox/firefox-edit-review.png) | Works as expected |
+| iPhone 13 Pro(personal mobile) | ![screenshot](documentation/responsiveness/iphone13/iphone-product-detail-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-product-detail-2.PNG)  | ![screenshot](documentation/responsiveness/iphone13/iphone-products.PNG)  | ![screenshot](documentation/responsiveness/iphone13/iphone-profile.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-add-review.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-add-review-2.PNG)| ![screenshot](documentation/responsiveness/iphone13/iphone-edit-review-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-edit-review-2.PNG)|Works as expected |
+
+| Device | Contact-success | Home | Add Product | Edit Product | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
-| repeat for any other tested devices | x | x | x | x | x |
+| Mobile (DevTools) 320px | ![screenshot](documentation/responsiveness/mobile/mobile-contact-success.png) | ![screenshot](documentation/responsiveness/mobile/mobile-home.png) | ![screenshot](documentation/responsiveness/mobile/mobile-add-product.png) | ![screenshot](documentation/responsiveness/mobile/mobile-edit-product.png) | Works as expected |
+| Tablet (DevTools) 768px | ![screenshot](documentation/responsiveness/tablet/tablet-contact-success.png) | ![screenshot](documentation/responsiveness/tablet/tablet-home.png) | ![screenshot](documentation/responsiveness/tablet/tablet-add-product.png) | ![screenshot](documentation/responsiveness/tablet/tablet-edit-product.png) | Works as expected |
+| Desktop | ![screenshot](documentation/browsers/firefox/firefox-contact-success.png) | ![screenshot](documentation/browsers/firefox/firefox-home-1.png) ![screenshot](documentation/browsers/firefox/firefox-home-2.png) ![screenshot](documentation/browsers/firefox/firefox-home-3.png)| ![screenshot](documentation/browsers/firefox/firefox-add-product-1.png) ![screenshot](documentation/browsers/firefox/firefox-add-product-2.png) | ![screenshot](documentation/browsers/firefox/firefox-edit-product-1.png) ![screenshot](documentation/browsers/firefox/firefox-edit-product-1.png) | Works as expected |
+| iPhone 13 Pro (personal mobile) | ![screenshot](documentation/responsiveness/iphone13/iphone-contact-success.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-home-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-home-2.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-home-3.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-add-product.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-add-product-2.PNG)| ![screenshot](documentation/responsiveness/iphone13/iphone-edit-product-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-edit-product-2.PNG)| Works as expected |
+
 
 ## Lighthouse Audit
 
