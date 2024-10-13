@@ -475,8 +475,13 @@ input[type=radio]:checked + i {
     #hero-image-review {
         background-position: right;
     }
-
-
+    .mobile-font {
+        font-size: 90%;        
+    }
+    .mobile-nav-icon {
+        padding: 0px;
+        font-size: 15px;
+    }
 
 }
 
@@ -511,9 +516,10 @@ input[type=radio]:checked + i {
         font-size: 10px;
     }
     .logo {
-        max-height: 5.5rem;
+        max-height: 5rem;
     }
-
-
+    .button.toggle-button {
+        padding: 0px;
+    }
 
 }
