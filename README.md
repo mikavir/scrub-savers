@@ -38,7 +38,6 @@ Ensuring that the typography is consistent with other healthcare websites is vit
 
 - As a Shopper, I want to be able to view a list of products so that I can select items to purchase.
 - As a Shopper, I want to be able to view individual product details so that I can identify the price, description, and product details.
-- As a Shopper, I want to quickly identify deals, clearance items, and special offers so that I can take advantage of special savings on - products I'd like to purchase.
 - As a Shopper, I want to easily view the total of my purchases at any time so that I can avoid overspending.
 
 ### Registration and User Authentication
@@ -53,17 +52,12 @@ Ensuring that the typography is consistent with other healthcare websites is vit
 ### Sorting and Searching
 
 - As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products.
-- As a Shopper, I want to sort a specific category of products so that I can find the best-priced or best-rated products in that category or sort them by name.
-- As a Shopper, I want to sort multiple categories or products simultaneously so that I can find the best-priced or best-rated products across broad categories, such as clothing or medical items.
 - As a Shopper, I want to search for a product by name or description so that I can find the specific product I want to purchase.
-- As a Shopper, I want to easily view what I have searched for and the number of results so that I can quickly identify if the product I'm searching for is available.
 
 ### Purchasing and Checkout
 
 - As a Shopper, I want to easily select the size and quantity of a product when purchasing it so that I don't accidentally select the wrong size.
-- As a Shopper, I want to view items in my bag to be purchased so that I can identify the total cost of the items I'm purchasing.
 - As a Shopper, I want to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.
-- As a Shopper, I want to easily enter my payment information so that I can checkout quickly.
 - As a Shopper, I want to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
 - As a Shopper, I want to receive an email confirmation after my purchase so that I have a record of my purchase.
 
@@ -77,7 +71,6 @@ Ensuring that the typography is consistent with other healthcare websites is vit
 ### Contact and Questions
 
 - As a Shopper, I want to see contact information so that I can feel safe knowing that I can contact someone to remedy any mistakes.
-- As a Shopper, I want to see questions and answers so that I can understand more about what happens during my purchase.
 - As a Shopper, I want to see reviews so that I can understand the quality of the product I'm buying.
 - As a Store Owner, I want to be contacted so that I can improve customer loyalty and understand if there are improvements to be made.
 
