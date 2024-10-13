@@ -467,7 +467,6 @@ input[type=radio]:checked + i {
 }
 
 @media (max-width: 600px) {
-
         
     #hero-image {
         background-position: left;
@@ -482,7 +481,6 @@ input[type=radio]:checked + i {
         padding: 0px;
         font-size: 15px;
     }
-
 }
 
 
