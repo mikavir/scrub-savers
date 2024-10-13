@@ -291,28 +291,28 @@ The aforementioned tests are just an example of a few different project scenario
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a Shopper, I want to be able to view a list of products so that I can select items to purchase. | ![screenshot](documentation/features/feature06.png) |
+| As a Shopper, I want to be able to view individual product details so that I can identify the price, description, and product details. | ![screenshot](documentation/features/feature23.png) |
+| As a Shopper, I want to easily view the total of my purchases at any time so that I can avoid overspending. | ![screenshot](documentation/features/feature17.png) |
+| As a Shopper, I want to easily register for an account so that I can have a personal account to view my purchase history. | ![screenshot](documentation/features/feature13.png) |
+| As a Shopper, I want to easily log in to my account so that I can keep track of my purchase history.| ![screenshot](documentation/features/feature12.png) |
+| As a Shopper, I want to easily log out of my account so that my account is secure when using a public device. | ![screenshot](documentation/features/feature11.png) |
+| As a Shopper, I want to have a personalized user profile so that I can view my purchase history, order confirmations, and save my payment history. | ![screenshot](documentation/features/feature08.png) |
+| As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products. | ![screenshot](documentation/features/feature06.png) |
+|  As a Shopper, I want to search for a product by name or description so that I can find the specific product I want to purchase. | ![screenshot](documentation/features/feature07.png) |
+| As a Shopper, I want to easily select the size and quantity of a product when purchasing it so that I don't accidentally select the wrong size. |![screenshot](documentation/features/feature24.png)  |
+|  As a Shopper, I want to view an order confirmation after checkout so that I can verify that I haven't made any mistakes. | ![screenshot](documentation/features/feature25.png)|
+|  As a Shopper, I want to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout. | ![screenshot](documentation/features/feature27.png)|
+|  As a Shopper, I want to receive an email confirmation after my purchase so that I have a record of my purchase. | ![screenshot](documentation/features/feature26.PNG)| |
+|  As a Store Owner, I want to add a product so that I can add new items to my store. | ![screenshot](documentation/features/feature20.png)| |
+|  As a Store Owner, I want to edit a product so that I can change the product information easily. | ![screenshot](documentation/features/feature21.png) |
+|  As a Store Owner, I want to delete a product so that I can remove items that are no longer for sale. |  ![screenshot](documentation/features/feature21.png)|
+|  As a Store Owner, I want to have a logo so that I can improve my brand identity.| ![screenshot](documentation/features/feature28.png) |
+|  As a Shopper, I want to see contact information so that I can feel safe knowing that I can contact someone to remedy any mistakes.| ![screenshot](documentation/features/feature05.png) |
+|  As a Shopper, I want to see reviews so that I can understand the quality of the product I'm buying.| ![screenshot](documentation/features/feature15.png) |
+|  As a Store Owner, I want to be contacted so that I can improve customer loyalty and understand if there are improvements to be made.|![screenshot](documentation/features/feature14.png)|
 
 ## Automated Testing
 
