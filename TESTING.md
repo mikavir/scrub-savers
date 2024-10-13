@@ -16,7 +16,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | --- | --- | --- | --- |
 | bag | bag.html | ![screenshot](documentation/validation/w3c/bag-w3c.png) | |
 | checkout | checkout.html | ![screenshot](documentation/validation/w3c/checkout-w3c.png) | |
-| checkout | checkout_success.html | ![screenshot](documentation/validation/w3c/checkout-success-w3c.png-w3) | |
+| checkout | checkout_success.html | ![screenshot](documentation/validation/w3c/checkout_success-w3c.png) | |
 | contact | contact.html | ![screenshot](documentation/validation/w3c/contact-w3c.png) | |
 | contact | success.html | ![screenshot](documentation/validation/w3c/contact-success-w3c.png) | |
 | home | index.html | ![screenshot](documentation/validation/w3c/index-w3c.png) | |
@@ -94,44 +94,28 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | scrub_savers | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/mikavir/scrub-savers/main/scrub_savers/views.py) | ![screenshot](documentation/validation/python/views-python.png) | No errors |
 
 ## Browser Compatibility
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing AT LEAST 3 different browsers, if available on your system.
-
-You DO NOT need to use all of the browsers below, just pick any 3 (minimum).
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | About | Contact | etc | Notes |
+| Browser | Bag | Checkout | Checkout-success | Contact | 404 |  Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browsers/chrome/chrome-bag.png) | ![screenshot](documentation/browsers/chrome/chrome-checkout-1.png) ![screenshot](documentation/browsers/chrome/chrome-checkout-2.png)| ![screenshot](documentation/browsers/chrome/chrome-checkout-success.png) | ![screenshot](documentation/browsers/chrome/chrome-contact.png) |  ![screenshot](documentation/browsers/chrome/chrome-404.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/firefox/firefox-bag.png) | ![screenshot](documentation/browsers/firefox/firefox-checkout-1.png) [screenshot](documentation/browsers/firefox/firefox-checkout-2.png)| ![screenshot](documentation/browsers/firefox/firefox-checkout-success.png) | ![screenshot](documentation/browsers/firefox/firefox-contact.png) | ![screenshot](documentation/browsers/firefox/firefox-404.png) | Works as expected |
+| Safari | ![screenshot](documentation/browsers/safari/safari-bag.png) | ![screenshot](documentation/browsers/safari/safari-checkout-1.png) ![screenshot](documentation/browsers/safari/safari-checkout-2.png)| ![screenshot](documentation/browsers/safari/safari-checkout-success.png) | ![screenshot](documentation/browsers/safari/safari-contact.png) | ![screenshot](documentation/browsers/safari/safari-404.png) | Works as expected |
+
+
+| Browser | Contact-success | Home | Add Product | Edit Product | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browsers/browser-brave-home.png) | ![screenshot](documentation/browsers/browser-brave-about.png) | ![screenshot](documentation/browsers/browser-brave-contact.png) | ![screenshot](documentation/browsers/browser-brave-etc.png) | Works as expected |
-| Opera | ![screenshot](documentation/browsers/browser-opera-home.png) | ![screenshot](documentation/browsers/browser-opera-about.png) | ![screenshot](documentation/browsers/browser-opera-contact.png) | ![screenshot](documentation/browsers/browser-opera-etc.png) | Minor differences |
-| repeat for any other tested browsers | x | x | x | x | x |
+| Chrome | ![screenshot](documentation/browsers/chrome/chrome-contact-success.png) | ![screenshot](documentation/browsers/chrome/chrome-home-1.png) ![screenshot](documentation/browsers/chrome/chrome-home-2.png) ![screenshot](documentation/browsers/chrome/chrome-home-3.png) | ![screenshot](documentation/browsers/chrome/chrome-add-product-1.png) ![screenshot](documentation/browsers/chrome/chrome-add-product-2.png)| ![screenshot](documentation/browsers/chrome/chrome-edit-product-1.png) ![screenshot](documentation/browsers/chrome/chrome-edit-product-2.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/firefox/firefox-contact-success.png) | ![screenshot](documentation/browsers/firefox/firefox-home-1.png) ![screenshot](documentation/browsers/firefox/firefox-home-2.png) ![screenshot](documentation/browsers/firefox/firefox-home-3.png)| ![screenshot](documentation/browsers/firefox/firefox-add-product-1.png) ![screenshot](documentation/browsers/firefox/firefox-add-product-2.png) | ![screenshot](documentation/browsers/firefox/firefox-edit-product-1.png) ![screenshot](documentation/browsers/firefox/firefox-edit-product-1.png) | Works as expected |
+| Safari | ![screenshot](documentation/browsers/safari/safari-contact-success.png) | ![screenshot](documentation/browsers/safari/safari-home-1.png) ![screenshot](documentation/browsers/safari/safari-home-2.png) ![screenshot](documentation/browsers/safari/safari-home-3.png)| ![screenshot](documentation/browsers/safari/safari-add-product.png) ![screenshot](documentation/browsers/safari/safari-add-product-2.png) |![screenshot](documentation/browsers/safari/safari-edit-product.png) ![screenshot](documentation/browsers/safari/safari-edit-product-2.png)  | Works as expected |
+
+
+| Browser | Product Detail | Products | Profiles | Add Review | Edit Reviews | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browsers/chrome/chrome-product-detail.png) | ![screenshot](documentation/browsers/chrome/chrome-products.png) | ![screenshot](documentation/browsers/chrome/chrome-profile.png) | ![screenshot](documentation/browsers/chrome/chrome-add-review.png) | ![screenshot](documentation/browsers/chrome/chrome-edit-review.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/firefox/firefox-product-detail.png) | ![screenshot](documentation/browsers/firefox/firefox-products.png) | ![screenshot](documentation/browsers/firefox/firefox-profile.png) | ![screenshot](documentation/browsers/firefox/firefox-add-review.png) | ![screenshot](documentation/browsers/firefox/firefox-edit-review.png) | Works as expected |
+| Safari | ![screenshot](documentation/browsers/safari/safari-product-detail.png) | ![screenshot](documentation/browsers/safari/safari-products.png) | ![screenshot](documentation/browsers/safari/safari-profiles.png) | ![screenshot](documentation/browsers/safari/safari-add-review.png) |  ![screenshot](documentation/browsers/safari/safari-edit-review.png) | Works as expected |
+
 
 ## Responsiveness
 
