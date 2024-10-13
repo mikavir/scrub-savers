@@ -518,8 +518,8 @@ input[type=radio]:checked + i {
     .logo {
         max-height: 5rem;
     }
-    .button.toggle-button {
+    .toggle-button {
         padding: 0px;
     }
-
+    
 }
