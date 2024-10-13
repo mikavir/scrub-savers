@@ -144,32 +144,26 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 
 ## Lighthouse Audit
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| bag |![screenshot](documentation/lighthouse/mobile/mobile-bag.png) | ![screenshot](documentation/lighthouse/desktop/desktop-bag.png) | mobile: Improvements to be made to serve images in a next gen format: unable to change this as cloudinary render the images.|
+| checkout | ![screenshot](documentation/lighthouse/mobile/mobile-checkout.png) | ![screenshot](documentation/lighthouse/desktop/desktop-checkout.png) | mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend|
+| checkout success |  ![screenshot](documentation/lighthouse/mobile/mobile-checkout-success.png) | ![screenshot](documentation/lighthouse/desktop/desktop-checkout-sucess.png) | mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend|
+| contact |  ![screenshot](documentation/lighthouse/mobile/mobile-contact.png) |  ![screenshot](documentation/lighthouse/desktop/desktop-contact.png) |  No major warnings |
+| contact success| ![screenshot](documentation/lighthouse/mobile/mobile-contact-success.png) |  ![screenshot](documentation/lighthouse/desktop/desktop-contact-success.png) | No major warnings|
+| home | ![screenshot](documentation/lighthouse/mobile/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop/desktop-home.png)| mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend |
+| Add Product Page| ![screenshot](documentation/lighthouse/mobile/mobile-add-product.png) | ![screenshot](documentation/lighthouse/desktop/desktop-add-product.png) | |
+| Edit Product | ![screenshot](documentation/lighthouse/mobile/mobile-edit-product.png) | ![screenshot](documentation/lighthouse/desktop/desktop-edit-product.png) | Affected accessibility due to not having labels with crispy forms |
+| Product Detail | ![screenshot](documentation/lighthouse/mobile/mobile-product-detail.png) | ![screenshot](documentation/lighthouse/desktop/desktop-product-detail.png) | Accessbility to be imr=proved due to no labels to forms |
+| products | ![screenshot](documentation/lighthouse/mobile/mobile-products.png) | ![screenshot](documentation/lighthouse/desktop/desktop-products.png) | Accessbility due to select |
+| profiles | ![screenshot](documentation/lighthouse/mobile/mobile-profile.png) | ![screenshot](documentation/lighthouse/desktop/desktop-profile.png) | No major warnings|
+| Add review | ![screenshot](documentation/lighthouse/mobile/mobile-add-review.png) | ![screenshot](documentation/lighthouse/desktop/desktop-add-review.png) | No major warning |
+| Edit Review | ![screenshot](documentation/lighthouse/mobile/mobile-edit-review.png)| ![screenshot](documentation/lighthouse/desktop/desktop-edit-review.png) | No major warnings |
+
 
 ## Defensive Programming
 
