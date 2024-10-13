@@ -12,11 +12,13 @@ html {
 .bg-cream {
     background-color: #fff9F0;
 }
+
 h1,h2,h3,h4, h5, p {
     font-family: "Montserrat", sans-serif;
 
 
 }
+
 .heading {
     font-family: "Lora", serif;
 }
@@ -25,13 +27,16 @@ h1,h2,h3,h4, h5, p {
     color:#081F5c;
     font-family: "Montserrat", sans-serif;
 }
+
 .btn-blue {
     background-color: #081F5c;
     color: #fff9F0;
 }
+
 .text-primary {
     font-family: "Montserrat", sans-serif;
 }
+
 .text-secondary {
     font-family: "Lora", serif;
 }
@@ -48,6 +53,7 @@ h1,h2,h3,h4, h5, p {
     border-radius: 15px;
     border: 1px #081F5c solid;
 }
+
 /*  NAVIGATION BAR */
 .sort-nav {
     padding: 5px;
@@ -57,10 +63,6 @@ h1,h2,h3,h4, h5, p {
     max-height: 7rem;
 }
 
-/* .nav-icon {
-    color: #7096D1;
-    font-family: "Montserrat", sans-serif;
-} */
 
 .nav-link {
     font-family: "Montserrat", sans-serif;
@@ -100,16 +102,12 @@ h1,h2,h3,h4, h5, p {
     background-color: #fff9F0;
 }
 
-
-
-
 .account-dropdown-menu, .nav-dropdown-menu{
     background-color: #081F5c;
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
 
 }
-
 
 .account-dropdown, .nav-dropdown {
     color: #fff9f0;
@@ -125,6 +123,8 @@ h1,h2,h3,h4, h5, p {
     border: none;
     background-color: #fff9f0;
 }
+
+
 /*  DELIVERY BANNER */
 
 #delivery-banner {
@@ -137,6 +137,8 @@ h1,h2,h3,h4, h5, p {
     text-transform: uppercase;
     color:#081F5c;
 }
+
+
 /* FOOTER */
 
 footer {
@@ -147,8 +149,6 @@ ul.social-media-icons {
     padding-inline-start: 0px;  
 }
 
-
-  
 .social-media-icons li {
 list-style: none;
 display: inline-block;
@@ -158,9 +158,9 @@ margin: 10px;
 .social-media-icons i {
 color: #081F5c;
 font-size: 30px;
-  }
-/*  HOME PAGE  */
+}
 
+/*  HOME PAGE  */
 
 #hero-image {
     width: 100%;
@@ -233,7 +233,7 @@ font-size: 30px;
     border-radius: 50%;
  }
 
- .colour-black {
+.colour-black {
     height: 2rem;
     width: 2rem;
     border: 1px black solid;
@@ -241,7 +241,7 @@ font-size: 30px;
     border-radius: 50%;
  }
 
- .colour-green {
+.colour-green {
     height: 2rem;
     width: 2rem;
     border: 1px green solid;
@@ -249,7 +249,7 @@ font-size: 30px;
     border-radius: 50%;
  }
 
- .colour-purple {
+.colour-purple {
     height: 2rem;
     width: 2rem;
     border: 1px purple solid;
@@ -257,25 +257,25 @@ font-size: 30px;
     border-radius: 50%;
  }
 
- .colour-pink {
+.colour-pink {
     height: 2rem;
     width: 2rem;
     border: 1px pink solid;
     background-color: pink;
     border-radius: 50%;
- }
+}
 
- .colour-white {
+.colour-white {
     height: 2rem;
     width: 2rem;
     border: 1px black solid;
     background-color: white;
     border-radius: 50%;
- }
+}
 
 .custom-select {
     font-family: "Montserrat", sans-serif;
- }
+}
 
 
 .review-container {
@@ -290,6 +290,7 @@ font-size: 30px;
     padding: 1rem;
     background-color: #f7F2EB;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -330,6 +331,7 @@ font-size: 30px;
 .text-cream {
     color:#fff9F0;
 }
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -338,15 +340,6 @@ font-size: 30px;
     background: #000 !important;
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}
 
 .btt-button {
     height: 42px;
@@ -362,15 +355,18 @@ font-size: 30px;
 .remove-item {
     cursor: pointer;
 }
+
 .btn-red {
     background-color: red;
     color: #f7F2EB;
 }
+
 .btn-red:hover {
    border: red 1px solid;
    background-color: #f7F2EB;
    color: red;
 }
+
 /* ------------------------------- bootstrap toasts */
 .toast-font {
     font-size: 90%;
@@ -391,7 +387,7 @@ font-size: 30px;
     height: 2px;
 }
 
-
+/* FORMS */
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -434,6 +430,7 @@ input[type=radio]:checked + i {
 .rating-stars .fa-star.gold {
     color: gold;
 }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -460,8 +457,6 @@ input[type=radio]:checked + i {
         background-color: rgba(247, 242, 235, 0.7);
         padding: 10px;
     }
-
-
 }
 
 @media (max-width: 800px) {
@@ -470,8 +465,6 @@ input[type=radio]:checked + i {
         padding: 10px;
     }
 }
-
-
 
 @media (max-width: 600px) {
 
