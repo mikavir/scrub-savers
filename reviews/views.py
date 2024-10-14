@@ -37,22 +37,22 @@ def add_review(request, product_id):
     if request.method == 'POST':
         if request.user.is_authenticated:
             form = ProductReviewForm(request.POST)
-            
             # Get the rating value from the POST data
             rating = request.POST.get('rating')
-
-            if form.is_valid() and rating:  # Check if the form is valid and rating is selected
+            # Check if the form is valid and rating is selected
+            if form.is_valid() and rating:
                 # Save review but don't commit to the database yet
                 instance = form.save(commit=False)
-                
                 # Attach product, rating, and user profile
                 instance.product = product
-                instance.rating = rating  # Set the rating from the custom stars
-                instance.user_profile = UserProfile.objects.get(user=request.user)
-                
+                # Set the rating from the custom stars
+                instance.rating = rating
+                instance.user_profile = UserProfile.objects.get(
+                    user=request.user
+                    )
                 # Save the instance
                 instance.save()
-                
+
                 # Success message
                 messages.success(request, 'Successfully added review')
                 return redirect('product_detail', product_id)
@@ -60,7 +60,7 @@ def add_review(request, product_id):
                 # Handle form validation failure
                 messages.error(
                     request,
-                    'Failed to add review. Please ensure the form is valid and a rating is selected.'
+                    'Failed to add review. Please ensure the form is valid and a rating is selected.'  # noqa
                 )
     else:
         form = ProductReviewForm()

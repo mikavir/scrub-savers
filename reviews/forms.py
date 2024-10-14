@@ -6,6 +6,7 @@ class ProductReviewForm(forms.ModelForm):
     class Meta:
         model = ProductReview
         exclude = ('product', 'user_profile', 'rating')
+
         def clean_rating(self):
             rating = self.cleaned_data.get('rating')
             if not rating:
