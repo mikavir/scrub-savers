@@ -44,10 +44,10 @@
                         <div class="rating-stars">
                             {% spaceless %}
                                 {% for star in "12345"|make_list %}
-                                    <label for="id_rating_{{forloop.counter}}">
-                                        <input class="d-none" type="radio" name="rating" id="id_rating_{{forloop.counter}}" value="{{forloop.counter}}">
-                                        <i class="fa-solid fa-star fw-lg fs-1"></i>
-                                    </label>
+                                <label for="id_rating_{{ forloop.counter }}">
+                                    <input class="d-none" type="radio" name="rating" id="id_rating_{{ forloop.counter }}" value="{{ forloop.counter }}">
+                                    <i class="fa-solid fa-star fw-lg fs-1"></i>
+                                </label>
                                 {% endfor %}
                             {% endspaceless %}
                         </div>
@@ -70,6 +70,7 @@
 
 {% endblock %}
 {% block postloadjs %}
+{{ block.super }}
 <script>
     $(document).ready(function () {
       $("input[name='rating']").on("change", function () {

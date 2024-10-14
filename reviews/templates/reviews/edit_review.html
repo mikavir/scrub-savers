@@ -70,6 +70,7 @@
 
 {% endblock %}
 {% block postloadjs %}
+{{ block.super }}
 <script>
     $(document).ready(function () {
         function highlightStars(selectedValue){
