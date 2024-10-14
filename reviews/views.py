@@ -58,7 +58,6 @@ def add_review(request, product_id):
                 return redirect('product_detail', product_id)
             else:
                 # Handle form validation failure
-                print("I failed")
                 messages.error(
                     request,
                     'Failed to add review. Please ensure the form is valid and a rating is selected.'
