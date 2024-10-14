@@ -413,11 +413,27 @@ When testing the views for the reviews section, I faced challenges in simulating
 - The delete modal was deleting the wrong product. For example, when clicking the delete button for the product "Crocs," the modal incorrectly pointed to "Trousers" instead. After debugging, I discovered that the issue was caused by the product IDs not being unique in the modal, leading to mismatches between the clicked item and the product shown in the modal.
 
     ![screenshot](documentation/bugs/bug-4.png)
-    
+
 To resolve this, I ensured that each product ID was made unique.
 
+- Empty Rating Causes Database Error: When a user submits the form to add a review without selecting a rating, it results in a database error due to the None value being submitted. This issue arose because the form validation was not triggered effectively, as the rating field was not generated using Crispy Forms.
 
+    ![screenshot](documentation/bugs/bug-4.png)
 
+To resolve this issue, I implemented validation for the rating field in forms.py by adding a custom validation method within the ProductReviewForm class:
+```python
+        def clean_rating(self):
+            rating = self.cleaned_data.get('rating')
+            if not rating:
+                raise forms.ValidationError("Please select a rating.")
+            return rating
+```
+I have also implemented additional defensive programming to ensure the form is only submitted if the rating is valid. The updated code checks both the form's validity and whether a rating has been selected:
+
+```python
+    rating = request.POST.get('rating')
+    if form.is_valid() and rating:  # Check if the form is valid and rating is selected
+```
 
 ## Unfixed Bugs
 > [!NOTE]  
