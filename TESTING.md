@@ -367,88 +367,58 @@ To test the "Add Product" views, I first needed to create a superuser. The test 
 When testing the views for the reviews section, I faced challenges in simulating a logged-in user who both purchases a product and submits a review. This process was similar to testing the checkout section, where a bag of products is required to proceed.
 ## Bugs
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+## Fixed bugs
+- Internal sever error due to sample being negative.
 
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
+    ![screenshot](documentation/bugs/bug-1.png)
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
+    - The original code in the home views attempts to render 4 randomly recommended items, but this causes an error when there are fewer than 4 products available.
+    *original code:*
+    `products = random.sample(products, 4)`
+    To fix this, I added a condition to only sample the products if there are more than 4 available:
+    *fixed code*
+    ```python
+        if len(products) > 4:
+        products = random.sample(products, 4)
+    ```
 
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
+- Anonymous user is not iterable
+    ![screenshot](documentation/bugs/bug-2.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+    - When an unsigned user attempts to make a purchase, they encounter an internal server error (500) during the checkout success process. This error occurs because the code tries to iterate through an AnonymousUser, which does not have an associated profile.
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+    To resolve this, I added a condition to check if the user is signed in before attempting to retrieve their profile.
 
-    ![screenshot](documentation/bugs/bug01.png)
+    ```python
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        # Attach the user's profile to the order
+        order.user_profile = profile
+        order.save()
+    ```
+- Static files was not being collected to staticfiles with deployment.
+    ![screenshot](documentation/bugs/bug-3.png)
 
-    - To fix this, I _____________________.
+    -After configuring Whitenoise to serve static files, we were unable to collect them into the staticfiles directory. Manually copying static files into the directory didn't resolve the issue, as it failed to include static files from other apps. As a result, critical files like stripe.js were missing, which prevented payments from working during checkout.
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+    The issue was caused by the incorrect order of apps in the INSTALLED_APPS setting—specifically, `django.contrib.staticfiles` was placed below `Cloudinary`. To fix this, I reordered the apps, ensuring `django.contrib.staticfiles` is listed above `Cloudinary`.
+    ```python
+    INSTALLED_APPS = [
+        '...',
+        'django.contrib.staticfiles',
+        'cloudinary_storage',
+        'cloudinary',
+    ]
+    ```
+- The delete modal was deleting the wrong product. For example, when clicking the delete button for the product "Crocs," the modal incorrectly pointed to "Trousers" instead. After debugging, I discovered that the issue was caused by the product IDs not being unique in the modal, leading to mismatches between the clicked item and the product shown in the modal.
 
-    ![screenshot](documentation/bugs/bug02.png)
+    ![screenshot](documentation/bugs/bug-4.png)
+    
+To resolve this, I ensured that each product ID was made unique.
 
-    - To fix this, I _____________________.
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
 
-    ![screenshot](documentation/bugs/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
 
 ## Unfixed Bugs
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
-
-Some examples:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/bugs/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/bugs/unfixed-bug02.png)
-
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/bugs/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 > [!NOTE]  
 > There are no remaining bugs that I am aware of.
