@@ -728,8 +728,7 @@ Sample `env.py` file:
 ```python
 import os
 
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
+
 os.environ.setdefault("DATABASE_URL", "user's own value")
 os.environ.setdefault("EMAIL_HOST_PASS", "user's own value")
 os.environ.setdefault("EMAIL_HOST_USER", "user's own value")
@@ -741,6 +740,7 @@ os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
+os.envirpn.setdefault("DEVELOPNENT", "1")
 ```
 
 Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
@@ -831,7 +831,7 @@ There is no difference between the local version and the deployed version.
 | [Medisave](https://www.medisave.co.uk/products/littmann-classic-iii-monitoring-stethoscope-champagne-rose-5910c) | Product | image | Product Image |
 | [Medisave](https://www.medisave.co.uk/products/3m-littmann-core-digital-stethoscope-black) | Product | image | Product Image |
 | [Sketchers](https://www.skechers.co.uk/skechers-slip-ins-waterproof-summits---best-choice/150199_BKLB.html) | Product | image | Product Image |
-| [Freepik](hhttps://www.freepik.com/free-photo/enthusiastic-doctor-woman-rejoicing-winning-celebrating-achieve-goal-standing-white-coat-agai_34232083.htm#fromView=search&page=3&position=3&uuid=6387a032-3b30-4d83-b19d-4c9d1ce527c1) | Home | image | hero image |
+| [Freepik](https://www.freepik.com/free-photo/enthusiastic-doctor-woman-rejoicing-winning-celebrating-achieve-goal-standing-white-coat-agai_34232083.htm#fromView=search&page=3&position=3&uuid=6387a032-3b30-4d83-b19d-4c9d1ce527c1) | Home | image | hero image |
 | [Freepik](https://www.freepik.com/free-photo/medical-workers-healthcare-covid19-vaccination-concept-surprised-excited-female-nurse-doctor-blue-scrubs-with-stethoscope-show-thumbsup-approval-like-idea-smiling-upbeat_24764341.htm#fromView=search&page=27&position=10&uuid=f8dddf95-a5ff-4d1a-aedb-4230a8cea1b7) | Home | image | Hero image |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
