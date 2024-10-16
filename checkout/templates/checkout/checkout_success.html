@@ -11,8 +11,9 @@
 
 {% block content %}
 
-<div class="container-fluid bg-cream">
+<main class="container-fluid bg-cream">
     <div class="row text-center">
+        <!-- THANK YOU MESSAGE -->
         <div class="col">
             <hr>
             <h2 class="logo-font mb-4 text-blue">Thank You</h2>
@@ -22,7 +23,7 @@
             </p>
         </div>
     </div>
-
+    <!-- ORDER INFORMATION -->
     <div class="row">
         <div class="col-12 col-lg-7 mx-auto">
             <div class="order-confirmation-wrapper p-3">
@@ -69,6 +70,7 @@
                     </div>
                 </div>
                 {% endfor %}
+                <!-- ORDER ADDRESS -->
 
                 <div class="row">
                     <div class="col">
@@ -159,6 +161,7 @@
                         <small class="text-muted text-secondary">Billing Info:</small>
                     </div>
                 </div>
+                <!-- ORDER TOTAL -->
 
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -189,6 +192,7 @@
             </div>
         </div>
     </div>
+    <!-- BUTTONS -->
     <div class="row">
         <div class="col-12 col-lg-7 mx-auto text-right">
             {% if from_profile %}
@@ -208,6 +212,6 @@
             {% endif %}
         </div>
     </div>
-</div>
+</main>
 
 {% endblock %}

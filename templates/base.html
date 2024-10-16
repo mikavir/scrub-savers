@@ -15,8 +15,10 @@
     {% endblock %}
 
     {% block corecss %}
+    <!-- BOOTSTRAP CDN CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- BASE CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -24,12 +26,15 @@
     {% endblock %}
 
     {% block corejs %}
+    <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/61cd806bb5.js" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CDN JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
@@ -47,13 +52,16 @@
 </head>
 
 <body>
+    <!-- NAV BAR FOR DESKTOP -->
     <header class="container-fluid">
+        <!-- LOGO -->
         <div id="topnav" class="row d-none d-md-flex">
             <div class="col-2 mx-auto text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <img class="logo" src="{% static 'images/logo/scrub-savers-logo.png' %}" alt="logo">
                 </a>
             </div>
+            <!-- SEARCH BAR -->
             <div class="col-10 my-auto text-right">
                 <ul class="list-inline list-unstyled text-lg-right">
                     <li class="list-inline-item">
@@ -74,6 +82,7 @@
                         </form>
 
                     </li>
+                    <!-- Account Icon -->
                     <li class="list-inline-item dropdown p-0">
                         <a class="nav-icon nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -96,6 +105,7 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Bag Icon -->
                     <li class="list-inline-item p-0">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}{% endif %} nav-link nav-icon"
                             href="{% url 'view_bag' %}">
@@ -115,6 +125,7 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
         </div>
+        <!-- MOBILE NAV -->
         <div class="row mobile-nav">
 
             <div class="col px-0">
@@ -124,6 +135,7 @@
                 </nav>
             </div>
         </div>
+        <!-- DELIVERY BANNER -->
         <div id="delivery-banner" class="row text-center">
             <div class="col-12">
                 <h4 class="delivery-banner-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
@@ -131,6 +143,7 @@
             </div>
         </div>
     </header>
+    <!-- TOASTS -->
 
     {% if messages %}
     <div class="message-container">
@@ -153,9 +166,10 @@
 
     {% block page_header %}
     {% endblock %}
-
+    <!-- MAIN -->
     {% block content %}
     {% endblock %}
+    <!-- FOOTER -->
     <footer class="container-fluid footer-section text-center">
         <div class="row">
             <div class="col-12 col-md-3 text-center text-md-left">
@@ -203,6 +217,7 @@
                     </ul>
                     
                 </div>
+                <!-- FOOTER NAVIGATION -->
                 <div class="d-block">
                     <ul class="nav justify-content-center justify-content-md-end">
                         <li class="nav-item"><a href="{% url 'home' %}"

@@ -7,7 +7,8 @@
 
 {% block content %}
 
-<div class="container-fluid bg-cream">
+<main class="container-fluid bg-cream">
+    <!-- HEADER TITLE -->
     <div class="row">
         <div class="col-12 text-center">
             <hr>
@@ -16,7 +17,7 @@
             <hr>
         </div>
     </div>
-
+    <!-- ADD PRODUCT FORM -->
     <div class="row">
         <div class="col-12 col-md-8 mx-auto">
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
@@ -35,7 +36,7 @@
             </form>
         </div>
     </div>
-</div>
+</main>
 {% endblock %}
 
 {% block postloadjs %}
