@@ -297,8 +297,16 @@ To test the "Add Product" views, I first needed to create a superuser. The test 
 ```
 When testing the views for the reviews section, I faced challenges in simulating a logged-in user who both purchases a product and submits a review. This process was similar to testing the checkout section, where a bag of products is required to proceed.
 ## Bugs
+### GitHub **Issues**
 
-## Fixed bugs
+**Fixed Bugs**
+
+[![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3Amikavir%2Fscrub-savers%20label%3Abug&label=bugs)](https://github.com/mikavir/scrub-savers/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
+
+All previously closed/fixed bugs can be tracked [here](https://github.com/mikavir/scrub-savers/issues?q=is%3Aissue+is%3Aclosed+label%3Abug).
+
+![screenshot](documentation/fixed-bug-issues.png)
+
 - Internal sever error due to sample being negative.
 
     ![screenshot](documentation/bugs/bug-1.png)
@@ -367,9 +375,28 @@ I have also implemented additional defensive programming to ensure the form is o
     if form.is_valid() and rating:  # Check if the form is valid and rating is selected
 ```
 
-## Unfixed Bugs
-- User can bruteforce an URL of another user's checkout-success/ order confirmation if they know the URL. 
+**Open Issues**
+
+[![GitHub issues](https://img.shields.io/github/issues/mikavir/scrub-savers)](https://github.com/mikavir/scrub-savers/issues)
+
+![screenshot](documentation/open-issues.png)
+
+**Closed Issues**
+
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/mikavir/scrub-savers)](https://github.com/mikavir/scrub-savers/issues?q=is%3Aissue+is%3Aclosed)
+
+Any remaining open issues can be tracked [here](https://github.com/mikavir/scrub-savers/issues).
+
+![screenshot](documentation/closed-issues.png)
+
+### Unfixed Bugs
+
+- User can brute-force an URL of another user's checkout-success/ order confirmation if they know the URL. 
 
     ![gif](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif)
 
 - I have been exploring solutions to prevent this issue, but they would involve restricting unsigned users from purchasing products. This is a known vulnerability, as noted in the Code Institute's Boutique Ado walkthrough. Additionally, the links are highly unique, making it unlikely that users would remember the exact URL.
+
+
+> [!NOTE]
+> There are no remaining bugs that I am aware of.
