@@ -306,6 +306,33 @@ Contact
 
   ![screenshot](documentation/features/feature19.png)
 
+- **Edit/Delete Review**
+  - This feature gives users full control over their reviews, allowing them to update or remove their feedback as needed for greater accuracy and flexibility.
+
+  ![screenshot](documentation/features/feature22.png)
+
+- **Product Detail page**
+  - This feature provides users with detailed information about the product, including its description, price, and customer reviews. This helps users make informed purchasing decisions
+
+  ![screenshot](documentation/features/feature23.png)
+
+- **Adjust size and quantity**
+  - This feature allows users to easily adjust the size and quantity of items directly on the product detail page, providing a seamless and personalized shopping experience for greater convenience.
+
+  ![screenshot](documentation/features/feature24.png)
+
+- **Order confirmation email**
+  - This feature ensures users receive order confirmation details directly in their email, allowing them to easily track and reference their purchase at any time.
+![screenshot](documentation/features/feature26.PNG)
+
+- **Adjust quantity**
+  - This feature allows users to easily make last-minute adjustments to the quantity of products on the checkout page, enhancing their shopping experience with added flexibility and convenience.
+![screenshot](documentation/features/feature27.png)
+
+- **Logo**
+  - Having a logo establishes a strong brand identity for Scrubs Savers, enhancing customer recognition and recall of the site. The inclusion of a stethoscope in the logo creates a clear association with medical equipment, perfectly aligning with the brand’s focus on e-commerce for medical supplies.
+![screenshot](documentation/features/feature28.png)
+
 - **Product Management**
   - **Add Product**
     - This page allows administrators to efficiently add new products to the ScrubSavers inventory.
