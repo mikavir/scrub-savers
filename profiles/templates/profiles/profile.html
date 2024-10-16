@@ -59,6 +59,7 @@
                                                     {% if item.product.has_sizes %}
                                                         Size {{ item.product.size|upper }}
                                                     {% endif %}{{ item.product.name }} x{{ item.quantity }}
+                                                    <a href="{% url 'product_detail' item.product.id %}" class="btn btn-sm btn-blue mobile-font"><small>Review</small></a>
                                                 </li>
                                             {% endfor %}
                                         </ul>
