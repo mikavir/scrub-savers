@@ -201,26 +201,26 @@ Contact
 
 - **Hero Callout and button**
 
-    - The Hero Callout and button on the ScrubSavers home page immediately capture users' attention with striking visuals of medical professionals, reinforcing its identity as a site for healthcare workers while providing engaging messages and seamless navigation to the products page.
+    - The hero callout and button on the ScrubSavers home page immediately capture users' attention with striking visuals of medical professionals, reinforcing its identity as a site for healthcare workers while providing engaging messages and seamless navigation to the products page.
 
 ![screenshot](documentation/features/feature02.png)
 
 - **Recommendations**
 
-    - The Recommendations feature on ScrubSavers offers randomized product suggestions, enhancing user engagement and discovery while providing a unique shopping experience each time they visit the site.
+    - The recommendations feature on ScrubSavers offers randomized product suggestions, enhancing user engagement and discovery while providing a unique shopping experience each time they visit the site.
 
 ![screenshot](documentation/features/feature03.png)
 
 - **Hero review**
 
-    - The Hero Review feature showcases a top customer testimonial on the ScrubSavers home page, building trust and credibility while encouraging new users to make purchases.
+    - The hero review feature showcases a top customer testimonial on the ScrubSavers home page, building trust and credibility while encouraging new users to make purchases.
 
 ![screenshot](documentation/features/feature04.png)
 
 
 - **Footer and social media icons**
 
-    - The Footer and Social Media Icons offer quick access to essential site links and social media profiles, enhancing navigation and providing a sense of security for customers by facilitating easy contact, ultimately improving the brand image.
+    - The footer and social media icons offer quick access to essential site links and social media profiles, enhancing navigation and providing a sense of security for customers by facilitating easy contact, ultimately improving the brand image.
 
 ![screenshot](documentation/features/feature05.png)
 
@@ -234,7 +234,7 @@ Contact
 
 - **Search Bar**
 
-    - The Search Bar feature allows users to quickly find specific products or information on the ScrubSavers site by entering keywords. This functionality enhances user experience by saving time and reducing frustration, enabling customers to easily locate items without navigating through multiple categories
+    - The search bar feature allows users to quickly find specific products or information on the ScrubSavers site by entering keywords. This functionality enhances user experience by saving time and reducing frustration, enabling customers to easily locate items without navigating through multiple categories
 
 ![screenshot](documentation/features/feature07.png)
 
@@ -252,7 +252,7 @@ Contact
 
 - **Main Navigation**
 
-    - The Main Navigation feature allows users to sort products by profession, color, and category, enabling a more tailored shopping experience. By streamlining navigation, the Main Navigation enhances user satisfaction and encourages more efficient browsing.
+    - The main navigation feature allows users to sort products by profession, color, and category, enabling a more tailored shopping experience. By streamlining navigation, the Main Navigation enhances user satisfaction and encourages more efficient browsing.
 
 ![screenshot](documentation/features/feature10.png)
 
@@ -260,23 +260,23 @@ Contact
 
   - **Sign Out**
 
-      - The Sign Out Page allows users to securely log out of their ScrubSavers account, ensuring their personal information remains protected.
+      - The sign out Page allows users to securely log out of their ScrubSavers account, ensuring their personal information remains protected.
 
   ![screenshot](documentation/features/feature11.png)
 
   - **Sign in**
 
-      - The Sign In Page enables users to securely access their ScrubSavers account by entering their credentials. This feature enhances user experience by providing quick and easy access to order history, and saved information.
+      - The sign in Page enables users to securely access their ScrubSavers account by entering their credentials. This feature enhances user experience by providing quick and easy access to order history, and saved information.
 
   ![screenshot](documentation/features/feature12.png)
 
   - **Register**
 
-      - The Register Page allows users to create a new ScrubSavers account by entering essential information, including their name, email address, and password. By creating an account, users gain access to their order history, enhancing their overall shopping experience.
+      - The register page allows users to create a new ScrubSavers account by entering essential information, including their name, email address, and password. By creating an account, users gain access to their order history, enhancing their overall shopping experience.
 
   ![screenshot](documentation/features/feature13.png)
 - **Contact**
-  - The Contact Page provides users with a straightforward way to reach out to ScrubSavers for inquiries, support, or feedback.
+  - The contact page provides users with a straightforward way to reach out to ScrubSavers for inquiries, support, or feedback.
 
   ![screenshot](documentation/features/feature14.png)
 
@@ -476,7 +476,7 @@ INSTALLED_APPS = [
 
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
-This is the autogenerated ERD that shows al the relationships of my current models.
+This is the autogenerated Entity-Relationship Diagram (ERD) illustrating all the relationships between my existing models, including the newly added review model.
 ![screenshot](documentation/new-erd.png)
 
 ## Testing
@@ -555,15 +555,15 @@ This project uses [cloudinary](https://cloudinary.com/) to host media files.
 2. Sign up for a Cloudinary account. During registration, select Programmable Media and Files as your intended use.
 Set Up Cloudinary in env.py
 
- - After registration, copy your Cloudinary URL and add it to your env.py file:
+3. After registration, copy your Cloudinary URL and add it to your env.py file:
 	`os.environ.setdefault("CLOUDINARY_URL", "YOUR_CLOUDINARY_URL")`
-	- Later, transfer this to your Heroku config variables. 
-3. In Heroku, add the environment variable:
+- Later, transfer this to your Heroku config variables. 
+4. In Heroku, add the environment variable:
 
 	`DISABLE_COLLECTSTATIC=1`
-4. Install the necessary Cloudinary packages:
+5. Install the necessary Cloudinary packages:
 	`pip install cloudinary==1.41.0 dj3-cloudinary-storage==0.0.6`
-5. Add the following to the INSTALLED_APPS list in the correct order in your settings.py:
+6. Add the following to the INSTALLED_APPS list in the correct order in your settings.py:
 	```python
 	INSTALLED_APPS = [
 		'django.contrib.admin',
@@ -578,11 +578,11 @@ Set Up Cloudinary in env.py
 	```
 
 
-6. Make sure to import Cloudinary at the top of your settings.py:
+7. Make sure to import Cloudinary at the top of your settings.py:
 
 `import cloudinary`
 
-7. Add cloudinary configuration at the bottom of your static files declation in settings.py:
+8. Add cloudinary configuration at the bottom of your static files declation in settings.py:
 
 `cloudinary.config(secure=True, )`
 
@@ -591,6 +591,7 @@ This project uses [Django WhiteNoise](https://whitenoise.readthedocs.io/en/stabl
 1. Install Whitenoise using pip:
 
 `pip install whitenoise`
+
 2. Add Whitenoise to the top of your middleware stack, right after the SecurityMiddleware:
 
 ```python
@@ -600,6 +601,7 @@ MIDDLEWARE = [
 	...
 ]
 ```
+
 3. Ensure you have the following static file settings in your settings.py:
 
 ```python
@@ -708,7 +710,7 @@ os.environ.setdefault("SECRET_KEY", "user's own value")
 os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
 os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
 os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
-os.environ.setdefault("CLOUDINARY_URL", "YOUR_CLOUDINARY_URL")
+os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
@@ -770,18 +772,18 @@ There is no difference between the local version and the deployed version.
 | [StackOverflow](https://stackoverflow.com/questions/3495114/how-to-create-admin-user-in-django-tests-py) | profiles and products test.py | "How to create admin user in django" |
 | [Code Insititute Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/933797d5e14d6c3f072df31adf0ca6f938d02218) | entire site | MS4 tutorial: making an e-commerce project |
 | [b0uh.github.io](https://b0uh.github.io/djangodrf-how-to-authenticate-a-user-in-tests.html) | profiles and products test.py | How to authenicate a user in tests |
-| [W3Schools](https://stackoverflow.com/questions/1737017/django-auto-now-and-auto-now-add) | Reviews forms.py | How to add date when review is added |
+| [W3Schools](https://stackoverflow.com/questions/1737017/django-auto-now-and-auto-now-add) | reviews forms.py | How to add date when review is added |
 | [Mailtrap](https://mailtrap.io/blog/django-contact-form/) | contact app | Creating a contact form in django forms |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 | [Youtube](https://www.youtube.com/watch?v=UgEVC7oJDHI) | review app | How to make a review app in django |
 | [YouTube](https://www.youtube.com/watch?v=zJWhizYFKP0) | reviews views.py | using instances to save form to be posted |
 | [Stack Overflow]( https://stackoverflow.com/questions/38370908/how-to-check-if-a-user-already-likes-a-blog-post-or-not-in-django) | reviews views.py | How to ensure user can only make a review once |
-| [Stack Overflow](https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model/12026867#12026867) | Reviews forms.py | Setting a max value in django model |
-| [Medium](https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287) | Products forms.py |creating a multiple choice field for a many to many relationship in django |
+| [Stack Overflow](https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model/12026867#12026867) | reviews forms.py | Setting a max value in django model |
+| [Medium](https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287) | products forms.py |creating a multiple choice field for a many to many relationship in django |
 | [Stack Overflow](https://stackoverflow.com/questions/33274874/assertionerror-302-200) | products test.py | Fixing an assertion error |
-| [Stack Overflow]( https://stackoverflow.com/questions/1182380/how-to-add-data-into-manytomany-field) | Checkout views.py | Adding products to userprofile |
-| [Stack Overflow]( https://docs.djangoproject.com/en/5.1/topics/db/queries/#:~:text=To%20save%20changes%20to%20an,the%20database%2C%20use%20save()%20.&text=This%20performs%20an%20UPDATE%20SQL,you%20explicitly%20call%20save()%20.) | Checkout views.py | Adding products to userprofile |
-| [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/) | Delete modals | Making modals prior to deletion |
+| [Stack Overflow]( https://stackoverflow.com/questions/1182380/how-to-add-data-into-manytomany-field) | checkout views.py | Adding products to userprofile |
+| [Stack Overflow]( https://docs.djangoproject.com/en/5.1/topics/db/queries/#:~:text=To%20save%20changes%20to%20an,the%20database%2C%20use%20save()%20.&text=This%20performs%20an%20UPDATE%20SQL,you%20explicitly%20call%20save()%20.) | checkout views.py | Adding products to userprofile |
+| [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/) | delete modals | Making modals prior to deletion |
 
 
 

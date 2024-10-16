@@ -124,7 +124,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Device | Bag | Checkout | Checkout-success | Contact | 404 |  Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | Mobile (DevTools) 320px | ![screenshot](documentation/responsiveness/mobile/mobile-bag.png) | ![screenshot](documentation/responsiveness/mobile/mobile-checkout.png) | ![screenshot](documentation/responsiveness/mobile/mobile-checkout-fix.png) ![screenshot](documentation/responsiveness/mobile/mobile-checkout-success.png)| ![screenshot](documentation/responsiveness/mobile/mobile-404.png) | Order Number is spilling out of the container. Fix: make order number font smaller |
-| Tablet (DevTools) 768px | ![screenshot](documentation/responsiveness/tablet/tablet-bag.png) | ![screenshot](documentation/responsiveness/tablet/tablet-checkout.png) | ![screenshot](documentation/responsiveness/tablet/tablet-checkout-success.png) | ![screenshot](documentation/responsiveness/tablet/contact) | ![screenshot](documentation/responsiveness/tablet/tablet-404.png) | Works as expected |
+| Tablet (DevTools) 768px | ![screenshot](documentation/responsiveness/tablet/tablet-bag.png) | ![screenshot](documentation/responsiveness/tablet/tablet-checkout.png) | ![screenshot](documentation/responsiveness/tablet/tablet-checkout-success.png) | ![screenshot](documentation/responsiveness/tablet/tablet-contact.png) | ![screenshot](documentation/responsiveness/tablet/tablet-404.png) | Works as expected |
 | Desktop | ![screenshot](documentation/browsers/firefox/firefox-bag.png) | ![screenshot](documentation/browsers/firefox/firefox-checkout-1.png) ![screenshot](documentation/browsers/firefox/firefox-checkout-2.png)| ![screenshot](documentation/browsers/firefox/firefox-checkout-success.png) | ![screenshot](documentation/browsers/firefox/firefox-contact.png) | ![screenshot](documentation/browsers/firefox/firefox-404.png) | Works as expected |
 | iPhone 13 Pro(personal mobile) | ![screenshot](documentation/responsiveness/iphone13/iphone-bag.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-2.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-3.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-success-1.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-checkout-success-2.PNG)| ![screenshot](documentation/responsiveness/iphone13/iphone-contact.PNG) ![screenshot](documentation/responsiveness/iphone13/iphone-contact-2.PNG) | ![screenshot](documentation/responsiveness/iphone13/iphone-400.PNG) | Works as expected |
 
@@ -177,7 +177,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Logged out user should no be able to access other users checkout -success | Tested the feature by brute-forcing the url as a logged out person | The feature was able to access the checkout-success | Test concluded and failed. Will fix | ![screenshot](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif) |
 | Add Product | | | | | |
 | | Logged out user should not be able to access the add product page and will be redirected to a sign in page| Tested the feature by brute-forcing the url| The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/logged-out-user-cant-access-add-product.gif) |
-| | Standard users are unable to access the add product page and will encounter a message error | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![screenshot](documentation/defensive-programming/user-cant-brute-force-profile.gif) |
+| | Standard users are unable to access the add product page and will encounter a message error | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![screenshot](documentation/defensive-programming/standard-users-can't-access-admin.gif) |
 | Edit Product | | | | | |
 | | Logged out user should not be able to access the add product page and will be redirected to a sign in page |  Tested the feature by brute-forcing the url| The feature behaved as expected| Test concluded and passed | ![screenshot](documentation/defensive-programming/loggedout-user-can't-access-edit.gif) |
 | | Standard users are unable to access the add product page and will encounter a message error  | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![screenshot](documentation/defensive-programming/standard-users-cant-access-edit.gif) |
@@ -304,9 +304,10 @@ When testing the views for the reviews section, I faced challenges in simulating
     ![screenshot](documentation/bugs/bug-1.png)
 
     - The original code in the home views attempts to render 4 randomly recommended items, but this causes an error when there are fewer than 4 products available.
-    *original code:*
+    
+    - *original code:*
     `products = random.sample(products, 4)`
-    To fix this, I added a condition to only sample the products if there are more than 4 available:
+   - To fix this, I added a condition to only sample the products if there are more than 4 available:
     *fixed code*
     ```python
         if len(products) > 4:
