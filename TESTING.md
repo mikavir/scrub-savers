@@ -174,19 +174,19 @@ Defensive programming was manually tested with the below user acceptance testing
 | Profile | | | | | |
 | | Logged out users are not able to access profile and should be redirected to sign in page | Tested the feature by doing brute-forcing the url to profile | The feature behaved as expected| Test concluded and passed | ![gif](documentation/defensive-programming/user-cant%20brute-force-profile.gif) |
 | Checkout-success | | | | | |
-| | Logged out user should no be able to access other users checkout -success | Tested the feature by brute-forcing the url as a logged out person | The feature was able to access the checkout-success | Test concluded and failed. Will fix | ![screenshot](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif) |
+| | Logged out user should no be able to access other users checkout-success | Tested the feature by brute-forcing the url as a logged out person | The feature was able to access the checkout-success | Test concluded and failed. Will fix | ![gif](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif) |
 | Add Product | | | | | |
-| | Logged out user should not be able to access the add product page and will be redirected to a sign in page| Tested the feature by brute-forcing the url| The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/logged-out-user-cant-access-add-product.gif) |
-| | Standard users are unable to access the add product page and will encounter a message error | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![screenshot](documentation/defensive-programming/standard-users-can't-access-admin.gif) |
+| | Logged out user should not be able to access the add product page and will be redirected to a sign in page| Tested the feature by brute-forcing the url| The feature behaved as expected | Test concluded and passed | ![gif](documentation/defensive-programming/logged-out-user-cant-access-add-product.gif) |
+| | Standard users are unable to access the add product page and will encounter a message error | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![gif](documentation/defensive-programming/standard-users-can't-access-admin.gif) |
 | Edit Product | | | | | |
-| | Logged out user should not be able to access the add product page and will be redirected to a sign in page |  Tested the feature by brute-forcing the url| The feature behaved as expected| Test concluded and passed | ![screenshot](documentation/defensive-programming/loggedout-user-can't-access-edit.gif) |
-| | Standard users are unable to access the add product page and will encounter a message error  | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![screenshot](documentation/defensive-programming/standard-users-cant-access-edit.gif) |
+| | Logged out user should not be able to access the add product page and will be redirected to a sign in page |  Tested the feature by brute-forcing the url| The feature behaved as expected| Test concluded and passed | ![gif](documentation/defensive-programming/loggedout-user-can't-access-edit.gif) |
+| | Standard users are unable to access the add product page and will encounter a message error  | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![gif](documentation/defensive-programming/standard-users-cant-access-edit.gif) |
 | Add Review | | | | | |
-| | Logged out user should not be able to access the add review page and will be redirected to a sign in page |  Tested the feature by brute-forcing the url| The feature behaved as expected| Test concluded and passed | ![screenshot](documentation/defensive-programming/loggedout-user-can't-access-add-review.gif) |
-| | Users that have not bought the product is unable to add a review and will be lead to an error message | Tested the feature by brute forcing the url signed in as a unverified buyer | The feature behaved as expected | Test Concluded and Passed | ![screenshot](documentation/defensive-programming/unverified-buyers-can't-access-add-review.gif) |
+| | Logged out user should not be able to access the add review page and will be redirected to a sign in page |  Tested the feature by brute-forcing the url| The feature behaved as expected| Test concluded and passed | ![gif](documentation/defensive-programming/loggedout-user-can't-access-add-review.gif) |
+| | Users that have not bought the product is unable to add a review and will be lead to an error message | Tested the feature by brute forcing the url signed in as a unverified buyer | The feature behaved as expected | Test Concluded and Passed | ![gif](documentation/defensive-programming/unverified-buyers-can't-access-add-review.gif) |
 | Edit Review | | | | | |
-| | Logged out user should not be able to access the edit review page and will be redirected to a sign in page |  Tested the feature by brute-forcing the url| The feature behaved as expected| Test concluded and passed | ![screenshot](documentation/defensive-programming/loggedout-user-can't-access-edit-review.gif) |
-| | Users that have not made the review is unable to edit other review and will be lead to an error message | Tested the feature by brute forcing the url signed in as a unverified buyer | The feature behaved as expected | Test Concluded and Passed | ![screenshot](documentation/defensive-programming/unverified-buyer-unable-to-edit-other-review.gif) |
+| | Logged out user should not be able to access the edit review page and will be redirected to a sign in page |  Tested the feature by brute-forcing the url| The feature behaved as expected| Test concluded and passed | ![gif](documentation/defensive-programming/loggedout-user-can't-access-edit-review.gif) |
+| | Users that have not made the review is unable to edit other review and will be lead to an error message | Tested the feature by brute forcing the url signed in as a unverified buyer | The feature behaved as expected | Test Concluded and Passed | ![gif](documentation/defensive-programming/unverified-buyer-unable-to-edit-other-review.gif) |
 
 ### CRUD functionality
 | Page | Expectation | Test | Result | Fix | Screenshot |
@@ -368,5 +368,8 @@ I have also implemented additional defensive programming to ensure the form is o
 ```
 
 ## Unfixed Bugs
-> [!NOTE]  
-> There are no remaining bugs that I am aware of.
+- User can bruteforce an URL of another user's checkout-success/ order confirmation if they know the URL. 
+
+    ![gif](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif)
+
+- I have been exploring solutions to prevent this issue, but they would involve restricting unsigned users from purchasing products. This is a known vulnerability, as noted in the Code Institute's Boutique Ado walkthrough. Additionally, the links are highly unique, making it unlikely that users would remember the exact URL.
