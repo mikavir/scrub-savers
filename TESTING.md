@@ -20,7 +20,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | contact | contact.html | ![screenshot](documentation/validation/w3c/contact-w3c.png) | |
 | contact | success.html | ![screenshot](documentation/validation/w3c/contact-success-w3c.png) | |
 | home | index.html | ![screenshot](documentation/validation/w3c/index-w3c.png) | |
-| products | add_product.html | ![screenshot](documentation/validation/w3c/add-product-w3c.png) | |
+| products | add_product.html | ![screenshot](documentation/validation/w3c/add-product-w3c-new.png) | Errors on duplicate id- unable to fix as the id is being created by crispy forms |
 | products | edit_product.html | ![screenshot](documentation/validation/w3c/edit-product-w3c.png) | |
 | products | product_detail.html | ![screenshot](documentation/validation/w3c/product-detail-w3c.png) | |
 | products | products.html | ![screenshot](documentation/validation/w3c/product-w3c.png) | |
@@ -409,6 +409,10 @@ Any remaining open issues can be tracked [here](https://github.com/mikavir/scrub
 
 - I have been exploring solutions to prevent this issue, but they would involve restricting unsigned users from purchasing products. This is a known vulnerability, as noted in the Code Institute's Boutique Ado walkthrough. Additionally, the links are highly unique, making it unlikely that users would remember the exact URL.
 
+- Duplicate id on Add/Edit Product page
+     ![screenshot](documentation/validation/w3c/add-product-w3c-new.png)
+
+I attempted to resolve the issue but realized that the additional ID being generated is due to Django Crispy Forms. Removing the ID would break certain functionality in both the script and Crispy Forms, causing them to stop working as intended. This code was originally taken from the Code Institute Boutique Ado walkthrough.
 
 > [!NOTE]
 > There are no remaining bugs that I am aware of.
