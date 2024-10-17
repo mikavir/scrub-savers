@@ -17,7 +17,7 @@ class ProductForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
         colours = Colours.objects.all()
-        profession = Profession.objects.all()
+        professions = Profession.objects.all()
 
         # Get friendly names of categories
         # https://medium.com/@mattbancroft03/django-crispy-forms-clean-horizontal-multiple-choice-fields-564734738287 # noqa
@@ -26,18 +26,26 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = friendly_names
 
-        self.fields['colours'] = forms.MultipleChoiceField(
+        # Set choices with model names
+        # https://docs.djangoproject.com/en/5.1/ref/forms/fields/#modelmultiplechoicefield
+        self.fields['colours'] = forms.ModelMultipleChoiceField(
+            queryset=colours,
             widget=forms.CheckboxSelectMultiple,
-            choices=[(c.id, c.get_friendly_name()) for c in colours],
             required=False,
         )
-
-        # Get friendly names of profession
-        self.fields['profession'] = forms.MultipleChoiceField(
+        self.fields['profession'] = forms.ModelMultipleChoiceField(
+            queryset=professions,
             widget=forms.CheckboxSelectMultiple,
-            choices=[(p.id, p.get_friendly_name()) for p in profession],
             required=False,
         )
-
+        # Assign friendly names to choices directly
+        self.fields['colours'].choices = [
+            (colour.id, colour.get_friendly_name())
+            for colour in colours
+            ]
+        self.fields['profession'].choices = [
+            (profession.id, profession.get_friendly_name())
+            for profession in professions
+            ]
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-1'  # noqa
