@@ -363,11 +363,11 @@ To resolve this, I ensured that each product ID was made unique.
 
 To resolve this issue, I implemented validation for the rating field in forms.py by adding a custom validation method within the ProductReviewForm class:
 ```python
-        def clean_rating(self):
-            rating = self.cleaned_data.get('rating')
-            if not rating:
-                raise forms.ValidationError("Please select a rating.")
-            return rating
+    def clean_rating(self):
+        rating = self.cleaned_data.get('rating')
+        if not rating:
+            raise forms.ValidationError("Please select a rating.")
+        return rating
 ```
 I have also implemented additional defensive programming to ensure the form is only submitted if the rating is valid. The updated code checks both the form's validity and whether a rating has been selected:
 
@@ -375,7 +375,17 @@ I have also implemented additional defensive programming to ensure the form is o
     rating = request.POST.get('rating')
     if form.is_valid() and rating:  # Check if the form is valid and rating is selected
 ```
+- The Product Form instance does not display the previously selected options for the many-to-many field, resulting in a lack of visibility for users regarding their current selections. This issue may cause confusion and hinder the editing process, as users cannot see which options were previously chosen.
+ ![gif](documentation/bugs/bug-6.gif)
 
+ - To resolve the issue of the Product Form not displaying previously selected choices in the many-to-many field, we updated the form's initialization method. We switched from `forms.MultipleChoiceField` to `ModelMultipleChoiceField`, allowing us to link directly to the specific model. By properly setting the queryset to include the current selections, the form now correctly pre-populates the field with the user's previous choices when editing a product instance.
+ ```python
+    self.fields['colours'] = forms.ModelMultipleChoiceField(
+    queryset=colours,
+    widget=forms.CheckboxSelectMultiple,
+    required=False,
+)
+ ```
 **Open Issues**
 
 [![GitHub issues](https://img.shields.io/github/issues/mikavir/scrub-savers)](https://github.com/mikavir/scrub-savers/issues)
