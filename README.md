@@ -251,7 +251,7 @@ Contact
 
 - **Main Navigation**
 
-    - The main navigation feature allows users to sort products by profession, color, and category, enabling a more tailored shopping experience. By streamlining navigation, the Main Navigation enhances user satisfaction and encourages more efficient browsing.
+    - The main navigation feature allows users to sort products by profession, color, and category, enabling a more tailored shopping experience. By streamlining navigation, the main navigation enhances user satisfaction and encourages more efficient browsing.
 
 ![screenshot](documentation/features/feature10.png)
 
@@ -259,13 +259,13 @@ Contact
 
   - **Sign Out**
 
-      - The sign out Page allows users to securely log out of their ScrubSavers account, ensuring their personal information remains protected.
+      - The sign out page allows users to securely log out of their ScrubSavers account, ensuring their personal information remains protected.
 
   ![screenshot](documentation/features/feature11.png)
 
   - **Sign in**
 
-      - The sign in Page enables users to securely access their ScrubSavers account by entering their credentials. This feature enhances user experience by providing quick and easy access to order history, and saved information.
+      - The sign in page enables users to securely access their ScrubSavers account by entering their credentials. This feature enhances user experience by providing quick and easy access to order history, and saved information.
 
   ![screenshot](documentation/features/feature12.png)
 
@@ -873,14 +873,14 @@ There is no difference between the local version and the deployed version.
 | [Medisave](https://www.medisave.co.uk/products/littmann-classic-iii-monitoring-stethoscope-champagne-rose-5910c) | Product | image | Product Image |
 | [Medisave](https://www.medisave.co.uk/products/3m-littmann-core-digital-stethoscope-black) | Product | image | Product Image |
 | [Sketchers](https://www.skechers.co.uk/skechers-slip-ins-waterproof-summits---best-choice/150199_BKLB.html) | Product | image | Product Image |
-| [Freepik](https://www.freepik.com/free-photo/enthusiastic-doctor-woman-rejoicing-winning-celebrating-achieve-goal-standing-white-coat-agai_34232083.htm#fromView=search&page=3&position=3&uuid=6387a032-3b30-4d83-b19d-4c9d1ce527c1) | Home | image | hero image |
+| [Freepik](https://www.freepik.com/free-photo/enthusiastic-doctor-woman-rejoicing-winning-celebrating-achieve-goal-standing-white-coat-agai_34232083.htm#fromView=search&page=3&position=3&uuid=6387a032-3b30-4d83-b19d-4c9d1ce527c1) | Home | image | Hero image |
 | [Freepik](https://www.freepik.com/free-photo/medical-workers-healthcare-covid19-vaccination-concept-surprised-excited-female-nurse-doctor-blue-scrubs-with-stethoscope-show-thumbsup-approval-like-idea-smiling-upbeat_24764341.htm#fromView=search&page=27&position=10&uuid=f8dddf95-a5ff-4d1a-aedb-4230a8cea1b7) | Home | image | Hero image |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [TinyPNG](https://tinypng.com) | entire site | image | Tool for image compression |
 
 ### Acknowledgements
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner John for believing in me, and allowing me to make this transition into software development.
+- I would like to thank my partner Jon for believing in me, and allowing me to make this transition into software development.
 

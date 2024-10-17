@@ -150,17 +150,17 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| bag |![screenshot](documentation/lighthouse/mobile/mobile-bag.png) | ![screenshot](documentation/lighthouse/desktop/desktop-bag.png) | mobile: Improvements to be made to serve images in a next gen format: unable to change this as cloudinary render the images.|
-| checkout | ![screenshot](documentation/lighthouse/mobile/mobile-checkout.png) | ![screenshot](documentation/lighthouse/desktop/desktop-checkout.png) | mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend|
-| checkout success |  ![screenshot](documentation/lighthouse/mobile/mobile-checkout-success.png) | ![screenshot](documentation/lighthouse/desktop/desktop-checkout-sucess.png) | mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend|
+| bag |![screenshot](documentation/lighthouse/mobile/mobile-bag.png) | ![screenshot](documentation/lighthouse/desktop/desktop-bag.png) | Mobile: Improvements to be made to serve images in a next gen format: unable to change this as cloudinary render the images.|
+| checkout | ![screenshot](documentation/lighthouse/mobile/mobile-checkout.png) | ![screenshot](documentation/lighthouse/desktop/desktop-checkout.png) | Mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend|
+| checkout success |  ![screenshot](documentation/lighthouse/mobile/mobile-checkout-success.png) | ![screenshot](documentation/lighthouse/desktop/desktop-checkout-sucess.png) | Mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend|
 | contact |  ![screenshot](documentation/lighthouse/mobile/mobile-contact.png) |  ![screenshot](documentation/lighthouse/desktop/desktop-contact.png) |  No major warnings |
 | contact success| ![screenshot](documentation/lighthouse/mobile/mobile-contact-success.png) |  ![screenshot](documentation/lighthouse/desktop/desktop-contact-success.png) | No major warnings|
-| home | ![screenshot](documentation/lighthouse/mobile/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop/desktop-home.png)| mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend |
-| Add Product Page| ![screenshot](documentation/lighthouse/mobile/mobile-add-product.png) | ![screenshot](documentation/lighthouse/desktop/desktop-add-product.png) | |
+| home | ![screenshot](documentation/lighthouse/mobile/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop/desktop-home.png)| Mobile: Affected performance due to render blocking sources such as bootstrap CDN, FontAwesome and Stripe API, Unable to remove these as important for the project's frontend |
+| Add Product Page| ![screenshot](documentation/lighthouse/mobile/mobile-add-product.png) | ![screenshot](documentation/lighthouse/desktop/desktop-add-product.png) | No major warnings |
 | Edit Product | ![screenshot](documentation/lighthouse/mobile/mobile-edit-product.png) | ![screenshot](documentation/lighthouse/desktop/desktop-edit-product.png) | Affected accessibility due to not having labels with crispy forms |
-| Product Detail | ![screenshot](documentation/lighthouse/mobile/mobile-product-detail.png) | ![screenshot](documentation/lighthouse/desktop/desktop-product-detail.png) | Accessbility to be imr=proved due to no labels to forms |
-| products | ![screenshot](documentation/lighthouse/mobile/mobile-products.png) | ![screenshot](documentation/lighthouse/desktop/desktop-products.png) | Accessbility due to select |
-| profiles | ![screenshot](documentation/lighthouse/mobile/mobile-profile.png) | ![screenshot](documentation/lighthouse/desktop/desktop-profile.png) | No major warnings|
+| Product Detail | ![screenshot](documentation/lighthouse/mobile/mobile-product-detail.png) | ![screenshot](documentation/lighthouse/desktop/desktop-product-detail.png) | Accessbility to be improved due to no labels to forms |
+| Products | ![screenshot](documentation/lighthouse/mobile/mobile-products.png) | ![screenshot](documentation/lighthouse/desktop/desktop-products.png) | Accessbility due to select |
+| Profiles | ![screenshot](documentation/lighthouse/mobile/mobile-profile.png) | ![screenshot](documentation/lighthouse/desktop/desktop-profile.png) | No major warnings|
 | Add review | ![screenshot](documentation/lighthouse/mobile/mobile-add-review.png) | ![screenshot](documentation/lighthouse/desktop/desktop-add-review.png) | No major warning |
 | Edit Review | ![screenshot](documentation/lighthouse/mobile/mobile-edit-review.png)| ![screenshot](documentation/lighthouse/desktop/desktop-edit-review.png) | No major warnings |
 
@@ -174,7 +174,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Profile | | | | | |
 | | Logged out users are not able to access profile and should be redirected to sign in page | Tested the feature by doing brute-forcing the url to profile | The feature behaved as expected| Test concluded and passed | ![gif](documentation/defensive-programming/user-cant%20brute-force-profile.gif) |
 | Checkout-success | | | | | |
-| | Logged out user should no be able to access other users checkout-success | Tested the feature by brute-forcing the url as a logged out person | The feature was able to access the checkout-success | Test concluded and failed. Will fix | ![gif](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif) |
+| | Logged out user should no be able to access other users checkout-success | Tested the feature by brute-forcing the url as a logged out person | The feature was able to access the checkout-success | Test concluded and failed. Unable to fix-This is documented down below in the unfixed bugs | ![gif](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif) |
 | Add Product | | | | | |
 | | Logged out user should not be able to access the add product page and will be redirected to a sign in page| Tested the feature by brute-forcing the url| The feature behaved as expected | Test concluded and passed | ![gif](documentation/defensive-programming/logged-out-user-cant-access-add-product.gif) |
 | | Standard users are unable to access the add product page and will encounter a message error | Tested the feature by brute forcing the url signed in as a standard user | The feature behaved as expected | Test Concluded and Passed | ![gif](documentation/defensive-programming/standard-users-can't-access-admin.gif) |
@@ -376,9 +376,10 @@ I have also implemented additional defensive programming to ensure the form is o
     if form.is_valid() and rating:  # Check if the form is valid and rating is selected
 ```
 - The Product Form instance does not display the previously selected options for the many-to-many field, resulting in a lack of visibility for users regarding their current selections. This issue may cause confusion and hinder the editing process, as users cannot see which options were previously chosen.
- ![gif](documentation/bugs/bug-6.gif)
 
- - To resolve the issue of the Product Form not displaying previously selected choices in the many-to-many field, we updated the form's initialization method. We switched from `forms.MultipleChoiceField` to `ModelMultipleChoiceField`, allowing us to link directly to the specific model. By properly setting the queryset to include the current selections, the form now correctly pre-populates the field with the user's previous choices when editing a product instance.
+![gif](documentation/bugs/bug-6.gif)
+
+To resolve the issue of the Product Form not displaying previously selected choices in the many-to-many field, we updated the form's initialization method. We switched from `forms.MultipleChoiceField` to `ModelMultipleChoiceField`, allowing us to link directly to the specific model. By properly setting the queryset to include the current selections, the form now correctly pre-populates the field with the user's previous choices when editing a product instance.
  ```python
     self.fields['colours'] = forms.ModelMultipleChoiceField(
     queryset=colours,
