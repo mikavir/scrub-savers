@@ -47,5 +47,3 @@ class ProductForm(forms.ModelForm):
             (profession.id, profession.get_friendly_name())
             for profession in professions
             ]
-        for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-1'  # noqa
