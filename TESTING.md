@@ -230,6 +230,7 @@ The form validation is handled by Django Crispy Forms:
 | As a Shopper, I want to easily register for an account so that I can have a personal account to view my purchase history. | ![screenshot](documentation/features/feature13.png) |
 | As a Shopper, I want to easily log in to my account so that I can keep track of my purchase history.| ![screenshot](documentation/features/feature12.png) |
 | As a Shopper, I want to easily log out of my account so that my account is secure when using a public device. | ![screenshot](documentation/features/feature11.png) |
+| As a Shopper, I want to easily recover my password in case I forget it so that I can recover access to my account. | ![screenshot](documentation/features/feature31.png) |
 | As a Shopper, I want to have a personalized user profile so that I can view my purchase history, order confirmations, and save my payment history. | ![screenshot](documentation/features/feature08.png) |
 | As a Shopper, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products. | ![screenshot](documentation/features/feature06.png) |
 |  As a Shopper, I want to search for a product by name or description so that I can find the specific product I want to purchase. | ![screenshot](documentation/features/feature07.png) |

@@ -7,7 +7,7 @@
 ![screenshot](documentation/mockup.png)
 source: [amiresponsive](https://ui.dev/amiresponsive?url=https://scrub-savers-5f33124f2ec3.herokuapp.com)
 
-Scrub Savers isn e-commerce web application built with Django, catering to healthcare and medical professionals. The site specializes in selling a wide range of medical clothing and equpment. Designed for ease of use, Scrub Savers ensures a seamless shopping experience, from browsing to checkout. Whether you're looking for scrubs, tools, or medical accessories, Scrub Savers provides everything in one convenient place.
+Scrub Savers is an e-commerce web application built with Django, catering to healthcare and medical professionals. The site specializes in selling a wide range of medical clothing and equpment. Designed for ease of use, Scrub Savers ensures a seamless shopping experience, from browsing to checkout. Whether you're looking for scrubs, tools, or medical accessories, Scrub Savers provides everything in one convenient place.
 
 ## UX
 
@@ -46,7 +46,6 @@ Ensuring that the typography is consistent with other healthcare websites is vit
 - As a Shopper, I want to easily log in to my account so that I can keep track of my purchase history.
 - As a Shopper, I want to easily log out of my account so that my account is secure when using a public device.
 - As a Shopper, I want to easily recover my password in case I forget it so that I can recover access to my account.
-- As a Shopper, I want to receive an email confirmation after signing in so that I can verify that my account registration was successful.
 - As a Shopper, I want to have a personalized user profile so that I can view my purchase history, order confirmations, and save my payment history.
 
 ### Sorting and Searching
@@ -346,11 +345,11 @@ Contact
 
 -**Error Handling**
  - **404**
-  Implementing a 404 page ensures that users have  redirected to the home page if they encounter a broken link, improving their navigation experience.
+  - Implementing a 404 page ensures that users have  redirected to the home page if they encounter a broken link, improving their navigation experience.
   ![screenshot](documentation/features/feature30.png)
 
-  -**500**
-  Implementing a 500 error page ensures that users are informed of a server issue and provides a seamless way to return to the home page, enhancing their overall experience even during technical difficulties.
+  - **500**
+  - Implementing a 500 error page ensures that users are informed of a server issue and provides a seamless way to return to the home page, enhancing their overall experience even during technical difficulties.
   ![screenshot](documentation/features/feature29.png)
 
 
