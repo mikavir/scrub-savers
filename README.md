@@ -343,13 +343,13 @@ Contact
   ![screenshot](documentation/features/feature21.png)
 
 
--**Error Handling**
- - **404**
-  - Implementing a 404 page ensures that users have  redirected to the home page if they encounter a broken link, improving their navigation experience.
+- **Error Handling**
+  - **404**
+    - Implementing a 404 page ensures that users have  redirected to the home page if they encounter a broken link, improving their navigation experience.
   ![screenshot](documentation/features/feature30.png)
 
   - **500**
-  - Implementing a 500 error page ensures that users are informed of a server issue and provides a seamless way to return to the home page, enhancing their overall experience even during technical difficulties.
+    - Implementing a 500 error page ensures that users are informed of a server issue and provides a seamless way to return to the home page, enhancing their overall experience even during technical difficulties.
   ![screenshot](documentation/features/feature29.png)
 
 
