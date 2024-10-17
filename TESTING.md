@@ -319,7 +319,7 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
    - To fix this, I added a condition to only sample the products if there are more than 4 available:
     *fixed code*
     ```python
-        if len(products) > 4:
+    if len(products) > 4:
         products = random.sample(products, 4)
     ```
 
@@ -340,9 +340,9 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
 - Static files was not being collected to staticfiles with deployment.
     ![screenshot](documentation/bugs/bug-3.png)
 
-    -After configuring Whitenoise to serve static files, we were unable to collect them into the staticfiles directory. Manually copying static files into the directory didn't resolve the issue, as it failed to include static files from other apps. As a result, critical files like stripe.js were missing, which prevented payments from working during checkout.
+    - After configuring Whitenoise to serve static files, we were unable to collect them into the staticfiles directory. Manually copying static files into the directory didn't resolve the issue, as it failed to include static files from other apps. As a result, critical files like stripe.js were missing, which prevented payments from working during checkout.
 
-    The issue was caused by the incorrect order of apps in the INSTALLED_APPS setting—specifically, `django.contrib.staticfiles` was placed below `Cloudinary`. To fix this, I reordered the apps, ensuring `django.contrib.staticfiles` is listed above `Cloudinary`.
+    The issue was caused by the incorrect order of apps in the INSTALLED_APPS setting—specifically, `django.contrib.staticfiles` was placed below `cloudinary`. To fix this, I reordered the apps, ensuring `django.contrib.staticfiles` is listed above `cloudinary`.
     ```python
     INSTALLED_APPS = [
         '...',
@@ -355,31 +355,31 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
 
     ![screenshot](documentation/bugs/bug-4.png)
 
-To resolve this, I ensured that each product ID was made unique.
+    - To resolve this, I ensured that each product ID was made unique.
 
 - Empty Rating Causes Database Error: When a user submits the form to add a review without selecting a rating, it results in a database error due to the None value being submitted. This issue arose because the form validation was not triggered effectively, as the rating field was not generated using Crispy Forms.
 
-    ![screenshot](documentation/bugs/bug-4.png)
+    ![screenshot](documentation/bugs/bug-5.png)
 
-To resolve this issue, I implemented validation for the rating field in forms.py by adding a custom validation method within the ProductReviewForm class:
-```python
-    def clean_rating(self):
-        rating = self.cleaned_data.get('rating')
-        if not rating:
-            raise forms.ValidationError("Please select a rating.")
-        return rating
-```
-I have also implemented additional defensive programming to ensure the form is only submitted if the rating is valid. The updated code checks both the form's validity and whether a rating has been selected:
+    - To resolve this issue, I implemented validation for the rating field in forms.py by adding a custom validation method within the ProductReviewForm class:
+    ```python
+        def clean_rating(self):
+            rating = self.cleaned_data.get('rating')
+            if not rating:
+                raise forms.ValidationError("Please select a rating.")
+            return rating
+    ```
+    - I have also implemented additional defensive programming to ensure the form is only submitted if the rating is valid. The updated code checks both the form's validity and whether a rating has been selected:
 
-```python
-    rating = request.POST.get('rating')
-    if form.is_valid() and rating:  # Check if the form is valid and rating is selected
-```
+    ```python
+        rating = request.POST.get('rating')
+        if form.is_valid() and rating:  # Check if the form is valid and rating is selected
+    ```
 - The Product Form instance does not display the previously selected options for the many-to-many field, resulting in a lack of visibility for users regarding their current selections. This issue may cause confusion and hinder the editing process, as users cannot see which options were previously chosen.
 
 ![gif](documentation/bugs/bug-6.gif)
 
-To resolve the issue of the Product Form not displaying previously selected choices in the many-to-many field, we updated the form's initialization method. We switched from `forms.MultipleChoiceField` to `ModelMultipleChoiceField`, allowing us to link directly to the specific model. By properly setting the queryset to include the current selections, the form now correctly pre-populates the field with the user's previous choices when editing a product instance.
+    - To resolve the issue of the Product Form not displaying previously selected choices in the many-to-many field, we updated the form's initialization method. We switched from `forms.MultipleChoiceField` to `ModelMultipleChoiceField`, allowing us to link directly to the specific model. By properly setting the queryset to include the current selections, the form now correctly pre-populates the field with the user's previous choices when editing a product instance.
  ```python
     self.fields['colours'] = forms.ModelMultipleChoiceField(
     queryset=colours,
@@ -407,12 +407,12 @@ Any remaining open issues can be tracked [here](https://github.com/mikavir/scrub
 
     ![gif](documentation/defensive-programming/log-out-user-cant-access-checkout-success.gif)
 
-- I have been exploring solutions to prevent this issue, but they would involve restricting unsigned users from purchasing products. This is a known vulnerability, as noted in the Code Institute's Boutique Ado walkthrough. Additionally, the links are highly unique, making it unlikely that users would remember the exact URL.
+    - I have been exploring solutions to prevent this issue, but they would involve restricting unsigned users from purchasing products. This is a known vulnerability, as noted in the Code Institute's Boutique Ado walkthrough. Additionally, the links are highly unique, making it unlikely that users would remember the exact URL.
 
 - Duplicate id on Add/Edit Product page
      ![screenshot](documentation/validation/w3c/add-product-w3c-new.png)
 
-I attempted to resolve the issue but realized that the additional ID being generated is due to Django Crispy Forms. Removing the ID would break certain functionality in both the script and Crispy Forms, causing them to stop working as intended. This code was originally taken from the Code Institute Boutique Ado walkthrough.
+    - I attempted to resolve the issue but realized that the additional ID being generated is due to Django Crispy Forms. Removing the ID would break certain functionality in both the script and Crispy Forms, causing them to stop working as intended. This code was originally taken from the Code Institute Boutique Ado walkthrough.
 
 > [!NOTE]
 > There are no remaining bugs that I am aware of.
