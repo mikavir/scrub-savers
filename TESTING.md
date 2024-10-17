@@ -328,7 +328,7 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
 
     - When an unsigned user attempts to make a purchase, they encounter an internal server error (500) during the checkout success process. This error occurs because the code tries to iterate through an AnonymousUser, which does not have an associated profile.
 
-    To resolve this, I added a condition to check if the user is signed in before attempting to retrieve their profile.
+    - To resolve this, I added a condition to check if the user is signed in before attempting to retrieve their profile.
 
     ```python
     if request.user.is_authenticated:
@@ -342,7 +342,7 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
 
     - After configuring Whitenoise to serve static files, we were unable to collect them into the staticfiles directory. Manually copying static files into the directory didn't resolve the issue, as it failed to include static files from other apps. As a result, critical files like stripe.js were missing, which prevented payments from working during checkout.
 
-    The issue was caused by the incorrect order of apps in the INSTALLED_APPS setting—specifically, `django.contrib.staticfiles` was placed below `cloudinary`. To fix this, I reordered the apps, ensuring `django.contrib.staticfiles` is listed above `cloudinary`.
+    - The issue was caused by the incorrect order of apps in the INSTALLED_APPS setting—specifically, `django.contrib.staticfiles` was placed below `cloudinary`. To fix this, I reordered the apps, ensuring `django.contrib.staticfiles` is listed above `cloudinary`.
     ```python
     INSTALLED_APPS = [
         '...',
@@ -375,18 +375,20 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
         rating = request.POST.get('rating')
         if form.is_valid() and rating:  # Check if the form is valid and rating is selected
     ```
+
 - The Product Form instance does not display the previously selected options for the many-to-many field, resulting in a lack of visibility for users regarding their current selections. This issue may cause confusion and hinder the editing process, as users cannot see which options were previously chosen.
 
-![gif](documentation/bugs/bug-6.gif)
+    ![gif](documentation/bugs/bug-6.gif)
 
     - To resolve the issue of the Product Form not displaying previously selected choices in the many-to-many field, we updated the form's initialization method. We switched from `forms.MultipleChoiceField` to `ModelMultipleChoiceField`, allowing us to link directly to the specific model. By properly setting the queryset to include the current selections, the form now correctly pre-populates the field with the user's previous choices when editing a product instance.
- ```python
-    self.fields['colours'] = forms.ModelMultipleChoiceField(
-    queryset=colours,
-    widget=forms.CheckboxSelectMultiple,
-    required=False,
-)
- ```
+
+    ```python
+        self.fields['colours'] = forms.ModelMultipleChoiceField(
+        queryset=colours,
+        widget=forms.CheckboxSelectMultiple,
+        required=False,
+    )
+    ```
 **Open Issues**
 
 [![GitHub issues](https://img.shields.io/github/issues/mikavir/scrub-savers)](https://github.com/mikavir/scrub-savers/issues)
