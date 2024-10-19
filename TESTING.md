@@ -389,6 +389,28 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
         required=False,
     )
     ```
+
+- The 'Save Information' checkbox is not functioning as expected. User information is being saved to the profile even when the checkbox is unchecked.
+
+    ![gif](documentation/bugs/bug7.gif)
+
+    - To resolve this issue, I implemented proper handling of the checkbox value in the backend. Previously, the checkbox state was not validated correctly, leading to user information being saved to the profile even when the checkbox was unchecked. The fix involved updating the logic to explicitly verify the checkbox state and accurately pass this value to Stripe's metadata, ensuring that information is only saved when the user opts in.
+
+    ```python
+    # views.py
+    # Explicitely verify the checkbox state
+    'save_info': 'True' if request.POST.get('save_info') else 'False',
+
+        ....
+    #Webhook_handler.py
+    if save_info:
+        # Save profile information
+
+    ```
+
+
+    - This fix presented some challenges, as I was unable to observe the effects of my changes due to the webhooks file not being triggered, as evidenced by the print statements not executing. After consulting with tutor support, I realized that the webhook endpoint was set to the deployed version rather than the local version, which was the root cause of the issue and the reason I wasn't seeing any effects. After switching the endpoint back to the local version, everything started functioning correctly. Following thorough testing, I redeployed the changes and reset the endpoint to the deployed version, which is now operating as intended.
+
 **Open Issues**
 
 [![GitHub issues](https://img.shields.io/github/issues/mikavir/scrub-savers)](https://github.com/mikavir/scrub-savers/issues)
