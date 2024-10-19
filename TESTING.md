@@ -20,7 +20,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | contact | contact.html | ![screenshot](documentation/validation/w3c/contact-w3c.png) | |
 | contact | success.html | ![screenshot](documentation/validation/w3c/contact-success-w3c.png) | |
 | home | index.html | ![screenshot](documentation/validation/w3c/index-w3c.png) | |
-| products | add_product.html | ![screenshot](documentation/validation/w3c/add-product-w3c-new.png) | Errors on duplicate id- unable to fix as the id is being created by crispy forms |
+| products | add_product.html | ![screenshot](documentation/validation/w3c/add-product-w3c-new.png) | Errors on duplicate ID - unable to fix as the ID is being created by crispy forms |
 | products | edit_product.html | ![screenshot](documentation/validation/w3c/edit-product-w3c.png) | |
 | products | product_detail.html | ![screenshot](documentation/validation/w3c/product-detail-w3c.png) | |
 | products | products.html | ![screenshot](documentation/validation/w3c/product-w3c.png) | |
