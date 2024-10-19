@@ -24,7 +24,7 @@ def cache_checkout_data(request):
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
-            'save_info': request.POST.get('save_info'),
+            'save_info': 'True' if request.POST.get('save-info') else 'False',
             'username': request.user,
         })
         return HttpResponse(status=200)
@@ -63,7 +63,6 @@ def checkout(request):
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
-                    print("just before is instance")
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
