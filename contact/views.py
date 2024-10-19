@@ -12,9 +12,10 @@ def contact(request):
     """ Renders the contact page and allow users to send message
     https://mailtrap.io/blog/django-contact-form/ """
     """ A view to return the contact page """
-    form = ContactForm(request.POST or None)
 
     if request.method == 'POST':
+        form = ContactForm(request.POST)
+
         if form.is_valid():
             form.save()
             sender = settings.DEFAULT_FROM_EMAIL
@@ -43,12 +44,19 @@ def contact(request):
                 request,
                 ("Something went wrong, Please try again")
             )
+    else:
+        # Prepopulate the email field only if the user is authenticated
+        if request.user.is_authenticated:
+            # https://stackoverflow.com/questions/63775061/how-do-i-populate-an-editable-form-field-with-logged-in-user-name-in-django
+            form = ContactForm(initial={'email': request.user.email})
+        else:
+            form = ContactForm()
 
+    # Render the contact form page
     template = 'contact/contact.html'
     context = {
         'form': form,
     }
-
     return render(request, template, context)
 
 
