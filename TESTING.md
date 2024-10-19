@@ -392,7 +392,7 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
 
 - The 'Save Information' checkbox is not functioning as expected. User information is being saved to the profile even when the checkbox is unchecked.
 
-    ![gif](documentation/bugs/bug7.gif)
+    ![gif](documentation/bugs/bug-7.gif)
 
     - To resolve this issue, I implemented proper handling of the checkbox value in the backend. Previously, the checkbox state was not validated correctly, leading to user information being saved to the profile even when the checkbox was unchecked. The fix involved updating the logic to explicitly verify the checkbox state and accurately pass this value to Stripe's metadata, ensuring that information is only saved when the user opts in.
 
@@ -433,7 +433,7 @@ Any remaining open issues can be tracked [here](https://github.com/mikavir/scrub
 
     - I have been exploring solutions to prevent this issue, but they would involve restricting unsigned users from purchasing products. This is a known vulnerability, as noted in the Code Institute's Boutique Ado walkthrough. Additionally, the links are highly unique, making it unlikely that users would remember the exact URL.
 
-- Duplicate id on Add/Edit Product page
+- Duplicate ID on Add/Edit Product page
      ![screenshot](documentation/validation/w3c/add-product-w3c-new.png)
 
     - I attempted to resolve the issue but realized that the additional ID being generated is due to Django Crispy Forms. Removing the ID would break certain functionality in both the script and Crispy Forms, causing them to stop working as intended. This code was originally taken from the Code Institute Boutique Ado walkthrough.
