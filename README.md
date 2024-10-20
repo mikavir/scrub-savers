@@ -399,8 +399,8 @@ This is the ERD design prior to the development.
 During the development, I have made new models and altered the relationsips between the models. I've used [Mermaid](https://mermaid.live) to generate an interactive version of my ERD.
 
 The models that are available for CRUD are:
-- product
-- review
+- Product
+- Review
 
 ```mermaid
 erDiagram
@@ -476,6 +476,15 @@ erDiagram
         text content
         int rating
         datetime date_added
+    }
+
+    Contact {
+        int id
+        string name
+        string email
+        string subject
+        text message
+        datetime date
     }
 
     Category ||--o{ Product : "has many"
