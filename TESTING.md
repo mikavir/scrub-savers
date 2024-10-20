@@ -212,13 +212,13 @@ The form validation is handled by Django Crispy Forms:
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Add product | | | | | |
-| | Form is expected to not submit and display a error message if one required field is unmet | Tested the feature by doing submitting the form without price | The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/add-product-form-validation.gif) |
+| | Form is expected to not submit and display an error message if one required field is unmet | Tested the feature by doing submitting the form without a price | The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/add-product-form-validation.gif) |
 | Edit Product | | | | | |
-| | Form is expected to not submit and display a error message if one required field is unmet | Tested the feature by doing submitting the form without price | The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/edit-product-form-validation.gif) |
+| | Form is expected to not submit and display an error message if one required field is unmet | Tested the feature by doing submitting the form without a price | The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/edit-product-form-validation.gif) |
 | Add Review | | | | | |
-| | Form is expected to not submit and display a error message if one required field is unmet | Tested the feature by doing submitting the form without rating | The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/add-review-form-validation.gif) |
+| | Form is expected to not submit and display an error message if one required field is unmet | Tested the feature by doing submitting the form without a rating | The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/add-review-form-validation.gif) |
 | Contact | | | | | |
-| | Form is expected to not submit and display a error message if one required field is unmet | Tested the feature by doing submitting the form without valid email and without a message| The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/contact-form-validation.gif) |
+| | Form is expected to not submit and display an error message if one required field is unmet | Tested the feature by doing submitting the form without valid email and without a message| The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/defensive-programming/contact-form-validation.gif) |
 
 ## User Story Testing
 
@@ -409,7 +409,7 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/mikavi
     ```
 
 
-    - This fix presented some challenges, as I was unable to observe the effects of my changes due to the webhooks file not being triggered, as evidenced by the print statements not executing. After consulting with tutor support, I realized that the webhook endpoint was set to the deployed version rather than the local version, which was the root cause of the issue and the reason I wasn't seeing any effects. After switching the endpoint back to the local version, everything started functioning correctly. Following thorough testing, I redeployed the changes and reset the endpoint to the deployed version, which is now operating as intended.
+    - This fix presented some challenges, as I was unable to observe the effects of my changes due to the webhooks file not being triggered, as evidenced by the print statements not executing. After consulting with tutor support, I realized that the webhook endpoint was set to the deployed version rather than the local version, which was the reason I wasn't seeing any effects. After switching the endpoint back to the local version, everything started functioning correctly. Following thorough testing, I redeployed the changes and reset the endpoint to the deployed version, which is now operating as intended.
 
 **Open Issues**
 
